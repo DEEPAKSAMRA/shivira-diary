@@ -1,0 +1,39 @@
+{
+  "name": "Shivira Calendar : Raj Teacher",
+  "short_name": "Shivira Cal",
+  "description": "राजस्थान सरकारी शिक्षकों के लिए शिविरा पंचांग, डायरी, नोट्स, रिमाइंडर एवं CL प्लानर",
+  "start_url": "/shivira-diary/",
+  "scope": "/shivira-diary/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFCF9",
+  "theme_color": "#E8560A",
+  "lang": "hi",
+  "dir": "ltr",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot1.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "शिविरा पंचांग 2026-27"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
