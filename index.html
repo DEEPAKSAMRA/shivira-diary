@@ -1,0 +1,2274 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-adsense-account" content="ca-pub-2253494477834162">
+<title>शिविरा पंचांग 2026–2027 | Teacher Junction</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2253494477834162" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron:#E8560A;--saffron-light:#F4813A;--saffron-pale:#FFF3EB;--saffron-dark:#B8420A;
+    --green:#1A7A4A;--green-light:#E8F5EE;--blue:#1565C0;--blue-light:#E3F0FF;
+    --purple:#6A1B9A;--purple-light:#F3E5F5;--red:#C62828;--red-light:#FFEBEE;
+    --gold:#F59E0B;--gold-light:#FFFBEB;--teal:#00695C;--teal-light:#E0F2F1;
+    --ink:#1C1917;--ink-soft:#44403C;--ink-muted:#78716C;
+    --surface:#FFFCF9;--border:#E7E5E4;
+    --shadow-sm:0 1px 3px rgba(0,0,0,.08);--shadow-md:0 4px 16px rgba(0,0,0,.1);
+    --radius:12px;--radius-sm:8px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Noto Sans Devanagari',sans-serif;background:var(--surface);color:var(--ink);min-height:100vh}
+  .header{background:linear-gradient(135deg,#B8420A 0%,#E8560A 45%,#F4813A 70%,#E8A020 100%);padding:22px 16px 0;position:relative;overflow:hidden}
+  .header::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:rgba(255,255,255,.06);border-radius:50%}
+  .header-top{display:flex;align-items:center;gap:12px;margin-bottom:18px;position:relative;z-index:1}
+  .header-icon{width:50px;height:50px;background:rgba(255,255,255,.2);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;border:1.5px solid rgba(255,255,255,.3)}
+  .header-text h1{font-family:'Noto Serif Devanagari',serif;font-size:20px;font-weight:700;color:#fff;line-height:1.2}
+  .header-text p{font-size:12px;color:rgba(255,255,255,.85);margin-top:2px}
+  .header-badge{margin-left:auto;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);color:#fff;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;white-space:nowrap}
+  .stats-row{display:grid;grid-template-columns:repeat(4,1fr);background:rgba(0,0,0,.12);border-radius:12px 12px 0 0;overflow:hidden;position:relative;z-index:1}
+  .stat-item{padding:10px 6px;text-align:center;border-right:1px solid rgba(255,255,255,.15);cursor:pointer;transition:background .2s}
+  .stat-item:last-child{border-right:none}
+  .stat-item:hover{background:rgba(255,255,255,.1)}
+  .stat-num{font-size:19px;font-weight:700;color:#fff;line-height:1}
+  .stat-label{font-size:10px;color:rgba(255,255,255,.75);margin-top:2px}
+  .month-nav-wrap{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+  .month-nav{display:flex;overflow-x:auto;scrollbar-width:none;padding:0 10px;gap:2px}
+  .month-nav::-webkit-scrollbar{display:none}
+  .month-tab{flex-shrink:0;padding:11px 12px;cursor:pointer;font-size:12.5px;font-weight:500;color:var(--ink-muted);border-bottom:3px solid transparent;transition:all .2s;white-space:nowrap;text-align:center}
+  .month-tab span.yr{font-size:9.5px;display:block;color:var(--ink-muted)}
+  .month-tab:hover{color:var(--saffron);background:var(--saffron-pale);border-radius:8px 8px 0 0}
+  .month-tab.active{color:var(--saffron);font-weight:700;border-bottom-color:var(--saffron)}
+  .content{padding:14px 14px 80px;max-width:800px;margin:0 auto}
+  .month-panel{display:none;animation:fadeIn .25s ease}
+  .month-panel.active{display:block}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .month-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding:14px 16px;background:linear-gradient(135deg,var(--saffron-pale),#fff);border:1px solid rgba(232,86,10,.15);border-radius:var(--radius);border-left:4px solid var(--saffron)}
+  .month-name{font-family:'Noto Serif Devanagari',serif;font-size:20px;font-weight:700;color:var(--saffron-dark)}
+  .month-year{font-size:12px;color:var(--ink-muted);margin-top:1px}
+  .month-stats{display:flex;gap:10px}
+  .ms{text-align:center}
+  .ms-num{font-size:17px;font-weight:700;color:var(--ink);line-height:1}
+  .ms-lbl{font-size:10px;color:var(--ink-muted);white-space:nowrap}
+  .cal-wrap{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow-sm)}
+  .cal-days-header{display:grid;grid-template-columns:repeat(7,1fr);background:var(--ink)}
+  .cal-day-name{padding:7px 4px;text-align:center;font-size:10.5px;font-weight:600;color:rgba(255,255,255,.8)}
+  .cal-day-name.sun{color:#FF8A65}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr)}
+  .cal-cell{min-height:52px;padding:4px 5px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s;position:relative}
+  .cal-cell:nth-child(7n){border-right:none}
+  .cal-cell.empty{background:#FAFAFA;cursor:default}
+  .cal-cell:hover:not(.empty){background:var(--saffron-pale)}
+  .cal-num{font-size:13px;font-weight:600;color:var(--ink);line-height:1;margin-bottom:2px}
+  .cal-cell.sunday .cal-num{color:#D84315}
+  .cal-cell.holiday{background:#FFF3EB}
+  .cal-cell.holiday .cal-num{color:var(--saffron)}
+  .cal-cell.exam-day{background:#E3F2FD}
+  .cal-cell.festival-day{background:#FFF8E1}
+  .cal-dots{display:flex;flex-wrap:wrap;gap:2px;margin-top:2px}
+  .cal-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+  .dot-hol{background:var(--saffron)}.dot-fest{background:var(--gold)}.dot-exam{background:var(--blue)}
+  .dot-ptm{background:var(--green)}.dot-sport{background:var(--purple)}.dot-other{background:var(--ink-muted)}.dot-notice{background:var(--teal)}
+  .cal-tiny-text{font-size:8px;color:var(--ink-muted);line-height:1.2;margin-top:1px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;padding:10px 14px;background:#FAFAFA;border-top:1px solid var(--border)}
+  .leg-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--ink-muted)}
+  .leg-dot{width:8px;height:8px;border-radius:50%}
+  .section-title{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--ink-muted);padding:4px 0 8px;display:flex;align-items:center;gap:8px}
+  .section-title::after{content:'';flex:1;height:1px;background:var(--border)}
+  .event-card{display:flex;gap:10px;padding:11px 13px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:7px;border-left:3px solid transparent;transition:box-shadow .2s,transform .15s}
+  .event-card:hover{box-shadow:var(--shadow-md);transform:translateY(-1px)}
+  .event-card.holiday{border-left-color:var(--saffron);background:var(--saffron-pale)}
+  .event-card.festival{border-left-color:var(--gold);background:var(--gold-light)}
+  .event-card.exam{border-left-color:var(--blue);background:var(--blue-light)}
+  .event-card.meeting{border-left-color:var(--green);background:var(--green-light)}
+  .event-card.sports{border-left-color:var(--purple);background:var(--purple-light)}
+  .event-card.notice{border-left-color:var(--teal);background:var(--teal-light)}
+  .event-card.special{border-left-color:var(--red);background:var(--red-light)}
+  .event-date-block{flex-shrink:0;width:46px;text-align:center}
+  .ev-day{font-size:20px;font-weight:700;color:var(--ink);line-height:1}
+  .ev-range{font-size:10px;color:var(--ink-muted);line-height:1.3;white-space:nowrap}
+  .event-body{flex:1;min-width:0}
+  .ev-title{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.35;margin-bottom:3px}
+  .ev-sub{font-size:11.5px;color:var(--ink-soft)}
+  .ev-badge{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;margin-top:4px}
+  .badge-hol{background:rgba(232,86,10,.12);color:var(--saffron-dark)}
+  .badge-fest{background:rgba(245,158,11,.12);color:#92400E}
+  .badge-exam{background:rgba(21,101,192,.1);color:var(--blue)}
+  .badge-meeting{background:rgba(26,122,74,.1);color:var(--green)}
+  .badge-sports{background:rgba(106,27,154,.1);color:var(--purple)}
+  .badge-notice{background:rgba(0,105,92,.1);color:var(--teal)}
+  .badge-special{background:rgba(198,40,40,.1);color:var(--red)}
+  .notes-box{background:#FFFBF5;border:1px solid rgba(245,158,11,.2);border-left:3px solid var(--gold);border-radius:var(--radius-sm);padding:11px 13px;margin-bottom:8px}
+  .notes-title{font-size:12px;font-weight:700;color:#92400E;margin-bottom:7px}
+  .notes-box ul{padding-left:16px}
+  .notes-box li{font-size:12px;color:var(--ink-soft);margin-bottom:4px;line-height:1.5}
+  .info-banner{padding:12px 14px;border-radius:var(--radius-sm);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+  .banner-summer{background:linear-gradient(135deg,#E65100,#FF6D00);color:#fff}
+  .banner-winter{background:linear-gradient(135deg,#1565C0,#1976D2);color:#fff}
+  .banner-autumn{background:linear-gradient(135deg,#4A148C,#7B1FA2);color:#fff}
+  .banner-alert{background:linear-gradient(135deg,#1B5E20,#2E7D32);color:#fff}
+  .vac-title{font-size:14px;font-weight:700}
+  .vac-sub{font-size:11.5px;opacity:.85;margin-top:2px}
+  .vac-icon{font-size:26px}
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:14px}
+  .data-table{width:100%;border-collapse:collapse;font-size:12.5px;border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
+  .data-table th{background:var(--ink);color:#fff;padding:9px 11px;text-align:left;font-size:11.5px;font-weight:600}
+  .data-table td{padding:8px 11px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.5;color:var(--ink-soft)}
+  .data-table tr:nth-child(even) td{background:#FAFAFA}
+  .data-table tr:last-child td{border-bottom:none}
+  .data-table .hl td{background:var(--saffron-pale)!important;font-weight:600;color:var(--ink)}
+  .data-table .blue-hl td{background:var(--blue-light)!important}
+  .data-table .green-hl td{background:var(--green-light)!important}
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+  .info-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);padding:13px}
+  .info-card-icon{font-size:20px;margin-bottom:6px}
+  .info-card-title{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--ink-muted);margin-bottom:4px}
+  .info-card-val{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.4}
+  .chip{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;margin:2px}
+  .chip-9{background:#E3F0FF;color:#1565C0}
+  .chip-10{background:#E8F5EE;color:#1A7A4A}
+  .chip-11{background:#F3E5F5;color:#6A1B9A}
+  .chip-12{background:#FFEBEE;color:#C62828}
+  .chip-all{background:var(--saffron-pale);color:var(--saffron-dark)}
+  .warn-box{background:var(--red-light);border:1px solid rgba(198,40,40,.2);border-left:3px solid var(--red);border-radius:var(--radius-sm);padding:11px 13px;margin-bottom:10px;font-size:12.5px;color:#7f1d1d}
+  @media(max-width:480px){
+    .header-text h1{font-size:17px}
+    .info-grid{grid-template-columns:1fr}
+    .cal-cell{min-height:42px;padding:3px 3px}
+    .cal-num{font-size:11px}
+    .ev-day{font-size:17px}
+    .ev-title{font-size:12.5px}
+    .stats-row{grid-template-columns:repeat(2,1fr)}
+  }
+
+/* ── FEATURE STYLES: Diary, Notes, Reminder ── */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 16px;border-radius:var(--radius-sm);font-size:13px;font-weight:600;cursor:pointer;border:none;transition:all .18s;font-family:inherit}
+.btn-primary{background:var(--saffron);color:#fff}.btn-primary:active{background:var(--saffron-dark)}
+.btn-secondary{background:var(--border);color:var(--ink)}.btn-secondary:active{background:#d0cdc9}
+.btn-danger{background:var(--red-light);color:var(--red);border:1px solid rgba(198,40,40,.2)}
+.btn-sm{padding:6px 12px;font-size:12px}.btn-icon{width:36px;height:36px;padding:0;border-radius:8px;background:var(--border);color:var(--ink-muted);font-size:16px}.btn-block{width:100%}
+.feature-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding:14px 16px;background:linear-gradient(135deg,#E3F0FF,#fff);border:1px solid rgba(21,101,192,.12);border-radius:var(--radius);border-left:4px solid var(--blue)}
+.feature-title{font-family:'Noto Serif Devanagari',serif;font-size:20px;font-weight:700;color:#0C447C}
+.feature-sub{font-size:12px;color:var(--ink-muted);margin-top:2px}
+.form-group{margin-bottom:14px}.form-label{display:block;font-size:12px;font-weight:600;color:var(--ink-muted);margin-bottom:5px;text-transform:uppercase;letter-spacing:.4px}
+.form-input,.form-select,.form-textarea{width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-size:14px;font-family:inherit;background:#fff;color:var(--ink);outline:none;transition:border-color .18s}
+.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--saffron)}
+.form-textarea{min-height:120px;resize:vertical;line-height:1.6}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:999;display:none;align-items:flex-end;justify-content:center}
+.modal-overlay.open{display:flex}.modal-card{background:#fff;border-radius:20px 20px 0 0;width:100%;max-width:800px;max-height:92vh;overflow-y:auto;animation:slideUp .28s ease}
+@keyframes slideUp{from{transform:translateY(100%)}to{transform:none}}
+.modal-handle{width:40px;height:4px;background:var(--border);border-radius:2px;margin:12px auto 0}
+.modal-header{display:flex;align-items:center;justify-content:space-between;padding:16px 16px 12px;border-bottom:1px solid var(--border)}
+.modal-title{font-size:16px;font-weight:700;color:var(--ink)}.modal-close{width:30px;height:30px;border-radius:50%;background:var(--border);border:none;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;color:var(--ink-muted)}
+.modal-body{padding:16px}.modal-footer{display:flex;gap:10px;padding:0 16px 24px}
+.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 20px;border-radius:20px;font-size:13px;z-index:1001;opacity:0;pointer-events:none;transition:opacity .3s;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.2)}.toast.show{opacity:1}
+.diary-nav{display:flex;align-items:center;gap:8px;margin-bottom:14px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 12px}
+.diary-date-main{font-size:15px;font-weight:700;color:var(--ink)}.diary-date-sub{font-size:11px;color:var(--ink-muted)}
+.diary-ta{width:100%;min-height:220px;padding:14px;border:1.5px solid var(--border);border-radius:var(--radius-sm);font-size:14px;font-family:inherit;line-height:1.7;resize:vertical;outline:none;transition:border-color .18s}
+.diary-ta:focus{border-color:var(--saffron);background:#FFFCF9}
+.save-st{font-size:11px;color:var(--green);text-align:right;margin-top:4px;height:16px}
+.diary-item{display:flex;gap:10px;padding:11px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:7px;cursor:pointer;transition:background .15s}
+.diary-item:hover{background:var(--saffron-pale)}
+.d-badge{flex-shrink:0;background:var(--saffron-pale);border-radius:8px;padding:5px 8px;text-align:center;min-width:46px}
+.d-day{font-size:19px;font-weight:700;color:var(--saffron-dark);line-height:1}.d-mon{font-size:9px;color:var(--ink-muted);display:block}
+.d-prev{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.d-prev p{font-size:12.5px;color:var(--ink-soft);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.5}
+.d-prev-del{align-self:center;flex-shrink:0;width:28px;height:28px;border-radius:6px;border:none;background:transparent;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;color:var(--ink-muted)}
+.d-prev-del:hover{background:var(--red-light);color:var(--red)}
+.cat-tabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin-bottom:14px}
+.cat-tabs::-webkit-scrollbar{display:none}
+.cat-tab{flex-shrink:0;padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;border:1.5px solid var(--border);background:#fff;color:var(--ink-muted);transition:all .18s}
+.cat-tab.active{background:var(--saffron);color:#fff;border-color:var(--saffron)}
+.note-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 13px;margin-bottom:8px}
+.note-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:6px;margin-bottom:5px}
+.note-title-txt{font-size:13.5px;font-weight:600;color:var(--ink);flex:1;line-height:1.3}
+.note-acts{display:flex;gap:3px}.n-btn{width:28px;height:28px;border-radius:6px;border:none;background:transparent;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center}
+.n-btn:hover{background:var(--border)}.note-prev{font-size:12px;color:var(--ink-muted);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.5;margin-bottom:6px}
+.note-meta{display:flex;align-items:center;gap:8px}
+.n-chip{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px}
+.n-meeting{background:#E8F5EE;color:#1A7A4A}.n-staff{background:#E3F0FF;color:#1565C0}
+.n-student{background:#F3E5F5;color:#6A1B9A}.n-general{background:#FFF3EB;color:#B8420A}
+.n-date{font-size:10.5px;color:var(--ink-muted)}
+.rem-mini-cal{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:14px;box-shadow:var(--shadow-sm)}
+.rem-cal-nav{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--border)}
+.rem-cal-hd{font-size:15px;font-weight:700;color:var(--ink)}
+.rem-dn-row{display:grid;grid-template-columns:repeat(7,1fr);background:#FAFAFA;border-bottom:1px solid var(--border)}
+.rem-dn{padding:6px 2px;text-align:center;font-size:10px;font-weight:600;color:var(--ink-muted)}.rem-dn.sun{color:#D84315}
+.rem-grid2{display:grid;grid-template-columns:repeat(7,1fr)}
+.rc{min-height:44px;padding:3px 2px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);cursor:pointer;text-align:center;transition:background .15s}
+.rc:nth-child(7n){border-right:none}.rc.rc-empty{background:#FAFAFA;cursor:default}.rc:hover:not(.rc-empty){background:var(--saffron-pale)}
+.rc.rc-sel{background:#DBEAFE}.rc.rc-sun .rn{color:#D84315}
+.rc.rc-today .rn{background:var(--saffron);color:#fff!important;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:11px}
+.rn{font-size:12px;font-weight:600;color:var(--ink);line-height:1;margin-bottom:1px}
+.rdots{display:flex;justify-content:center;gap:2px}.rdot{width:4px;height:4px;border-radius:50%}
+.rem-day-detail{background:#fff;border:1.5px solid var(--blue-light);border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:14px}
+.rdd-hd{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.rev{display:flex;gap:8px;padding:7px 0;border-bottom:1px solid var(--border);align-items:flex-start}
+.rev:last-child{border-bottom:none}
+.rev-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:3px}
+.rev-body{flex:1;min-width:0}.rev-title{font-size:13px;font-weight:600;color:var(--ink);line-height:1.3}
+.rev-sub{font-size:11px;color:var(--ink-muted);margin-top:2px}.rev.r-done .rev-title{text-decoration:line-through;color:var(--ink-muted)}
+.rev-acts{display:flex;gap:3px}
+.up-item{display:flex;gap:10px;padding:11px 13px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:7px;transition:box-shadow .15s}
+.up-item:hover{box-shadow:var(--shadow-sm)}.up-item.up-done{opacity:.55}
+.up-db{flex-shrink:0;width:42px;text-align:center;background:var(--saffron-pale);border-radius:8px;padding:5px}
+.up-day{font-size:18px;font-weight:700;color:var(--saffron-dark);line-height:1}.up-mon{font-size:9px;color:var(--ink-muted)}
+.up-body{flex:1;min-width:0}.up-title{font-size:13px;font-weight:600;color:var(--ink)}
+.up-meta{font-size:11px;color:var(--ink-muted);margin-top:2px}
+.up-acts{display:flex;flex-direction:column;gap:4px;align-items:flex-end;justify-content:center}
+.nb{background:linear-gradient(135deg,#0C447C,#1565C0);color:#fff;border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:14px;display:flex;align-items:center;gap:10px;cursor:pointer}
+.nb-icon{font-size:22px}.nb-t{font-size:13px;font-weight:700}.nb-s{font-size:11px;opacity:.85;margin-top:2px}
+.empty-state{text-align:center;padding:36px 16px;color:var(--ink-muted)}
+.es-icon{font-size:38px;margin-bottom:8px}.es-title{font-size:14px;font-weight:600;color:var(--ink-soft);margin-bottom:5px}
+.es-sub{font-size:12px;line-height:1.6}
+.fab{position:fixed;bottom:24px;right:20px;width:52px;height:52px;border-radius:50%;background:var(--saffron);color:#fff;font-size:26px;border:none;cursor:pointer;box-shadow:0 4px 16px rgba(232,86,10,.4);display:none;align-items:center;justify-content:center;z-index:200;transition:transform .15s;line-height:1}
+.fab.visible{display:flex}.fab:active{transform:scale(.93)}
+.sec-divider{display:flex;align-items:center;gap:8px;margin:16px 0 10px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--ink-muted)}
+.sec-divider::after{content:'';flex:1;height:1px;background:var(--border)}
+.col-swatches{display:flex;gap:8px;flex-wrap:wrap;padding:4px 0}
+.col-sw{width:26px;height:26px;border-radius:50%;cursor:pointer;border:3px solid transparent;transition:transform .15s}
+.col-sw.sel{border-color:var(--ink);transform:scale(1.15)}
+
+/* BOTTOM NAV */
+.bnav{background:#fff;border-top:1px solid var(--border);display:flex;z-index:300;box-shadow:0 -2px 12px rgba(0,0,0,.08);width:100%;max-width:800px}
+.bnav-item{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px 4px 10px;cursor:pointer;position:relative;transition:background .15s;border:none;background:none;font-family:inherit}
+.bnav-item:active{background:var(--saffron-pale)}
+.bnav-icon{font-size:20px;line-height:1;margin-bottom:3px}
+.bnav-label{font-size:10px;font-weight:600;color:var(--ink-muted)}
+.bnav-item.active .bnav-label{color:var(--saffron)}
+.bnav-item.active .bnav-icon{filter:drop-shadow(0 0 3px rgba(232,86,10,.4))}
+.bnav-badge{position:absolute;top:6px;right:calc(50% - 14px);background:var(--red);color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:8px;min-width:14px;text-align:center}
+/* push content above bottom nav */
+
+/* DATE QUICK ACTION SHEET */
+.dqa-overlay{position:fixed;inset:0;background:rgba(0,0,0,.48);z-index:400;display:none;align-items:flex-end;justify-content:center}
+.dqa-overlay.open{display:flex}
+.dqa-sheet{background:#fff;border-radius:20px 20px 0 0;width:100%;max-width:800px;padding:0 0 24px;animation:slideUp .25s ease}
+.dqa-handle{width:40px;height:4px;background:var(--border);border-radius:2px;margin:12px auto 8px}
+.dqa-head{padding:10px 16px 12px;border-bottom:1px solid var(--border)}
+.dqa-date{font-size:16px;font-weight:700;color:var(--ink)}
+.dqa-day{font-size:12px;color:var(--ink-muted);margin-top:1px}
+.dqa-shivira{padding:10px 16px;background:#FFFCF9;max-height:130px;overflow-y:auto}
+.dqa-ev{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border)}
+.dqa-ev:last-child{border-bottom:none}
+.dqa-ev-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dqa-ev-txt{font-size:12.5px;color:var(--ink-soft)}
+.dqa-actions{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:14px 16px 4px}
+.dqa-btn{display:flex;flex-direction:column;align-items:center;gap:5px;padding:13px 8px;border-radius:var(--radius-sm);border:1.5px solid var(--border);background:#fff;cursor:pointer;transition:all .18s;font-family:inherit}
+.dqa-btn:active{transform:scale(.96)}
+.dqa-btn.b-diary{border-color:#F59E0B;background:var(--gold-light)}
+.dqa-btn.b-note{border-color:#1565C0;background:var(--blue-light)}
+.dqa-btn.b-rem{border-color:var(--saffron);background:var(--saffron-pale)}
+.dqa-btn-icon{font-size:22px;line-height:1}
+.dqa-btn-lbl{font-size:11.5px;font-weight:600;color:var(--ink)}
+.dqa-btn.b-diary .dqa-btn-lbl{color:#92400E}
+.dqa-btn.b-note .dqa-btn-lbl{color:#0C447C}
+.dqa-btn.b-rem .dqa-btn-lbl{color:var(--saffron-dark)}
+.dqa-close{position:absolute;top:12px;right:14px;width:28px;height:28px;border-radius:50%;background:var(--border);border:none;cursor:pointer;font-size:14px;color:var(--ink-muted);display:flex;align-items:center;justify-content:center}
+/* cal cell user-reminder dot */
+.dot-user{background:#C62828}
+/* calendar cell: show it's clickable */
+.cal-cell:not(.empty){cursor:pointer}
+.cal-cell:not(.empty):active{background:var(--saffron-pale)!important}
+
+.legal-bar{position:fixed;bottom:62px;left:0;right:0;z-index:299;display:flex;justify-content:center;pointer-events:none}
+.legal-bar-inner{display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.96);border-top:1px solid var(--border);width:100%;max-width:800px;padding:4px 6px;pointer-events:all}
+.leg-link{font-size:10px;color:var(--ink-muted);padding:4px 7px;cursor:pointer;white-space:nowrap;border-right:1px solid var(--border);border-top:none;border-bottom:none;border-left:none;background:none;font-family:inherit;transition:color .15s}
+.leg-link:last-child{border-right:none}
+.leg-link:hover{color:var(--saffron)}
+</style>
+</head>
+<body>
+<div id="appMain">
+
+<div class="header">
+  <div class="header-top">
+    <div class="header-icon">📅</div>
+    <div class="header-text">
+      <h1>शिविरा पंचांग 2026–2027</h1>
+      <p>शिक्षा विभाग, राजस्थान • निदेशक माध्यमिक शिक्षा, बीकानेर</p>
+    </div>
+    <div class="header-badge">सत्र 2026-2027</div>
+  </div>
+  <div class="stats-row">
+    <div class="stat-item" onclick="showPanel('annual-info')"><div class="stat-num">12</div><div class="stat-label">माह</div></div>
+    <div class="stat-item" onclick="showPanel('avkash')"><div class="stat-num">~75</div><div class="stat-label">अवकाश</div></div>
+    <div class="stat-item" onclick="showPanel('pariksha')"><div class="stat-num">7</div><div class="stat-label">परीक्षाएं</div></div>
+    <div class="stat-item" onclick="showPanel('annual-schedule')"><div class="stat-num">⏰</div><div class="stat-label">समय-सारिणी</div></div>
+  </div>
+</div>
+
+<div class="month-nav-wrap">
+  <div class="month-nav" id="monthNav">
+    <div class="month-tab active" onclick="showPanel('apr')">अप्रैल<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('may')">मई<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('jun')">जून<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('jul')">जुलाई<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('aug')">अगस्त<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('sep')">सितम्बर<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('oct')">अक्टूबर<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('nov')">नवम्बर<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('dec')">दिसम्बर<span class="yr">2026</span></div>
+    <div class="month-tab" onclick="showPanel('jan')">जनवरी<span class="yr">2027</span></div>
+    <div class="month-tab" onclick="showPanel('feb')">फरवरी<span class="yr">2027</span></div>
+    <div class="month-tab" onclick="showPanel('mar')">मार्च<span class="yr">2027</span></div>
+    <div class="month-tab" onclick="showPanel('pariksha')">📝 परीक्षा<span class="yr">CCE • परख</span></div>
+    <div class="month-tab" onclick="showPanel('annual-schedule')">⏰ समय-सारिणी<span class="yr">विवरण</span></div>
+    <div class="month-tab" onclick="showPanel('other')">🗂️ अन्य कार्यक्रम<span class="yr">Pt.13, 14 व अधिक</span></div>
+    <div class="month-tab" onclick="showPanel('baithak')">🤝 बैठक<span class="yr">PTM • SMC • गार्गी</span></div>
+    <div class="month-tab" onclick="showPanel('avkash')">🏖️ अवकाश<span class="yr">छुट्टी • CL Planner</span></div>
+    <div class="month-tab" onclick="showPanel('appinfo')">ℹ️ जानकारी<span class="yr">About • Contact</span></div>
+    <div class="month-tab" onclick="showPanel('diary')">📔 डायरी<span class="yr">दैनिक लॉग</span></div>
+    <div class="month-tab" onclick="showPanel('notes')">📝 नोट्स<span class="yr">बैठक • स्टाफ</span></div>
+    <div class="month-tab" onclick="showPanel('reminder')">🔔 रिमाइंडर<span class="yr">इवेंट • कैलेंडर</span></div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- ══ APRIL ══ -->
+<div class="month-panel active" id="panel-apr">
+  <div class="month-header"><div><div class="month-name">अप्रैल 2026</div><div class="month-year">शैक्षणिक सत्र प्रारंभ • प्रवेशोत्सव प्रथम चरण</div></div><div class="month-stats"><div class="ms"><div class="ms-num">23</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">4</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-apr"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div><div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>परीक्षा</div><div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div>बैठक/PTM</div><div class="leg-item"><div class="leg-dot" style="background:var(--teal)"></div>विशेष</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">01</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">🎓 शैक्षणिक सत्र 2026–27 प्रारंभ • विद्यालय समय परिवर्तन</div><div class="ev-sub">एक पारी: 7:30 AM–1:00 PM • दो पारी: 7:00 AM–6:00 PM (प्रत्येक पारी 5.30 घंटे)</div><span class="ev-badge badge-notice">📚 सत्रारंभ</span></div></div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">1–25</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">प्रवेशोत्सव — प्रथम चरण • हाउस होल्ड सर्वे</div><span class="ev-badge badge-notice">✍️ नामांकन</span></div></div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">1 अप्रैल–</div><div class="ev-range">2 मई</div></div><div class="event-body"><div class="ev-title">नामांकन अभियान (CSR मॉड्यूल में प्रविष्टि)</div><span class="ev-badge badge-notice">✍️ CSR</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">02</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">श्री हनुमान जन्मोत्सव / विश्व ऑटिज्म जागरूकता दिवस</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">03</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">गुडफ्राईडे</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">04</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">संस्था प्रधान — स्टाफ बैठक • SDMC/SMC साधारण सभा</div><div class="ev-sub">आगामी सत्र की विद्यालय योजना बनाकर जिला शिक्षा अधिकारी को प्रेषित</div><span class="ev-badge badge-meeting">🤝 बैठक</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">07</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">विश्व स्वास्थ्य दिवस (RSCERT)</div><span class="ev-badge badge-fest">🏥 स्वास्थ्य</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">8–10</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">स्थानीय पूरक परीक्षाएं</div><span class="ev-badge badge-exam">📝 पूरक परीक्षा</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">11</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">महात्मा ज्योतिबा फुले जयंती</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">14</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">डॉ. भीमराव अम्बेडकर जयंती</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">15</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">स्थानीय पूरक परीक्षा परिणाम</div><span class="ev-badge badge-exam">📊 परिणाम</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">18</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">सामुदायिक बाल सभा — विद्यालय स्तर</div><span class="ev-badge badge-meeting">👨‍👩‍👧 बाल सभा</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">19</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">श्री परशुराम जन्मोत्सव</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">20–21</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">सत्रारंभ की संस्था प्रधान वाक्पीठ (दो दिवसीय)</div><div class="ev-sub">प्रा./उप्रा./मा./उमावि — शिविरा पंचांग में निर्धारित अवधि में अनिवार्य</div><span class="ev-badge badge-notice">🎤 वाक्पीठ</span></div></div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">23–25</div><div class="ev-range">अप्रैल</div></div><div class="event-body"><div class="ev-title">सत्र पर्यंत प्रशिक्षण केन्द्र / खेल छात्रावासों में प्रवेश प्रक्रिया</div><span class="ev-badge badge-notice">🏅 खेल छात्रावास प्रवेश</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 अप्रैल विशेष</div><ul><li>ELC: <b>ग्राम पंचायत की यात्रा</b> — कक्षा 9,10,11,12</li><li>विशेष आवश्यकता वाले बालक-बालिकाओं के प्रवेश सुनिश्चित किए जाएं</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ MAY ══ -->
+<div class="month-panel" id="panel-may">
+  <div class="month-header"><div><div class="month-name">मई 2026</div><div class="month-year">प्रथम परख • ग्रीष्मावकाश</div></div><div class="month-stats"><div class="ms"><div class="ms-num">14</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">1</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-may"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div><div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>परीक्षा</div><div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div>PTM</div></div></div>
+  <div class="info-banner banner-summer"><div class="vac-icon">☀️</div><div><div class="vac-title">ग्रीष्मावकाश: 17 मई – 20 जून 2026 (35 दिन)</div><div class="vac-sub">व्यावसायिक शिक्षा काउंसलिंग जारी रहेगी</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">4 मई–</div><div class="ev-range">4 जुलाई</div></div><div class="event-body"><div class="ev-title">प्रवेशोत्सव — द्वितीय चरण (शेष बच्चों का हाउस होल्ड सर्वे)</div><span class="ev-badge badge-notice">✍️ प्रवेशोत्सव</span></div></div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">4 मई–</div><div class="ev-range">11 जुलाई</div></div><div class="event-body"><div class="ev-title">नामांकन अभियान — द्वितीय चरण (CSR Module)</div><span class="ev-badge badge-notice">✍️ CSR</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">07</div><div class="ev-range">मई</div></div><div class="event-body"><div class="ev-title">रवींद्रनाथ टैगोर जयंती</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">13–15</div><div class="ev-range">मई</div></div><div class="event-body"><div class="ev-title">प्रथम परख — कक्षा 6–12</div><span class="ev-badge badge-exam">📝 प्रथम परख</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">16</div><div class="ev-range">मई</div></div><div class="event-body"><div class="ev-title">PTM-I / सामुदायिक बाल सभा — विद्यालय स्तर</div><span class="ev-badge badge-meeting">🤝 PTM-I</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">28</div><div class="ev-range">मई</div></div><div class="event-body"><div class="ev-title">वीर सावरकर जयंती / ईद उल जुहा (चन्द्र दर्शन अनुसार)</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 मई नोट</div><ul><li>RBSE द्वारा शिक्षक प्रशिक्षण (ग्रीष्मावकाश में)</li><li>RBSE सुधारात्मक परीक्षा (प्रस्तावित)</li><li>ELC: <b>मस्ती, दोस्ती और मतदान फिल्म प्रदर्शन</b> — कक्षा 9,10,11,12 (ICT Lab)</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ JUNE ══ -->
+<div class="month-panel" id="panel-jun">
+  <div class="month-header"><div><div class="month-name">जून 2026</div><div class="month-year">ग्रीष्मावकाश समाप्ति • सत्र पुनर्प्रारंभ</div></div><div class="month-stats"><div class="ms"><div class="ms-num">7</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">2</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-jun"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div></div></div>
+  <div class="info-banner banner-summer"><div class="vac-icon">☀️</div><div><div class="vac-title">ग्रीष्मावकाश जारी: 1–20 जून 2026</div><div class="vac-sub">21 जून से विद्यालय पुनः प्रारंभ</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">17</div><div class="ev-range">जून</div></div><div class="event-body"><div class="ev-title">महाराणा प्रताप जयंती</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">21</div><div class="ev-range">जून</div></div><div class="event-body"><div class="ev-title">अंतर्राष्ट्रीय योग दिवस (RSCERT)</div><div class="ev-sub">समस्त विद्यालयों में प्रातः 7–8 बजे • 21 जून से विद्यालय पुनः प्रारंभ</div><span class="ev-badge badge-fest">🧘 योग दिवस</span></div></div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">21–30</div><div class="ev-range">जून</div></div><div class="event-body"><div class="ev-title">व्यावसायिक शिक्षा काउंसलिंग (नवीन प्रवेश हेतु)</div><span class="ev-badge badge-notice">🎓 काउंसलिंग</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">26</div><div class="ev-range">जून</div></div><div class="event-body"><div class="ev-title">मोहर्रम</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">28</div><div class="ev-range">जून</div></div><div class="event-body"><div class="ev-title">भामाशाह जयंती</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 जून नोट</div><ul><li>RBSE सुधारात्मक परीक्षा 2026 (प्रस्तावित)</li><li>विशेष आवश्यकता वाले बालक-बालिकाओं का विद्यालयों में प्रवेश (जून–जुलाई)</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ JULY ══ -->
+<div class="month-panel" id="panel-jul">
+  <div class="month-header"><div><div class="month-name">जुलाई 2026</div><div class="month-year">प्रवेश अंतिम तिथि • वृक्षारोपण</div></div><div class="month-stats"><div class="ms"><div class="ms-num">27</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">0</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-jul"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div><div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>परीक्षा</div><div class="leg-item"><div class="leg-dot" style="background:var(--teal)"></div>विशेष</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">1–11</div><div class="ev-range">जुलाई</div></div><div class="event-body"><div class="ev-title">प्रवेशोत्सव द्वितीय चरण जारी • हाउस होल्ड सर्वे • नामांकन (CSR) • सामुदायिक बाल सभा</div><span class="ev-badge badge-notice">✍️ नामांकन</span></div></div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">11</div><div class="ev-range">जुलाई</div></div><div class="event-body"><div class="ev-title">⚠️ कक्षा 9–12 में प्रवेश की अंतिम तिथि</div><div class="ev-sub">विश्व जनसंख्या दिवस (RSCERT) • नवीन प्रवेशित विद्यार्थियों की काउंसलिंग</div><span class="ev-badge badge-special">⚠️ अंतिम तिथि</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">23</div><div class="ev-range">जुलाई</div></div><div class="event-body"><div class="ev-title">लोकमान्य बाल गंगाधर तिलक जयंती</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">28</div><div class="ev-range">जुलाई</div></div><div class="event-body"><div class="ev-title">प्रकृति संरक्षण दिवस</div><span class="ev-badge badge-fest">🌿 उत्सव</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">29</div><div class="ev-range">जुलाई</div></div><div class="event-body"><div class="ev-title">गुरु पूर्णिमा / वृक्षारोपण दिवस</div><span class="ev-badge badge-fest">🌳 उत्सव</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 जुलाई नोट</div><ul><li>वर्षा आरंभ होते ही <b>वृक्षारोपण</b> (प्रथम चरण)</li><li>विशेष आवश्यकता वाले बालक-बालिकाओं का विद्यालयों में प्रवेश सुनिश्चित (जून–जुलाई)</li><li>शारीरिक शिक्षकों का <b>सूर्य नमस्कार प्रशिक्षण</b></li><li>TAF: प्रथम 6-माही डेटा प्रविष्टि (जुलाई–अगस्त 2026)</li><li>ELC: <b>लोकसभा-2019 फिल्म</b> — कक्षा 11-12 • <b>जागरूक मतदाता कार्ड खेल</b> — कक्षा 9</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ AUGUST ══ -->
+<div class="month-panel" id="panel-aug">
+  <div class="month-header"><div><div class="month-name">अगस्त 2026</div><div class="month-year">स्वतंत्रता दिवस • द्वितीय परख • खेलकूद</div></div><div class="month-stats"><div class="ms"><div class="ms-num">23</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">4</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-aug"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div><div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>परीक्षा</div><div class="leg-item"><div class="leg-dot" style="background:var(--purple)"></div>खेलकूद</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">05</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">स्वर्णमुकुट मस्तक दिवस</div><span class="ev-badge badge-fest">👑 उत्सव</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">08</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">कृमि मुक्ति दिवस / सामुदायिक बाल सभा</div><div class="ev-sub">समस्त विद्यार्थियों को Albendazole दवा खिलाना</div><span class="ev-badge badge-notice">💊 स्वास्थ्य</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">09</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">विश्व आदिवासी दिवस</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">13</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">वीर दुर्गादास राठौड़ जयंती</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">15</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">🇮🇳 स्वतंत्रता दिवस — अवकाश परंतु उत्सव अनिवार्य</div><div class="ev-sub">मतदाता शपथ — कक्षा 9,10,11,12 (ELC: भारत निर्वाचन आयोग निर्धारित)</div><span class="ev-badge badge-hol">🇮🇳 राष्ट्रीय उत्सव</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">17–19</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">द्वितीय परख — कक्षा 6–12</div><span class="ev-badge badge-exam">📝 द्वितीय परख</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">20</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">सद्भावना दिवस / राजीव गांधी जयंती</div><span class="ev-badge badge-fest">🕊️ उत्सव</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">20–21</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">43वीं जिला स्तरीय (सब जूनियर) नेहरू हॉकी प्रतियोगिता</div><span class="ev-badge badge-sports">🏑 हॉकी</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">22</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">रोल प्ले एवं लोक नृत्य — विद्यालय स्तर (RSCERT)</div><span class="ev-badge badge-sports">💃 नृत्य</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">24–25</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">तहसील स्तरीय शिक्षक क्रीड़ा एवं सांस्कृतिक प्रतियोगिता</div><span class="ev-badge badge-sports">🏅 शिक्षक क्रीड़ा</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">25 से पूर्व</div><div class="ev-range"></div></div><div class="event-body"><div class="ev-title">विद्यालयी खेलकूद प्रतियोगिताएं (प्रथम/द्वितीय/तृतीय समूह) — विद्यालय स्तर</div><span class="ev-badge badge-sports">🏃 विद्यालय</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">26</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">बाराबफात</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">27</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">रक्षा सूत्र बंधन दिवस (रक्षा बंधन से पूर्व कार्य दिवस पर)</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">27–29</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">43वीं राज्य स्तरीय (सब जूनियर) नेहरू हॉकी प्रतियोगिता</div><span class="ev-badge badge-sports">🏑 राज्य हॉकी</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">28</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">रक्षा बंधन / संस्कृत दिवस</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">29</div><div class="ev-range">अगस्त</div></div><div class="event-body"><div class="ev-title">खेल दिवस — मेजर ध्यान चन्द जयंती</div><span class="ev-badge badge-fest">🏅 खेल दिवस</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">30 अग–</div><div class="ev-range">3 सित</div></div><div class="event-body"><div class="ev-title">जिला स्तरीय विद्यालयी खेलकूद — प्रथम चरण/समूह (आयु 14/17/19 वर्ष)</div><div class="ev-sub">अधिकतम 05 दिन</div><span class="ev-badge badge-sports">🏅 जिला खेलकूद</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 अगस्त नोट</div><ul><li>RBSE मुख्य परीक्षा 2027 के ऑनलाइन आवेदन पत्र भरवाएं</li><li>RBSE विद्यार्थी सृजनात्मक प्रतियोगिता — ब्लॉक स्तर (प्रस्तावित)</li><li>वृक्षारोपण — द्वितीय चरण</li><li>KRP प्रशिक्षण (SMC/SDMC) • RP प्रशिक्षण (SMC/SDMC)</li><li>कक्षा 1–5: <b>प्रथम योगात्मक आकलन</b> — अगस्त अंतिम सप्ताह (~45% पाठ्यक्रम)</li><li>ELC: <b>निर्वाचित्र फिल्म</b> कक्षा 9-12 • <b>जनता के प्रतिनिधि बनें कार्ड खेल</b> कक्षा 11 • <b>आदर्श मतदान</b> कक्षा 11</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ SEPTEMBER ══ -->
+<div class="month-panel" id="panel-sep">
+  <div class="month-header"><div><div class="month-name">सितम्बर 2026</div><div class="month-year">शिक्षक दिवस • स्वच्छता पखवाड़ा • खेल प्रतियोगिताएं</div></div><div class="month-stats"><div class="ms"><div class="ms-num">24</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">2</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-sep"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div><div class="leg-item"><div class="leg-dot" style="background:var(--purple)"></div>खेलकूद</div><div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>सम्मेलन</div></div></div>
+  <div class="info-banner banner-alert"><div class="vac-icon">🧹</div><div><div class="vac-title">स्वच्छता पखवाड़ा: 01–15 सितम्बर 2026</div><div class="vac-sub">समस्त विद्यालयों में अनिवार्य</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">04</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">श्री कृष्ण जन्माष्टमी</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">05</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">🎓 शिक्षक दिवस</div><div class="ev-sub">राज्य स्तरीय शिक्षक सम्मान समारोह • राष्ट्रीय शिक्षक कल्याण प्रतिष्ठान — झंडियों की बिक्री शुभारंभ</div><span class="ev-badge badge-fest">🏆 शिक्षक दिवस</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">08</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">विश्व साक्षरता दिवस / निबंध प्रतियोगिता</div><div class="ev-sub">ELC: "देश में मतदाता साक्षरता और जागरूकता क्यों जरूरी है" — कक्षा 9,10,11,12</div><span class="ev-badge badge-fest">✍️ निबंध</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">8–9</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">जिला स्तरीय शिक्षक क्रीड़ा एवं सांस्कृतिक प्रतियोगिताएं</div><span class="ev-badge badge-sports">🏅 शिक्षक खेल</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">9–15</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">राज्य स्तरीय विद्यालयी खेलकूद — प्रथम चरण/समूह (आयु 14/17/19 वर्ष)</div><span class="ev-badge badge-sports">🏅 राज्य खेल</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">12–16</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">जिला स्तरीय विद्यालयी खेलकूद — द्वितीय चरण/समूह</div><span class="ev-badge badge-sports">🏅 जिला खेल</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">14</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">हिंदी दिवस / गणेश चतुर्थी</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">15</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">रोल प्ले एवं लोक नृत्य — जिला स्तरीय (RSCERT)</div><span class="ev-badge badge-sports">💃 नृत्य</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">18–19</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">शिक्षक सम्मेलन — जिला स्तर</div><span class="ev-badge badge-meeting">📚 सम्मेलन</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">21</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">श्री रामदेव जयंती / श्री तेजा दशमी / खेजड़ली शहीद दिवस</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">22–28</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">राज्य स्तरीय विद्यालयी खेलकूद — द्वितीय चरण/समूह</div><span class="ev-badge badge-sports">🏅 राज्य खेल</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">22–24</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">प्राथमिक विद्यालयी खेलकूद — जिला स्तरीय</div><span class="ev-badge badge-sports">🏅 प्राथमिक खेल</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">23</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">किशोरी जागृति दिवस (RSCERT)</div><span class="ev-badge badge-fest">👩 किशोरी दिवस</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">24–28</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">जिला स्तरीय विद्यालयी खेलकूद — तृतीय चरण/समूह (आयु 17/19 वर्ष)</div><span class="ev-badge badge-sports">🏅 जिला खेल</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">26</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">विद्यालय स्तरीय विज्ञान मेला — एक दिवस (RSCERT)</div><span class="ev-badge badge-fest">🔬 विज्ञान मेला</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">30</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">झंडियों की बिक्री राशि का बैंक ड्राफ्ट प्रेषण • SDMC कार्यकारिणी — कार्य पूर्णता</div><span class="ev-badge badge-notice">💰 वित्तीय</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 सितम्बर नोट</div><ul><li>RP प्रशिक्षण (SMC/SDMC) — अगस्त–सितम्बर 2026</li><li>ELC: <b>NOTA</b> कक्षा 10 • <b>मतदाता पंजीकरण</b> कक्षा 10 • <b>चुनाव यंत्र/मतपत्र निर्माण</b> कक्षा 11 • <b>अपने उम्मीदवार को जानें</b> कक्षा 12</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ OCTOBER ══ -->
+<div class="month-panel" id="panel-oct">
+  <div class="month-header"><div><div class="month-name">अक्टूबर 2026</div><div class="month-year">अर्धवार्षिक परीक्षा • विज्ञान मेला • खेलकूद</div></div><div class="month-stats"><div class="ms"><div class="ms-num">24</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">4</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-oct"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>परीक्षा</div><div class="leg-item"><div class="leg-dot" style="background:var(--purple)"></div>खेलकूद</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div></div></div>
+  <div class="info-banner banner-summer" style="background:linear-gradient(135deg,#E65100,#F57F17)"><div class="vac-icon">⏰</div><div><div class="vac-title">01 अक्टूबर से विद्यालय समय परिवर्तन</div><div class="vac-sub">एक पारी: 10:00 AM–4:00 PM • दो पारी: 7:30 AM–5:30 PM</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">02</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">🇮🇳 महात्मा गांधी जयंती / लाल बहादुर शास्त्री जयंती</div><div class="ev-sub">अवकाश परंतु उत्सव अनिवार्य</div><span class="ev-badge badge-hol">🏖️ अवकाश + उत्सव</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">4–10</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">राज्य स्तरीय विद्यालयी खेलकूद — तृतीय चरण/समूह (आयु 17/19 वर्ष)</div><span class="ev-badge badge-sports">🏅 राज्य खेल</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">6–7</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">रोल प्ले एवं लोक नृत्य — राज्य स्तरीय (RSCERT)</div><span class="ev-badge badge-sports">💃 राज्य नृत्य</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">10</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">विश्व मानसिक स्वास्थ्य दिवस</div><span class="ev-badge badge-fest">🧠 जागरूकता</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">11</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">अंतर्राष्ट्रीय बालिका दिवस / नवरात्रा स्थापना / अग्रसेन जयंती</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">12–14</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">जिला स्तरीय विज्ञान मेला — तीन दिन (RSCERT)</div><span class="ev-badge badge-fest">🔬 विज्ञान मेला</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">13–17</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">जिला स्तरीय विद्यालयी खेलकूद — तृतीय समूह (14 वर्ष)</div><span class="ev-badge badge-sports">🏅 जिला खेल</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">13–17</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">जिला स्तरीय विद्यालयी खेलकूद — चतुर्थ चरण (17/19 वर्ष)</div><span class="ev-badge badge-sports">🏅 जिला खेल</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">15–29</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">अर्धवार्षिक परीक्षा / CBA SA-2 — कक्षा 6–12</div><span class="ev-badge badge-exam">📝 अर्धवार्षिक</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">19</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">दुर्गाष्टमी</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">20</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">विजयदशमी</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">23–29</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">राज्य स्तरीय विद्यालयी खेलकूद — तृतीय समूह (14 वर्ष) व चतुर्थ चरण (17/19 वर्ष)</div><span class="ev-badge badge-sports">🏅 राज्य खेल</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">31</div><div class="ev-range">अक्टूबर</div></div><div class="event-body"><div class="ev-title">सरदार पटेल जयंती — राष्ट्रीय एकता दिवस / इंदिरा गांधी पुण्य तिथि</div><span class="ev-badge badge-fest">🇮🇳 एकता दिवस</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 अक्टूबर नोट</div><ul><li>ELC: <b>स्टेप अप</b> कक्षा 10 • <b>फॉर्म-6 भरना और पंजीकृत होना</b> कक्षा 12</li><li>शाला-सिद्धि स्व मूल्यांकन (जुलाई–अक्टूबर 2026) • बाह्य मूल्यांकन (अगस्त–दिसम्बर 2026)</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ NOVEMBER ══ -->
+<div class="month-panel" id="panel-nov">
+  <div class="month-header"><div><div class="month-name">नवम्बर 2026</div><div class="month-year">मध्यावधि अवकाश • दीपावली • बाल दिवस</div></div><div class="month-stats"><div class="ms"><div class="ms-num">14</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">13</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-nov"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div><div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div>PTM</div><div class="leg-item"><div class="leg-dot" style="background:var(--purple)"></div>मेला</div></div></div>
+  <div class="info-banner banner-autumn"><div class="vac-icon">🪔</div><div><div class="vac-title">मध्यावधि अवकाश: 4–15 नवम्बर 2026 (12 दिन)</div><div class="vac-sub">दीपावली, गोवर्धन पूजा, भाई दूज सहित</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">08</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">दीपावली 🪔</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">09</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">गोवर्धन पूजा</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">11</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">भाई दूज / राष्ट्रीय शिक्षा दिवस</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">14</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">बाल दिवस 🎈 — पं. जवाहर लाल नेहरू जयंती</div><span class="ev-badge badge-fest">👦 बाल दिवस</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">18–21</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">राज्य स्तरीय विज्ञान मेला — चार दिन (RSCERT)</div><span class="ev-badge badge-sports">🔬 राज्य विज्ञान</span></div></div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">19–25</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">समरसता सप्ताह</div><span class="ev-badge badge-notice">🤝 समरसता</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">21</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">PTM-II / सामुदायिक बाल सभा / कालिदास जयंती</div><span class="ev-badge badge-meeting">🤝 PTM-II</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">24</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">गुरुनानक जयंती</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">26</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">राष्ट्रीय संविधान दिवस</div><div class="ev-sub">ELC: मतदान के संवैधानिक अधिकार एवं नैतिक मतदान जागरूकता — कक्षा 9,10,11,12</div><span class="ev-badge badge-fest">📜 संविधान दिवस</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">27–28</div><div class="ev-range">नवम्बर</div></div><div class="event-body"><div class="ev-title">शिक्षक सम्मेलन — राज्य स्तर</div><span class="ev-badge badge-meeting">📚 राज्य सम्मेलन</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 नवम्बर नोट</div><ul><li>ELC: <b>शब्दों का खेल</b> — कक्षा 12</li><li>कक्षा 1–5: <b>द्वितीय योगात्मक आकलन</b> — नवम्बर अंतिम सप्ताह (~35% पाठ्यक्रम)</li><li>RBSE एकल पुत्री-द्विपुत्री पुरस्कार योजना</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ DECEMBER ══ -->
+<div class="month-panel" id="panel-dec">
+  <div class="month-header"><div><div class="month-name">दिसम्बर 2026</div><div class="month-year">तृतीय परख • NMMSS • शीतावकाश</div></div><div class="month-stats"><div class="ms"><div class="ms-num">25</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">2</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-dec"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>परीक्षा</div><div class="leg-item"><div class="leg-dot" style="background:var(--purple)"></div>खेलकूद</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">01</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">विश्व एकता दिवस / विश्व एड्स दिवस (RSCERT)</div><span class="ev-badge badge-fest">🎗️ एड्स जागरूकता</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">03</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">विश्व विशेष योग्यजन दिवस</div><span class="ev-badge badge-fest">♿ जागरूकता</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">8–9</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">53वीं राज्य स्तरीय मंत्रालयिक कर्मचारी खेलकूद — जिला स्तर</div><span class="ev-badge badge-sports">🏅 कर्मचारी खेल</span></div></div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">10</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">अंतर्राष्ट्रीय मानवाधिकार दिवस / ELC भाषण प्रतियोगिता</div><div class="ev-sub">"वोट का संवैधानिक अधिकार एवं नैतिक मतदान का महत्व" — कक्षा 9 से 12</div><span class="ev-badge badge-fest">🕊️ भाषण</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">12</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">सामुदायिक बाल सभा — विद्यालय स्तर</div><span class="ev-badge badge-meeting">👨‍👩‍👧 बाल सभा</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">15–16</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">53वीं राज्य स्तरीय मंत्रालयिक खेलकूद — मण्डल स्तर</div><span class="ev-badge badge-sports">🏅 मण्डल खेल</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">16</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">शिक्षा विभागीय मंत्रालयिक एवं सहायक कर्मचारी पुरस्कार एवं सम्मान समारोह (राज्य स्तर)</div><span class="ev-badge badge-meeting">🏆 पुरस्कार</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">17–19</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">तृतीय परख — कक्षा 6–12</div><span class="ev-badge badge-exam">📝 तृतीय परख</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">19–24</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">53वीं मण्डल स्तरीय कर्मचारी खेलकूद प्रशिक्षण</div><span class="ev-badge badge-sports">🏅 प्रशिक्षण</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">20</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">NMMSS राज्य स्तरीय चयन परीक्षा 2026</div><span class="ev-badge badge-exam">🏆 NMMSS</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">25</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">क्रिसमस डे 🎄</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">26</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">वीर बाल दिवस</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">26–27</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">राज्य स्तरीय शिक्षक खेलकूद — पूर्व प्रशिक्षण (पुरुष एवं महिला)</div><span class="ev-badge badge-sports">🏅 पूर्व प्रशिक्षण</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">27–30</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">53वीं राज्य स्तरीय मंत्रालयिक कर्मचारी खेलकूद — राज्य स्तरीय प्रशिक्षण</div><span class="ev-badge badge-sports">🏅 राज्य प्रशिक्षण</span></div></div>
+  <div class="event-card sports"><div class="event-date-block"><div class="ev-day">30–31</div><div class="ev-range">दिसम्बर</div></div><div class="event-body"><div class="ev-title">शिक्षक क्रीड़ा एवं सांस्कृतिक प्रतियोगिताएं — राज्य स्तरीय (पुरुष एवं महिला)</div><span class="ev-badge badge-sports">🏅 राज्य शिक्षक क्रीड़ा</span></div></div>
+  <div class="info-banner banner-winter" style="margin-top:10px"><div class="vac-icon">❄️</div><div><div class="vac-title">शीतकालीन अवकाश: 31 दिसम्बर 2026 – 10 जनवरी 2027</div><div class="vac-sub">GPF वार्षिक अंशदान कटौती — दिसम्बर के वेतन से</div></div></div>
+  <div class="notes-box"><div class="notes-title">📋 दिसम्बर नोट</div><ul><li>EWS छात्रवृत्ति — RBSE अजमेर</li><li>RBSE सत्र 2027 की प्रायोगिक परीक्षाएं</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ JANUARY ══ -->
+<div class="month-panel" id="panel-jan">
+  <div class="month-header"><div><div class="month-name">जनवरी 2027</div><div class="month-year">गणतंत्र दिवस • राष्ट्रीय मतदाता दिवस</div></div><div class="month-stats"><div class="ms"><div class="ms-num">17</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">11</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-jan"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div><div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div>PTM</div></div></div>
+  <div class="info-banner banner-winter"><div class="vac-icon">❄️</div><div><div class="vac-title">शीतकालीन अवकाश जारी: 1–10 जनवरी 2027</div><div class="vac-sub">11 जनवरी से विद्यालय पुनः प्रारंभ</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">04</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">विश्व ब्रेल दिवस • SMC/SDMC प्रशिक्षण प्रोत्साहन</div><span class="ev-badge badge-fest">♿ ब्रेल दिवस</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">10</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">विश्व हिन्दी दिवस</div><span class="ev-badge badge-fest">📖 हिन्दी दिवस</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">12</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">स्वामी विवेकानन्द जयंती — राष्ट्रीय युवा दिवस</div><span class="ev-badge badge-fest">🌟 युवा दिवस</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">13</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">लोहड़ी पर्व</div><span class="ev-badge badge-fest">🔥 उत्सव</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">14</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">मकर संक्रांति</div><span class="ev-badge badge-fest">🪁 उत्सव</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">15</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">गुरु गोविन्द सिंह जयंती / कैरियर डे</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">16</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">PTM-III / सामुदायिक बाल सभा</div><span class="ev-badge badge-meeting">🤝 PTM-III</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">22</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">प्रभु श्रीरामलला प्राण प्रतिष्ठा दिवस</div><span class="ev-badge badge-fest">🛕 उत्सव</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">23</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">नेताजी सुभाष चन्द्र बोस जयंती</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">24</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">राष्ट्रीय बालिका दिवस</div><span class="ev-badge badge-fest">👧 बालिका दिवस</span></div></div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">25</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">राष्ट्रीय मतदाता दिवस</div><div class="ev-sub">कक्षा 9-10: नाटक / चित्र / पोस्टर / रंगोली • कक्षा 11-12: वाद-विवाद / निबंध • कक्षा 9-12: मतदाता जागरूकता प्रश्नोत्तरी</div><span class="ev-badge badge-fest">🗳️ मतदाता दिवस</span></div></div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">26</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">🇮🇳 गणतंत्र दिवस — अवकाश परंतु उत्सव अनिवार्य</div><div class="ev-sub">मतदाता शपथ — कक्षा 9,10,11,12</div><span class="ev-badge badge-hol">🇮🇳 राष्ट्रीय उत्सव</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">30</div><div class="ev-range">जनवरी</div></div><div class="event-body"><div class="ev-title">शहीद दिवस — महात्मा गांधी पुण्य तिथि</div><div class="ev-sub">प्रातः 11:00 बजे 2 मिनट का मौन</div><span class="ev-badge badge-fest">🕊️ शहीद दिवस</span></div></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ FEBRUARY ══ -->
+<div class="month-panel" id="panel-feb">
+  <div class="month-header"><div><div class="month-name">फरवरी 2027</div><div class="month-year">बसन्त पंचमी • बोर्ड परीक्षा (प्रस्तावित)</div></div><div class="month-stats"><div class="ms"><div class="ms-num">23</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">1</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-feb"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">09</div><div class="ev-range">फरवरी</div></div><div class="event-body"><div class="ev-title">सुरक्षित इंटरनेट दिवस (RSCERT)</div><span class="ev-badge badge-notice">🌐 सुरक्षित इंटरनेट</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">11</div><div class="ev-range">फरवरी</div></div><div class="event-body"><div class="ev-title">बसन्त पंचमी / सरस्वती जयंती / गार्गी पुरस्कार वितरण</div><span class="ev-badge badge-fest">🌸 बसन्त पंचमी</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">12</div><div class="ev-range">फरवरी</div></div><div class="event-body"><div class="ev-title">सूर्य नमस्कार दिवस (सूर्य सप्तमी से पूर्व)</div><span class="ev-badge badge-fest">🙏 सूर्य नमस्कार</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">13</div><div class="ev-range">फरवरी</div></div><div class="event-body"><div class="ev-title">देवनारायण जयंती / सूर्य सप्तमी</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">13</div><div class="ev-range">फरवरी</div></div><div class="event-body"><div class="ev-title">मातृ-पितृ पूजन दिवस आयोजन</div><div class="ev-sub">14 फरवरी रविवार होने के कारण 13 फरवरी को आयोज्य • ELC: "पाती माँ और पिता के नाम" — कक्षा 9 से 12</div><span class="ev-badge badge-meeting">👨‍👩‍👧 पालक उत्सव</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">19</div><div class="ev-range">फरवरी</div></div><div class="event-body"><div class="ev-title">छत्रपति शिवाजी महाराज जयंती</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">20</div><div class="ev-range">फरवरी</div></div><div class="event-body"><div class="ev-title">सन्त रविदास जयंती / सामुदायिक बाल सभा</div><span class="ev-badge badge-meeting">👨‍👩‍👧 बाल सभा</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">28</div><div class="ev-range">फरवरी</div></div><div class="event-body"><div class="ev-title">राष्ट्रीय विज्ञान दिवस / महाराणा प्रताप राज्यारोहण दिवस</div><span class="ev-badge badge-fest">🔬 विज्ञान दिवस</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 फरवरी नोट</div><ul><li>RBSE मुख्य बोर्ड परीक्षा माध्यमिक व उच्च माध्यमिक — आयोजन (प्रस्तावित)</li><li>TAF: द्वितीय 6-माही डेटा प्रविष्टि (जनवरी–फरवरी 2027)</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ MARCH ══ -->
+<div class="month-panel" id="panel-mar">
+  <div class="month-header"><div><div class="month-name">मार्च 2027</div><div class="month-year">वार्षिक परीक्षा • सत्रान्त वाक्पीठ</div></div><div class="month-stats"><div class="ms"><div class="ms-num">23</div><div class="ms-lbl">कार्यदिवस</div></div><div class="ms"><div class="ms-num">5</div><div class="ms-lbl">अवकाश</div></div></div></div>
+  <div class="cal-wrap"><div class="cal-days-header"><div class="cal-day-name sun">रवि</div><div class="cal-day-name">सोम</div><div class="cal-day-name">मंगल</div><div class="cal-day-name">बुध</div><div class="cal-day-name">गुरु</div><div class="cal-day-name">शुक्र</div><div class="cal-day-name">शनि</div></div><div class="cal-grid" id="cal-mar"></div><div class="legend"><div class="leg-item"><div class="leg-dot" style="background:var(--saffron)"></div>अवकाश</div><div class="leg-item"><div class="leg-dot" style="background:var(--blue)"></div>परीक्षा</div><div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>उत्सव</div></div></div>
+  <div class="section-title">इस माह के प्रमुख कार्यक्रम</div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">02</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">स्वामी दयानन्द सरस्वती जयंती</div><span class="ev-badge badge-fest">🎉 उत्सव</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">06</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">महाशिवरात्रि</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">08</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">अंतर्राष्ट्रीय महिला दिवस (RSCERT)</div><span class="ev-badge badge-fest">👩 महिला दिवस</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">8–20</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">वार्षिक परीक्षा / SA-3 — कक्षा 6–12 (प्रस्तावित)</div><span class="ev-badge badge-exam">📝 वार्षिक परीक्षा</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">10</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">ईदुलफितर</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card meeting"><div class="event-date-block"><div class="ev-day">13</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">सामुदायिक बाल सभा — विद्यालय स्तर</div><span class="ev-badge badge-meeting">👨‍👩‍👧 बाल सभा</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">15</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">विश्व उपभोक्ता दिवस</div><span class="ev-badge badge-fest">🛒 उत्सव</span></div></div>
+  <div class="event-card festival"><div class="event-date-block"><div class="ev-day">17</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">विश्व दिव्यांग दिवस</div><span class="ev-badge badge-fest">♿ दिव्यांग दिवस</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">21</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">होलिका दहन</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">22</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">धुलेण्डी</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card exam"><div class="event-date-block"><div class="ev-day">25</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">स्थानीय वार्षिक परीक्षा परिणाम + प्रगति पत्र वितरण (अनिवार्य)</div><span class="ev-badge badge-exam">📊 परिणाम</span></div></div>
+  <div class="event-card holiday"><div class="event-date-block"><div class="ev-day">26</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">गुडफ्राईडे</div><span class="ev-badge badge-hol">🏖️ अवकाश</span></div></div>
+  <div class="event-card special"><div class="event-date-block"><div class="ev-day">29–30</div><div class="ev-range">मार्च</div></div><div class="event-body"><div class="ev-title">सत्रान्त की संस्था प्रधान वाक्पीठ (दो दिवसीय)</div><span class="ev-badge badge-notice">🎤 सत्रान्त वाक्पीठ</span></div></div>
+  <div class="notes-box"><div class="notes-title">📋 मार्च नोट</div><ul><li>RBSE मुख्य बोर्ड परीक्षा (प्रस्तावित)</li><li>कक्षा 1–5: <b>तृतीय योगात्मक आकलन</b> — मार्च 2027 (~20% पाठ्यक्रम, प्राथमिक शिक्षा पूर्णता परीक्षा से पूर्व)</li></ul></div>
+</div>
+
+<!-- ══ ANNUAL INFO ══ -->
+<div class="month-panel" id="panel-pariksha">
+  <div class="month-header"><div><div class="month-name">📝 परीक्षा एवं आकलन</div><div class="month-year">वार्षिक परख कार्यक्रम • CCE • शैक्षणिक कार्यक्रम</div></div></div>
+  <div class="section-title">परख / परीक्षा वार्षिक कार्यक्रम</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>परीक्षा / परख</th><th>तिथि / माह</th><th>कक्षा</th></tr>
+    <tr><td>प्रथम परख</td><td>13–15 मई 2026</td><td>6–12</td></tr>
+    <tr class="hl"><td>द्वितीय परख</td><td>17–19 अगस्त 2026</td><td>6–12</td></tr>
+    <tr><td>अर्धवार्षिक परीक्षा (SA-2)</td><td>15–29 अक्टूबर 2026</td><td>6–12</td></tr>
+    <tr class="hl"><td>तृतीय परख</td><td>17–19 दिसम्बर 2026</td><td>6–12</td></tr>
+    <tr><td>NMMSS राज्य चयन परीक्षा</td><td>20 दिसम्बर 2026</td><td>—</td></tr>
+    <tr class="hl"><td>RBSE बोर्ड परीक्षा (प्रायोगिक)</td><td>जनवरी 2027</td><td>10, 12</td></tr>
+    <tr><td>वार्षिक परीक्षा (SA-3)</td><td>8–20 मार्च 2027</td><td>6–12</td></tr>
+    <tr class="hl"><td>RBSE मुख्य बोर्ड परीक्षा</td><td>फरवरी–मार्च 2027 (प्रस्तावित)</td><td>10, 12</td></tr>
+    <tr><td>RBSE पूरक परीक्षा</td><td>अप्रैल 2027 (द्वितीय सप्ताह)</td><td>9, 11</td></tr>
+  </table></div>
+  <div class="section-title">CCE — कक्षा 1–5 योगात्मक आकलन</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>टर्म</th><th>पाठ्यक्रम विभाजन</th><th>आकलन माह</th></tr>
+    <tr><td>प्रथम</td><td>लगभग 45%</td><td>अगस्त 2026 (अंतिम सप्ताह)</td></tr>
+    <tr class="hl"><td>द्वितीय</td><td>लगभग 35%</td><td>नवम्बर 2026 (अंतिम सप्ताह)</td></tr>
+    <tr><td>तृतीय</td><td>लगभग 20%</td><td>मार्च 2027 (पूर्णता परीक्षा से पूर्व)</td></tr>
+  </table></div>
+  <div class="section-title">प्रखर राजस्थान 2.0 — पठन कौशल अभियान</div>
+  <div class="notes-box" style="border-left-color:var(--blue)"><div class="notes-title" style="color:var(--blue)">📚 प्रखर राजस्थान 2.0</div><ul>
+    <li>मुख्यमंत्री शिक्षित राजस्थान अभियान — 90 दिवसीय पठन कौशल</li>
+    <li>आयु-उपयुक्त पठन सामग्री, आदर्श पठन गतिविधि, वर्ण-शब्द पहचान, वाक्य पढ़ने का अभ्यास</li>
+    <li>माता-पिता को 15–20 मिनट प्रतिदिन पढ़ने/सुनने के लिए प्रोत्साहित करना</li>
+    <li><b>मेगा PTM</b>: शासन स्तर से निर्धारित तिथि को आयोजन (प्रस्तावित)</li>
+  </ul></div>
+  <div class="section-title">निपुण राजस्थान — मूलभूत साक्षरता एवं संख्या ज्ञान</div>
+  <div class="notes-box" style="border-left-color:var(--green)"><div class="notes-title" style="color:var(--green)">✏️ निपुण भारत मिशन (30 अक्टूबर 2025 से प्रारंभ)</div><ul>
+    <li>संख्या की समझ, जोड़-घटाव, अक्षर पहचान, सरल शब्द व वाक्य पढ़ना और लेखन</li>
+    <li>सुदृढ़ शिक्षाशास्त्र आधारित पाठ योजना, कक्षा अभ्यास और सतत आकलन सामग्री</li>
+    <li>शासन स्तर से प्रदत्त तिथि के अनुरूप निपुण राजस्थान कार्यक्रम आयोजन</li>
+  </ul></div>
+  <div class="section-title">शाला-सिद्धि — विद्यालय मूल्यांकन</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>मूल्यांकन प्रकार</th><th>संभावित समयावधि</th></tr>
+    <tr><td>स्व मूल्यांकन</td><td>जुलाई–अक्टूबर 2026</td></tr>
+    <tr class="hl"><td>बाह्य मूल्यांकन</td><td>अगस्त–दिसम्बर 2026</td></tr>
+  </table></div>
+  <div class="section-title">प्रमुख तिथियां</div>
+  <div class="info-grid">
+    <div class="info-card"><div class="info-card-icon">📅</div><div class="info-card-title">सत्र प्रारंभ</div><div class="info-card-val">01 अप्रैल 2026</div></div>
+    <div class="info-card"><div class="info-card-icon">🏁</div><div class="info-card-title">सत्र समापन</div><div class="info-card-val">31 मार्च 2027</div></div>
+    <div class="info-card"><div class="info-card-icon">✍️</div><div class="info-card-title">प्रवेश अंतिम तिथि</div><div class="info-card-val">11 जुलाई 2026 (कक्षा 9–12)</div></div>
+    <div class="info-card"><div class="info-card-icon">📊</div><div class="info-card-title">प्रगति पत्र वितरण</div><div class="info-card-val">25 मार्च 2027 (अनिवार्य)</div></div>
+  </div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Monthly -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:60px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="3229650837" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Content -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:100px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="7635799706" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ SCHEDULE ══ -->
+<div class="month-panel" id="panel-annual-schedule">
+  <div class="month-header"><div><div class="month-name">समय-सारिणी विवरण</div><div class="month-year">एक पारी एवं दो पारी विद्यालय</div></div></div>
+  <div class="section-title">एक पारी विद्यालय</div>
+  <div class="table-wrap"><table class="data-table"><tr><th>अवधि</th><th>समय</th><th>कुल घंटे</th></tr><tr class="hl"><td>ग्रीष्मकाल (1 अप्रैल–30 सितम्बर)</td><td>7:30 AM – 1:00 PM</td><td>5.30 घंटे (35 मिनट प्रति कालांश)</td></tr><tr><td>शीतकाल (1 अक्टूबर–31 मार्च)</td><td>10:00 AM – 4:00 PM</td><td>6 घंटे (1–6: 40 मिनट; 7–8: 35 मिनट)</td></tr></table></div>
+  <div class="section-title">दो पारी विद्यालय</div>
+  <div class="table-wrap"><table class="data-table"><tr><th>अवधि</th><th>समय</th><th>प्रति पारी</th></tr><tr class="hl"><td>ग्रीष्मकाल</td><td>7:00 AM – 6:00 PM</td><td>5.30 घंटे (35 मिनट प्रति कालांश)</td></tr><tr><td>शीतकाल</td><td>7:30 AM – 5:30 PM</td><td>5 घंटे (1व5वां: 35 मिनट; शेष: 30 मिनट)</td></tr></table></div>
+  <div class="section-title">दो पारी विद्यालय — वर्ग क्रम</div>
+  <div class="table-wrap"><table class="data-table"><tr><th>विद्यालय प्रकार</th><th>प्रथम पारी</th><th>द्वितीय पारी</th></tr><tr><td>उच्च माध्यमिक (1–12)</td><td>9–12</td><td>1–8</td></tr><tr><td>उच्च माध्यमिक (6–12)</td><td>9–12</td><td>6–8</td></tr><tr><td>उच्च माध्यमिक (9–12)</td><td>11–12</td><td>9–10</td></tr><tr><td>माध्यमिक (1–10)</td><td>6–10</td><td>1–5</td></tr><tr><td>माध्यमिक (6–10)</td><td>9–10</td><td>6–8</td></tr></table></div>
+  <div class="section-title">No Bag Day</div>
+  <div class="notes-box" style="border-left-color:var(--purple)"><div class="notes-title" style="color:var(--purple)">🎒 No Bag Day — प्रत्येक माह का द्वितीय व चतुर्थ शनिवार</div><ul><li>खेलकूद, वाद-विवाद, भाषण, निबंध-लेखन आदि सहगामी क्रियाएं</li><li>स्थानीय लोक/शिल्प कलाकार Master Instructor के रूप में आमंत्रित</li><li>किशोरी सशक्तिकरण: <b>मीना राजू मंच</b> एवं <b>गार्गी मंच</b> (कक्षा 6–12)</li><li>बाल सभाएं, PTM, SDMC/SMC बैठक, गार्गी मंच बैठक भी No Bag Day पर आयोज्य</li><li>कक्षा 7 व ऊपर के विद्यार्थी प्रत्येक दूसरे No Bag Day पर लगाए पौधों की देखभाल</li><li>विशेष आवश्यकता वाले बालक-बालिकाओं की भागीदारी सुनिश्चित</li></ul></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Content -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:100px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="7635799706" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ OTHER ══ -->
+<div class="month-panel" id="panel-other">
+  <div class="month-header"><div><div class="month-name">🗂️ अन्य महत्वपूर्ण कार्यक्रम</div><div class="month-year">Point 13 • Point 14 • समावेशी शिक्षा • SMC/SDMC • बालिका शिक्षा • TAF • वार्षिक नियमित गतिविधियां</div></div></div>
+
+  <div class="section-title">📌 बिंदु 13 — समावेशी शिक्षा प्रकोष्ठ (Inclusive Education)</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>क्र.सं.</th><th>क्रियाकलाप</th><th>आयोजन</th></tr>
+    <tr class="hl"><td>01</td><td>विश्व ऑटिज्म जागरूकता दिवस</td><td>02 अप्रैल 2026</td></tr>
+    <tr><td>02</td><td>विशेष आवश्यकता वाले बालक-बालिकाओं का विद्यालयों में प्रवेश</td><td>जून–जुलाई 2026</td></tr>
+    <tr class="hl"><td>03</td><td>विश्व मानसिक स्वास्थ्य दिवस</td><td>10 अक्टूबर 2026</td></tr>
+    <tr><td>04</td><td>विश्व विशेष योग्यजन दिवस</td><td>03 दिसम्बर 2026</td></tr>
+  </table></div>
+  <div class="notes-box"><div class="notes-title">📋 समावेशी शिक्षा — अतिरिक्त निर्देश</div><ul>
+    <li>No Bag Day पर विशेष आवश्यकता वाले बालक-बालिकाओं की भागीदारी सुनिश्चित</li>
+    <li>KGBV में कुल सीटों की <b>5% सीटें विशेष आवश्यकता वाले बालक-बालिकाओं</b> के लिए</li>
+    <li>नामांकन पश्चात् फंक्शनल असेसमेंट → पात्र बच्चों को निःशुल्क अंग-उपकरण</li>
+    <li>समस्त सहशैक्षिक गतिविधियों में विशेष आवश्यकता वाले बच्चों को शामिल किया जाए</li>
+  </ul></div>
+
+  <div class="section-title">📌 बिंदु 14 — भारत निर्वाचन आयोग ELC कार्यक्रम (School Election Club)</div>
+  <div class="warn-box">⚠️ नोट: गतिविधियों की तिथि एवं दिवस अन्य शैक्षणिक/सहशैक्षणिक गतिविधियों, अवकाश को दृष्टिगत रखते हुए स्थानीय स्तर पर निर्धारित करें।</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>माह</th><th>कक्षा</th><th>ELC गतिविधि</th></tr>
+    <tr class="hl"><td>अप्रैल 2026</td><td><span class="chip chip-all">9,10,11,12</span></td><td>ग्राम पंचायत की यात्रा</td></tr>
+    <tr><td>मई 2026</td><td><span class="chip chip-all">9,10,11,12</span></td><td>मस्ती, दोस्ती और मतदान — फिल्म प्रदर्शन (ICT Lab)</td></tr>
+    <tr class="hl"><td>जून 2026</td><td>—</td><td>कोई गतिविधि नहीं (ग्रीष्मावकाश)</td></tr>
+    <tr><td rowspan="2">जुलाई 2026</td><td><span class="chip chip-11">11</span><span class="chip chip-12">12</span></td><td>लोकसभा-2019 फिल्म प्रदर्शन</td></tr>
+    <tr><td><span class="chip chip-9">9</span></td><td>जागरूक मतदाता कार्ड खेल</td></tr>
+    <tr class="hl"><td>15 अगस्त 2026</td><td><span class="chip chip-all">9,10,11,12</span></td><td>मतदाता शपथ</td></tr>
+    <tr><td rowspan="3">अगस्त 2026</td><td><span class="chip chip-all">9,10,11,12</span></td><td>निर्वाचित्र — फिल्म प्रदर्शन</td></tr>
+    <tr><td><span class="chip chip-11">11</span></td><td>जनता के प्रतिनिधि बनें — कार्ड का खेल</td></tr>
+    <tr><td><span class="chip chip-11">11</span></td><td>आदर्श मतदान</td></tr>
+    <tr class="hl"><td>08 सितम्बर 2026 (विश्व साक्षरता दिवस)</td><td><span class="chip chip-all">9,10,11,12</span></td><td>निबंध: "देश में मतदाता साक्षरता और जागरूकता क्यों जरूरी है"</td></tr>
+    <tr><td rowspan="3">सितम्बर 2026</td><td><span class="chip chip-10">10</span></td><td>NOTA / मतदाता पंजीकरण गतिविधि</td></tr>
+    <tr><td><span class="chip chip-11">11</span></td><td>चुनाव यंत्र और मतपत्र का निर्माण</td></tr>
+    <tr><td><span class="chip chip-12">12</span></td><td>अपने उम्मीदवार को जानें</td></tr>
+    <tr class="hl"><td rowspan="2">अक्टूबर 2026</td><td><span class="chip chip-10">10</span></td><td>स्टेप अप</td></tr>
+    <tr class="hl"><td><span class="chip chip-12">12</span></td><td>फॉर्म-6 भरना और पंजीकृत होना</td></tr>
+    <tr><td>नवम्बर 2026</td><td><span class="chip chip-12">12</span></td><td>शब्दों का खेल</td></tr>
+    <tr class="hl"><td>26 नवम्बर 2026 (संविधान दिवस)</td><td><span class="chip chip-all">9,10,11,12</span></td><td>मतदान के संवैधानिक अधिकार एवं नैतिक मतदान जागरूकता</td></tr>
+    <tr><td>10 दिसम्बर 2026 (मानवाधिकार दिवस)</td><td><span class="chip chip-all">9,10,11,12</span></td><td>भाषण: "वोट का संवैधानिक अधिकार एवं नैतिक मतदान का महत्व"</td></tr>
+    <tr class="hl"><td rowspan="3">25 जनवरी 2027 (राष्ट्रीय मतदाता दिवस)</td><td><span class="chip chip-9">9</span><span class="chip chip-10">10</span></td><td>नाटक / चित्र / पोस्टर / रंगोली प्रतियोगिता</td></tr>
+    <tr class="hl"><td><span class="chip chip-11">11</span><span class="chip chip-12">12</span></td><td>वाद-विवाद / निबंध लेखन प्रतियोगिता</td></tr>
+    <tr class="hl"><td><span class="chip chip-all">9,10,11,12</span></td><td>मतदाता जागरूकता प्रश्नोत्तरी</td></tr>
+    <tr><td>26 जनवरी 2027 (गणतंत्र दिवस)</td><td><span class="chip chip-all">9,10,11,12</span></td><td>मतदाता शपथ</td></tr>
+    <tr class="hl"><td>13 फरवरी 2027 (मातृ-पितृ पूजन — 14 रविवार)</td><td><span class="chip chip-all">9,10,11,12</span></td><td>पाती माँ और पिता के नाम</td></tr>
+    <tr><td>मार्च 2027</td><td>—</td><td>कोई गतिविधि नहीं (बोर्ड/स्थानीय परीक्षा)</td></tr>
+    <tr class="hl"><td>सत्र/वर्ष पर्यंत</td><td><span class="chip chip-all">9,10,11,12</span></td><td>स्कूल ELC लोकतंत्र की दीवार गतिविधि • पुस्तकालय Election Corner पठन</td></tr>
+    <tr><td>वार्षिकोत्सव/PTM/SDMC/बाल सभा पर</td><td><span class="chip chip-all">9,10,11,12</span></td><td>मतदाता जागरूकता नाटक/कविता/गीत • मतदाता शपथ</td></tr>
+  </table></div>
+
+  <div class="section-title">📌 सामुदायिक गतिशीलता (SMC/SDMC प्रशिक्षण)</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>क्रियाकलाप</th><th>आयोजन माह</th></tr>
+    <tr class="hl"><td>SMC/SDMC प्रशिक्षण में सदस्यों की सक्रिय भागीदारी प्रोत्साहन</td><td>04 जनवरी 2026</td></tr>
+    <tr><td>KRP प्रशिक्षण (SMC/SDMC)</td><td>अगस्त 2026</td></tr>
+    <tr class="hl"><td>RP प्रशिक्षण (SMC/SDMC)</td><td>अगस्त–सितम्बर 2026</td></tr>
+  </table></div>
+  <div class="notes-box"><div class="notes-title">📋 SMC/SDMC बैठकें — अनिवार्य माह सत्र 2026–27</div><ul>
+    <li>माह <b>अगस्त, सितम्बर एवं दिसम्बर</b> 2026 में SMC/SDMC बैठक अनिवार्य</li>
+    <li>अपरिहार्य कारण/अवकाश होने पर अगले दिन आयोजन करें</li>
+  </ul></div>
+
+  <div class="section-title">📌 बालिका शिक्षा कार्यक्रम</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>गतिविधि</th><th>विवरण</th><th>आयोजन</th></tr>
+    <tr class="hl"><td>किशोरी सशक्तिकरण — मीना राजू मंच एवं गार्गी मंच</td><td>कक्षा 6 से 12</td><td>प्रत्येक No Bag Day पर</td></tr>
+    <tr><td>अंतर्राष्ट्रीय बालिका दिवस</td><td>समस्त नामांकित बालिकाएं</td><td>11 अक्टूबर 2026</td></tr>
+    <tr class="hl"><td>राष्ट्रीय बालिका दिवस</td><td>समस्त नामांकित बालिकाएं</td><td>24 जनवरी 2027</td></tr>
+  </table></div>
+
+  <div class="section-title">📌 TAF — शिक्षक मूल्यांकन प्रपत्र</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>अवधि</th><th>डेटा प्रविष्टि (संभावित)</th></tr>
+    <tr class="hl"><td>प्रथम 6-माही</td><td>जुलाई–अगस्त 2026</td></tr>
+    <tr><td>द्वितीय 6-माही</td><td>जनवरी–फरवरी 2027</td></tr>
+  </table></div>
+
+  <div class="section-title">📌 एनीमिया मुक्त राजस्थान — साप्ताहिक IFA (प्रत्येक मंगलवार = शक्ति दिवस)</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>कक्षा</th><th>गोली</th><th>दिन</th></tr>
+    <tr class="hl"><td>कक्षा 1–5</td><td>IFA गुलाबी गोली</td><td>प्रत्येक मंगलवार (शक्ति दिवस)</td></tr>
+    <tr><td>कक्षा 6–12</td><td>IFA नीली गोली</td><td>प्रत्येक मंगलवार (शक्ति दिवस)</td></tr>
+  </table></div>
+
+  <div class="section-title">📌 PRABAL कार्यक्रम — 21वीं सदी जीवन कौशल (कक्षा 9–12)</div>
+  <div class="notes-box"><div class="notes-title">🌟 PRABAL</div><ul>
+    <li>राज्य स्तरीय कार्यक्रम — किशोर विद्यार्थियों को नेतृत्व, नागरिकता व करियर कौशल</li>
+    <li>PRABAL का राज्य स्तरीय आयोजन <b>15 दिसम्बर 2025</b> को राजस्थान विधानसभा में (158 विद्यार्थी)</li>
+    <li>शासन स्तर से प्रदत्त निर्धारित तिथि के अनुरूप PRABAL आयोजित होगा</li>
+  </ul></div>
+
+  <div class="section-title">📌 प्रखर राजस्थान 2.0 — 90 दिवसीय पठन कौशल अभियान</div>
+  <div class="notes-box" style="border-left-color:var(--blue)"><div class="notes-title" style="color:var(--blue)">📚 प्रखर राजस्थान 2.0</div><ul>
+    <li>मुख्यमंत्री शिक्षित राजस्थान अभियान — 90 दिवसीय पठन कौशल</li>
+    <li>आयु-उपयुक्त पठन सामग्री, आदर्श पठन गतिविधि, वर्ण-शब्द पहचान</li>
+    <li>माता-पिता को 15–20 मिनट प्रतिदिन पढ़ने/सुनने के लिए प्रोत्साहित करना</li>
+    <li><b>मेगा PTM</b>: शासन स्तर से निर्धारित तिथि को आयोजन (प्रस्तावित)</li>
+  </ul></div>
+
+  <div class="section-title">📌 निपुण राजस्थान (30 अक्टूबर 2025 से प्रारंभ)</div>
+  <div class="notes-box" style="border-left-color:var(--green)"><div class="notes-title" style="color:var(--green)">✏️ निपुण भारत मिशन — मूलभूत साक्षरता एवं संख्या ज्ञान</div><ul>
+    <li>संख्या की समझ, जोड़-घटाव, अक्षर पहचान, शब्द पढ़ना, वाक्य पढ़ना व लेखन</li>
+    <li>सुदृढ़ शिक्षाशास्त्र आधारित पाठ योजना, कक्षा अभ्यास, सतत आकलन सामग्री</li>
+    <li>शासन स्तर से प्रदत्त तिथि के अनुरूप निपुण राजस्थान कार्यक्रम आयोजन</li>
+  </ul></div>
+
+  <div class="section-title">📌 शाला-सिद्धि — संभावित मूल्यांकन समयावधि</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>मूल्यांकन प्रकार</th><th>संभावित समयावधि</th></tr>
+    <tr class="hl"><td>स्व मूल्यांकन</td><td>जुलाई–अक्टूबर 2026</td></tr>
+    <tr><td>बाह्य मूल्यांकन</td><td>अगस्त–दिसम्बर 2026</td></tr>
+  </table></div>
+
+  <div class="section-title">📌 स्वच्छता पखवाड़ा — 01–15 सितम्बर 2026</div>
+  <div class="event-card notice"><div class="event-date-block"><div class="ev-day">1–15</div><div class="ev-range">सितम्बर</div></div><div class="event-body"><div class="ev-title">स्वच्छता पखवाड़ा — समस्त विद्यालयों में अनिवार्य</div><div class="ev-sub">शौचालय/मूत्रालय सफाई • पेयजल रख-रखाव • हाथ धोने की व्यवस्था • वृक्षारोपण • परिसर सौंदर्यकरण</div><span class="ev-badge badge-notice">🧹 अनिवार्य</span></div></div>
+
+  <div class="section-title">📌 तम्बाकू नियंत्रण (COTPA ACT 2003)</div>
+  <div class="notes-box" style="border-left-color:var(--red)"><div class="notes-title" style="color:var(--red)">🚫 तम्बाकू निषेध क्षेत्र</div><ul>
+    <li>सभी उच्च माध्यमिक विद्यालयों में <b>TOBACCO MONITOR</b> विभागीय निर्देशानुसार</li>
+    <li>बाल सभा, PTM, SMC/SDMC बैठक में COTPA ACT 2003 की जानकारी दी जाए</li>
+    <li>प्रत्येक माह के <b>प्रथम सोमवार</b> प्रार्थना सभा में तम्बाकू उपयोग न करने की शपथ</li>
+  </ul></div>
+
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Content -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:100px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="7635799706" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+
+<!-- ══ BAITHAK ══ -->
+<div class="month-panel" id="panel-baithak">
+  <div class="month-header"><div><div class="month-name">🤝 बैठक कार्यक्रम</div><div class="month-year">PTM • SMC/SDMC • गार्गी मंच • अन्य बैठकें</div></div></div>
+  <div class="section-title">PTM — अभिभावक-शिक्षक बैठक</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>बैठक</th><th>तिथि</th><th>विवरण</th></tr>
+    <tr class="hl"><td>PTM-I</td><td>16 मई 2026</td><td>प्रथम परख पश्चात् • सामुदायिक बाल सभा के साथ</td></tr>
+    <tr><td>PTM-II</td><td>21 नवम्बर 2026</td><td>कालिदास जयंती • सामुदायिक बाल सभा के साथ</td></tr>
+    <tr class="hl"><td>PTM-III</td><td>16 जनवरी 2027</td><td>सामुदायिक बाल सभा के साथ</td></tr>
+    <tr><td>मेगा PTM</td><td>शासन स्तर से निर्धारित (प्रस्तावित)</td><td>प्रखर राजस्थान 2.0 के अंतर्गत</td></tr>
+  </table></div>
+  <div class="section-title">SMC / SDMC बैठकें</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>प्रकार</th><th>माह / तिथि</th><th>विवरण</th></tr>
+    <tr class="hl"><td>SDMC/SMC साधारण सभा</td><td>04 अप्रैल 2026</td><td>सत्रारंभ — स्टाफ बैठक के साथ संयुक्त आयोजन</td></tr>
+    <tr><td>KRP प्रशिक्षण बैठक (SMC/SDMC)</td><td>अगस्त 2026</td><td>सदस्यों का प्रशिक्षण</td></tr>
+    <tr class="hl"><td>RP प्रशिक्षण बैठक (SMC/SDMC)</td><td>अगस्त–सितम्बर 2026</td><td>—</td></tr>
+    <tr><td>अनिवार्य SMC/SDMC बैठक</td><td>अगस्त 2026</td><td>अनिवार्य माह</td></tr>
+    <tr class="hl"><td>अनिवार्य SMC/SDMC बैठक</td><td>सितम्बर 2026</td><td>अनिवार्य माह</td></tr>
+    <tr><td>अनिवार्य SMC/SDMC बैठक</td><td>दिसम्बर 2026</td><td>अनिवार्य माह</td></tr>
+    <tr class="hl"><td>SDMC कार्य पूर्णता</td><td>30 सितम्बर 2026</td><td>अनुमोदित कार्य योजना के अनुरूप कार्य पूर्ण करना</td></tr>
+  </table></div>
+  <div class="notes-box"><div class="notes-title">📋 SMC/SDMC बैठक नियम</div><ul>
+    <li>अपरिहार्य कारण या अवकाश होने पर <b>अगले दिन</b> बैठक आयोज्य</li>
+    <li>बैठक में COTPA ACT 2003 एवं तम्बाकू निषेध क्षेत्र की जानकारी अनिवार्य</li>
+    <li>No Bag Day पर भी SMC/SDMC बैठक आयोजित की जा सकती है</li>
+  </ul></div>
+  <div class="section-title">गार्गी मंच / मीना राजू मंच</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>मंच</th><th>कक्षा</th><th>आयोजन</th></tr>
+    <tr class="hl"><td>गार्गी मंच बैठक</td><td>6–12 (बालिकाएं)</td><td>प्रत्येक No Bag Day (द्वितीय एवं चतुर्थ शनिवार)</td></tr>
+    <tr><td>मीना राजू मंच</td><td>6–12 (सभी)</td><td>प्रत्येक No Bag Day के साथ</td></tr>
+    <tr class="hl"><td>गार्गी पुरस्कार वितरण</td><td>—</td><td>बसन्त पंचमी — 11 फरवरी 2027</td></tr>
+  </table></div>
+  <div class="section-title">अन्य महत्वपूर्ण बैठकें / सम्मेलन</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>बैठक / सम्मेलन</th><th>तिथि</th></tr>
+    <tr><td>सत्रारंभ स्टाफ बैठक</td><td>04 अप्रैल 2026</td></tr>
+    <tr class="hl"><td>वाक्पीठ (सत्रारंभ)</td><td>20–21 अप्रैल 2026</td></tr>
+    <tr><td>शिक्षक सम्मेलन — जिला स्तर</td><td>18–19 सितम्बर 2026</td></tr>
+    <tr class="hl"><td>शिक्षक सम्मेलन — राज्य स्तर</td><td>27–28 नवम्बर 2026</td></tr>
+    <tr><td>सामुदायिक बाल सभाएं</td><td>प्रतिमाह (अप्रैल–मार्च)</td></tr>
+    <tr class="hl"><td>वाक्पीठ (सत्रान्त)</td><td>29–30 मार्च 2027</td></tr>
+  </table></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Content -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:100px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="7635799706" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- ══ AVKASH ══ -->
+<div class="month-panel" id="panel-avkash">
+  <div class="month-header"><div><div class="month-name">🏖️ अवकाश</div><div class="month-year">ग्रीष्म • मध्यावधि • शीत • सार्वजनिक अवकाश • CL Planner</div></div><button class="btn btn-primary btn-sm" onclick="toggleCLSheet()" id="clSheetBtn" style="flex-shrink:0">📋 CL सूची</button></div>
+  <div class="section-title">प्रमुख अवकाश अवधि</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>अवकाश</th><th>अवधि</th><th>दिन</th><th>नोट</th></tr>
+    <tr class="hl"><td>🌞 ग्रीष्मावकाश</td><td>17 मई – 20 जून 2026</td><td>35</td><td>व्यावसायिक काउंसलिंग जारी</td></tr>
+    <tr><td>🪔 मध्यावधि अवकाश</td><td>04–15 नवम्बर 2026</td><td>12</td><td>दीपावली, गोवर्धन, भाई दूज</td></tr>
+    <tr class="hl"><td>❄️ शीतकालीन अवकाश</td><td>31 दिसम्बर 2026 – 10 जनवरी 2027</td><td>11</td><td>GPF कटौती दिसम्बर वेतन से</td></tr>
+  </table></div>
+  <div class="section-title">सत्र 2026–27 के सभी सार्वजनिक अवकाश</div>
+  <div class="table-wrap"><table class="data-table">
+    <tr><th>तिथि</th><th>दिन</th><th>अवकाश</th></tr>
+    <tr><td>03 अप्रैल 2026</td><td>शुक्रवार</td><td>गुडफ्राईडे</td></tr>
+    <tr class="hl"><td>11 अप्रैल 2026</td><td>शनिवार</td><td>ज्योतिबा फुले जयंती</td></tr>
+    <tr><td>14 अप्रैल 2026</td><td>मंगलवार</td><td>डॉ. अम्बेडकर जयंती</td></tr>
+    <tr class="hl"><td>19 अप्रैल 2026</td><td>रविवार</td><td>परशुराम जन्मोत्सव</td></tr>
+    <tr><td>28 मई 2026</td><td>गुरुवार</td><td>वीर सावरकर जयंती / ईद उल जुहा</td></tr>
+    <tr class="hl"><td>17 जून 2026</td><td>बुधवार</td><td>महाराणा प्रताप जयंती</td></tr>
+    <tr><td>26 जून 2026</td><td>शुक्रवार</td><td>मोहर्रम</td></tr>
+    <tr class="hl"><td>09 अगस्त 2026</td><td>रविवार</td><td>विश्व आदिवासी दिवस</td></tr>
+    <tr><td>15 अगस्त 2026</td><td>शनिवार</td><td>🇮🇳 स्वतंत्रता दिवस (उत्सव अनिवार्य)</td></tr>
+    <tr class="hl"><td>26 अगस्त 2026</td><td>बुधवार</td><td>बाराबफात</td></tr>
+    <tr><td>28 अगस्त 2026</td><td>शुक्रवार</td><td>रक्षा बंधन / संस्कृत दिवस</td></tr>
+    <tr class="hl"><td>04 सितम्बर 2026</td><td>शुक्रवार</td><td>श्री कृष्ण जन्माष्टमी</td></tr>
+    <tr><td>21 सितम्बर 2026</td><td>सोमवार</td><td>रामदेव जयंती / तेजा दशमी</td></tr>
+    <tr class="hl"><td>02 अक्टूबर 2026</td><td>शुक्रवार</td><td>गांधी जयंती (उत्सव अनिवार्य)</td></tr>
+    <tr><td>11 अक्टूबर 2026</td><td>रविवार</td><td>अंतर्राष्ट्रीय बालिका दिवस / नवरात्रा</td></tr>
+    <tr class="hl"><td>19 अक्टूबर 2026</td><td>सोमवार</td><td>दुर्गाष्टमी</td></tr>
+    <tr><td>20 अक्टूबर 2026</td><td>मंगलवार</td><td>विजयदशमी</td></tr>
+    <tr class="hl"><td>08 नवम्बर 2026</td><td>रविवार</td><td>दीपावली</td></tr>
+    <tr><td>09 नवम्बर 2026</td><td>सोमवार</td><td>गोवर्धन पूजा</td></tr>
+    <tr class="hl"><td>11 नवम्बर 2026</td><td>बुधवार</td><td>भाई दूज / राष्ट्रीय शिक्षा दिवस</td></tr>
+    <tr><td>24 नवम्बर 2026</td><td>मंगलवार</td><td>गुरुनानक जयंती</td></tr>
+    <tr class="hl"><td>25 दिसम्बर 2026</td><td>शुक्रवार</td><td>क्रिसमस</td></tr>
+    <tr><td>15 जनवरी 2027</td><td>शुक्रवार</td><td>गुरु गोविन्द सिंह / कैरियर डे</td></tr>
+    <tr class="hl"><td>26 जनवरी 2027</td><td>मंगलवार</td><td>🇮🇳 गणतंत्र दिवस (उत्सव अनिवार्य)</td></tr>
+    <tr><td>13 फरवरी 2027</td><td>शनिवार</td><td>देवनारायण जयंती / सूर्य सप्तमी</td></tr>
+    <tr class="hl"><td>06 मार्च 2027</td><td>शनिवार</td><td>महाशिवरात्रि</td></tr>
+    <tr><td>10 मार्च 2027</td><td>बुधवार</td><td>ईदुलफितर</td></tr>
+    <tr class="hl"><td>21 मार्च 2027</td><td>रविवार</td><td>होलिका दहन</td></tr>
+    <tr><td>22 मार्च 2027</td><td>सोमवार</td><td>धुलेण्डी</td></tr>
+    <tr class="hl"><td>26 मार्च 2027</td><td>शुक्रवार</td><td>गुडफ्राईडे</td></tr>
+  </table></div>
+
+  <!-- CL PLANNER -->
+  <div class="section-title" style="margin-top:8px">🧠 CL स्मार्ट प्लानर — आकस्मिक अवकाश (15 CL)</div>
+  <div class="notes-box" style="border-left-color:var(--blue);margin-bottom:10px"><div class="notes-title" style="color:var(--blue)">ℹ️ CL Planner क्या है?</div><ul>
+    <li>राजस्थान सरकारी शिक्षकों को प्रतिवर्ष <b>15 आकस्मिक अवकाश (CL)</b> मिलते हैं (1 जुलाई से 30 जून)</li>
+    <li>यह planner बताता है कि <b>शिविरा अवकाशों के आस-पास CL लेकर</b> लंबे weekend/break कैसे बनाएं</li>
+    <li>200–300 km दूर रहने वाले शिक्षकों के लिए उपयोगी</li>
+  </ul></div>
+  <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;margin-bottom:10px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+      <div style="font-size:13px;font-weight:700;color:var(--ink)">CL बजट</div>
+      <div id="clBudgetDisplay" style="font-size:13px;color:var(--saffron);font-weight:700">15 में से 0 उपयोग</div>
+    </div>
+    <div style="background:var(--border);border-radius:10px;height:8px;overflow:hidden">
+      <div id="clProgressBar" style="height:100%;width:0%;background:var(--saffron);border-radius:10px;transition:width .3s"></div>
+    </div>
+    <div style="font-size:11px;color:var(--ink-muted);margin-top:5px" id="clRemaining">शेष: 15 CL उपलब्ध</div>
+  </div>
+  
+  <!-- CL RESULT SHEET -->
+  <div id="clResultSheet" style="display:none;margin-top:4px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+      <div style="font-size:13px;font-weight:700;color:var(--ink)">📋 मेरी CL सूची</div>
+      <button onclick="document.getElementById('clResultSheet').style.display='none'" style="border:none;background:none;font-size:16px;cursor:pointer;color:var(--ink-muted)">✕</button>
+    </div>
+    <div id="clResultList"></div>
+    <div style="margin-top:10px;padding:10px;background:var(--saffron-pale);border-radius:var(--radius-sm);font-size:12px;color:var(--saffron-dark)">
+      <b>💡 उपयोग:</b> यह सूची अपने विभाग को CL आवेदन करते समय reference के रूप में उपयोग करें।
+    </div>
+  </div>
+  <div id="clSuggestions"></div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Content -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:100px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="7635799706" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+
+<!-- ══ APP INFO ══ -->
+<div class="month-panel" id="panel-appinfo">
+  <div class="month-header"><div><div class="month-name">ℹ️ App जानकारी</div><div class="month-year">About • Contact • Privacy Policy • Disclaimer</div></div></div>
+  <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;margin-bottom:10px">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px">
+      <div style="width:52px;height:52px;background:var(--saffron-pale);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0">📅</div>
+      <div><div style="font-size:17px;font-weight:700;color:var(--ink)">ShiviraDiary</div>
+        <div style="font-size:11.5px;color:var(--ink-muted);margin-top:2px">संस्करण 1.0 • सत्र 2026-2027</div>
+        <div style="font-size:11px;color:var(--saffron);margin-top:2px;font-weight:600">Teacher Junction — 2017 से सेवा में</div>
+      </div>
+    </div>
+    <div style="font-size:12.5px;color:var(--ink-soft);line-height:1.7">राजस्थान के सरकारी विद्यालयों के प्रधानाचार्यों एवं शिक्षकों के लिए शिविरा पंचांग, डायरी, नोट्स, रिमाइंडर एवं CL प्लानर।</div>
+    <div style="margin-top:10px;padding:8px 10px;background:var(--red-light);border-radius:var(--radius-sm);font-size:12px;color:var(--red);font-weight:600">⚠️ यह राजस्थान सरकार का आधिकारिक App नहीं है।</div>
+  </div>
+  <div class="section-title">👨‍💻 Developer</div>
+  <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;margin-bottom:10px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px">
+      <div style="width:42px;height:42px;background:var(--blue-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px">👨‍🏫</div>
+      <div><div style="font-size:14px;font-weight:700;color:var(--ink)">दीपक सामरा</div><div style="font-size:11.5px;color:var(--ink-muted)">PM Shri राजकीय उमावि, बून्दी, राजस्थान</div></div>
+    </div>
+  </div>
+  <div class="section-title">📧 संपर्क</div>
+  <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px;margin-bottom:10px">
+    <a href="mailto:junctionteacher@gmail.com" style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);text-decoration:none">
+      <div style="width:34px;height:34px;background:#FFF3EB;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">📧</div>
+      <div><div style="font-size:11px;color:var(--ink-muted)">ईमेल</div><div style="font-size:13px;font-weight:600;color:var(--blue)">junctionteacher@gmail.com</div></div>
+    </a>
+    <a href="https://wa.me/917014067853" style="display:flex;align-items:center;gap:10px;padding:8px 0;text-decoration:none">
+      <div style="width:34px;height:34px;background:#E8F5EE;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px">💬</div>
+      <div><div style="font-size:11px;color:var(--ink-muted)">WhatsApp</div><div style="font-size:13px;font-weight:600;color:var(--green)">+91 7014067853</div></div>
+    </a>
+  </div>
+  <div class="section-title">🔒 Privacy Policy</div>
+  <div style="background:#fff;border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;margin-bottom:10px;font-size:12.5px;color:var(--ink-soft);line-height:1.7">
+    यह App कोई व्यक्तिगत डेटा Server पर store नहीं करती। डायरी, नोट्स, रिमाइंडर <b>आपके फोन की local storage</b> में सुरक्षित हैं।<br>
+    <b>Permissions:</b> Notifications (वैकल्पिक) • Internet (AdSense/Fonts)<br>
+    <b>Ads:</b> Google AdSense द्वारा। <b>Target:</b> 18+ शिक्षक।<br>
+    <span style="font-size:10.5px;color:var(--ink-muted)">संपर्क: junctionteacher@gmail.com • अपडेट: अप्रैल 2026</span>
+  </div>
+  <div class="section-title">⚠️ Disclaimer</div>
+  <div style="background:var(--red-light);border:1px solid rgba(198,40,40,.15);border-left:3px solid var(--red);border-radius:var(--radius-sm);padding:12px;margin-bottom:10px;font-size:12.5px;color:#7f1d1d;line-height:1.7">
+    <b>यह App राजस्थान सरकार या शिक्षा विभाग का आधिकारिक App नहीं है।</b><br>
+    शिविरा पंचांग डेटा — निदेशालय माध्यमिक शिक्षा, राजस्थान के आधिकारिक पंचांग पर आधारित। CL सुझाव केवल मार्गदर्शन हेतु — CL स्वीकृति विभागीय नियमानुसार।
+  </div>
+  <div style="text-align:center;font-size:11px;color:var(--ink-muted);padding:6px 0">© 2026 ShiviraDiary by Teacher Junction</div>
+  <div style="margin:12px 0 2px;text-align:center">
+    <div style="font-size:9px;color:var(--ink-muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:3px">विज्ञापन</div>
+    <!-- ShiviraDiary_Content -->
+    <ins class="adsbygoogle" style="display:block;width:100%;min-height:100px" data-ad-client="ca-pub-2253494477834162" data-ad-slot="7635799706" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+
+<!-- ══ DIARY ══ -->
+<div class="month-panel" id="panel-diary">
+  <div class="feature-header">
+    <div><div class="feature-title">📔 डिजिटल डायरी</div><div class="feature-sub">प्रतिदिन का लेखा-जोखा • दिनांकवार प्रविष्टि</div></div>
+  </div>
+  <div class="diary-nav">
+    <button class="btn btn-icon" onclick="diaryNav(-1)">◀</button>
+    <div style="flex:1;text-align:center">
+      <div class="diary-date-main" id="diaryDateMain">—</div>
+      <div class="diary-date-sub" id="diaryDateSub">—</div>
+    </div>
+    <button class="btn btn-icon" onclick="diaryNav(1)">▶</button>
+    <button class="btn btn-sm btn-secondary" onclick="diaryToday()" style="margin-left:6px">आज</button>
+  </div>
+  <textarea class="diary-ta" id="diaryTa" placeholder="आज का विवरण यहाँ लिखें... बैठक, घटनाएं, विचार, कार्य..." oninput="diaryChange()"></textarea>
+  <div class="save-st" id="diarySt"></div>
+  <div class="sec-divider" style="margin-top:18px">पिछली प्रविष्टियां</div>
+  <div id="diaryList"></div>
+</div>
+
+<!-- ══ NOTES ══ -->
+<div class="month-panel" id="panel-notes">
+  <div class="feature-header">
+    <div><div class="feature-title">📝 नोट्स</div><div class="feature-sub">बैठक • स्टाफ • विद्यार्थी • सामान्य</div></div>
+  </div>
+  <div class="cat-tabs" id="noteCatTabs">
+    <div class="cat-tab active" onclick="setNotesCat('all',this)">सभी</div>
+    <div class="cat-tab" onclick="setNotesCat('meeting',this)">📋 बैठक</div>
+    <div class="cat-tab" onclick="setNotesCat('staff',this)">👤 स्टाफ</div>
+    <div class="cat-tab" onclick="setNotesCat('student',this)">👨‍🎓 विद्यार्थी</div>
+    <div class="cat-tab" onclick="setNotesCat('general',this)">📌 सामान्य</div>
+  </div>
+  <div id="notesList"></div>
+</div>
+
+<!-- ══ REMINDER ══ -->
+<div class="month-panel" id="panel-reminder">
+  <div class="feature-header">
+    <div><div class="feature-title">🔔 रिमाइंडर / इवेंट</div><div class="feature-sub">किसी भी तिथि के लिए इवेंट सेट करें</div></div>
+  </div>
+  <div id="todayBanner"></div>
+  <div class="rem-mini-cal">
+    <div class="rem-cal-nav">
+      <button class="btn btn-icon" onclick="remCalNav(-1)">◀</button>
+      <div class="rem-cal-hd" id="remCalHd">—</div>
+      <button class="btn btn-icon" onclick="remCalNav(1)">▶</button>
+    </div>
+    <div class="rem-dn-row">
+      <div class="rem-dn sun">रवि</div><div class="rem-dn">सोम</div><div class="rem-dn">मंगल</div>
+      <div class="rem-dn">बुध</div><div class="rem-dn">गुरु</div><div class="rem-dn">शुक्र</div><div class="rem-dn">शनि</div>
+    </div>
+    <div id="remCalGrid" class="rem-grid2"></div>
+  </div>
+  <div id="remDayDetail"></div>
+  <div class="sec-divider">आगामी इवेंट (अगले 60 दिन)</div>
+  <div id="upcomingList"></div>
+</div>
+
+</div><!-- /content -->
+
+<!-- MODAL -->
+<div class="modal-overlay" id="mainModal" onclick="modalBgClick(event)">
+  <div class="modal-card" id="modalCard">
+    <div class="modal-handle"></div>
+    <div class="modal-header">
+      <span class="modal-title" id="modalTitle">—</span>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-footer" id="modalFooter"></div>
+  </div>
+</div>
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+<!-- FAB -->
+<button class="fab" id="fab" onclick="fabClick()" style="bottom:72px">＋</button>
+
+
+<!-- LEGAL FOOTER BAR — only shown on home/calendar panels via JS -->
+<div class="legal-bar" id="legalBar" style="display:none">
+  <div class="legal-bar-inner">
+    <button class="leg-link" onclick="openLegal('about')">ℹ️ About</button>
+    <button class="leg-link" onclick="openLegal('contact')">📧 Contact</button>
+    <button class="leg-link" onclick="openLegal('privacy')">🔒 Privacy</button>
+    <button class="leg-link" onclick="openLegal('disclaimer')">⚠️ Disclaimer</button>
+  </div>
+</div>
+<!-- BOTTOM NAV -->
+</div><!-- /appMain -->
+<div id="bnavWrap" style="position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:center;background:#fff;border-top:1px solid #E7E5E4;box-shadow:0 -2px 8px rgba(0,0,0,.06);z-index:300">
+<div class="bnav" id="bnav">
+  <button class="bnav-item active" id="bn-home" onclick="bnavGo('home')">
+    <span class="bnav-icon">🏠</span><span class="bnav-label">होम</span>
+  </button>
+  <button class="bnav-item" id="bn-diary" onclick="bnavGo('diary')">
+    <span class="bnav-icon">📔</span><span class="bnav-label">डायरी</span>
+  </button>
+  <button class="bnav-item" id="bn-notes" onclick="bnavGo('notes')">
+    <span class="bnav-icon">📝</span><span class="bnav-label">नोट्स</span>
+  </button>
+  <button class="bnav-item" id="bn-reminder" onclick="bnavGo('reminder')">
+    <span class="bnav-icon">🔔</span><span class="bnav-label">रिमाइंडर</span>
+    <span class="bnav-badge" id="remBadge" style="display:none"></span>
+  </button>
+  <button class="bnav-item" id="bn-avkash" onclick="bnavGo('avkash')">
+    <span class="bnav-icon">🏖️</span><span class="bnav-label">अवकाश</span>
+    <span class="bnav-badge" id="clBadge" style="display:none"></span>
+  </button>
+</div>
+</div>
+
+<!-- DATE QUICK ACTION SHEET -->
+<div class="dqa-overlay" id="dqaOverlay" onclick="dqaBgClick(event)">
+  <div class="dqa-sheet" style="position:relative">
+    <button class="dqa-close" onclick="closeDqa()">✕</button>
+    <div class="dqa-handle"></div>
+    <div class="dqa-head">
+      <div class="dqa-date" id="dqaDate">—</div>
+      <div class="dqa-day" id="dqaDay">—</div>
+    </div>
+    <div class="dqa-shivira" id="dqaShivira"></div>
+    <div class="dqa-actions">
+      <button class="dqa-btn b-diary" onclick="dqaAction('diary')">
+        <span class="dqa-btn-icon">📔</span><span class="dqa-btn-lbl">डायरी</span>
+      </button>
+      <button class="dqa-btn b-note" onclick="dqaAction('note')">
+        <span class="dqa-btn-icon">📝</span><span class="dqa-btn-lbl">नोट</span>
+      </button>
+      <button class="dqa-btn b-rem" onclick="dqaAction('reminder')">
+        <span class="dqa-btn-icon">🔔</span><span class="dqa-btn-lbl">रिमाइंडर</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+
+// ─── APP STATE ────────────────────────────────────────────────────────────────
+const APP_KEY = 'shivira_diary_v1';
+let APP = { diary:[], notes:[], reminders:[] };
+const HI_MONTHS = ['जनवरी','फरवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितम्बर','अक्टूबर','नवम्बर','दिसम्बर'];
+const HI_MONTHS_SHORT = ['जन','फर','मार','अप्र','मई','जून','जुल','अग','सित','अक्त','नव','दिस'];
+const CAT_COLORS = {important:'#C62828',exam:'#E8560A',meeting:'#1A7A4A',personal:'#1565C0',other:'#78716C'};
+const CAT_LABELS = {important:'🔴 महत्वपूर्ण',exam:'🟠 परीक्षा/बोर्ड',meeting:'🟢 मीटिंग',personal:'🔵 व्यक्तिगत',other:'⚫ अन्य'};
+const NOTE_CAT = {meeting:{label:'📋 बैठक नोट्स',cls:'n-meeting'},staff:{label:'👤 स्टाफ नोट्स',cls:'n-staff'},student:{label:'👨‍🎓 विद्यार्थी नोट्स',cls:'n-student'},general:{label:'📌 सामान्य',cls:'n-general'}};
+let curPanel = 'apr';
+let diaryDate = todayStr();
+let activeNotesCat = 'all';
+let remCalY, remCalM, remSelDate;
+
+function todayStr() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+function fmtDateHi(str) {
+  const [y,m,d] = str.split('-');
+  return `${parseInt(d)} ${HI_MONTHS[parseInt(m)-1]} ${y}`;
+}
+function fmtDayName(str) {
+  const days = ['रविवार','सोमवार','मंगलवार','बुधवार','गुरुवार','शुक्रवार','शनिवार'];
+  return days[new Date(str).getDay()];
+}
+function loadApp() {
+  try { const s = localStorage.getItem(APP_KEY); if(s) Object.assign(APP, JSON.parse(s)); } catch(e){}
+}
+function saveApp() {
+  localStorage.setItem(APP_KEY, JSON.stringify(APP));
+}
+
+// ─── PANEL ROUTING ────────────────────────────────────────────────────────────
+function showPanel(id) {
+  document.querySelectorAll('.month-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.month-tab').forEach(t => t.classList.remove('active'));
+  const panel = document.getElementById('panel-' + id);
+  if (panel) panel.classList.add('active');
+  const tabMap={apr:0,may:1,jun:2,jul:3,aug:4,sep:5,oct:6,nov:7,dec:8,jan:9,feb:10,mar:11,pariksha:12,'annual-schedule':13,other:14,baithak:15,avkash:16,appinfo:17,diary:18,notes:19,reminder:20};
+  const idx = tabMap[id];
+  if (idx !== undefined) {
+    const tabs = document.querySelectorAll('.month-tab');
+    if (tabs[idx]) { tabs[idx].classList.add('active'); tabs[idx].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'}); }
+  }
+  curPanel = id;
+  updateBnav(id);
+  updateRemBadge();
+  if (id === 'diary') renderDiary();
+  if (id === 'notes') renderNotes();
+  if (id === 'reminder') renderReminder();
+  if (id === 'avkash') setTimeout(buildCLSuggestions, 50);
+  const lb = document.getElementById('legalBar');
+  if(lb) lb.style.display = HOME_PANELS.includes(id) ? 'flex' : 'none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function fabClick() {
+  if (curPanel === 'notes') openNoteModal();
+  if (curPanel === 'reminder') openRemModal(remSelDate || todayStr());
+}
+
+// ─── TOAST ────────────────────────────────────────────────────────────────────
+let toastTimer;
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+// ─── MODAL ────────────────────────────────────────────────────────────────────
+function openModal(title, bodyHtml, footerHtml) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalBody').innerHTML = bodyHtml;
+  document.getElementById('modalFooter').innerHTML = footerHtml;
+  document.getElementById('mainModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('mainModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function modalBgClick(e) {
+  if (e.target === document.getElementById('mainModal')) closeModal();
+}
+
+// ─── DIARY ────────────────────────────────────────────────────────────────────
+let diaryTimer;
+function diaryNav(d) {
+  const dt = new Date(diaryDate + 'T12:00:00');
+  dt.setDate(dt.getDate() + d);
+  diaryDate = dt.toISOString().slice(0,10);
+  renderDiary();
+}
+function diaryToday() { diaryDate = todayStr(); renderDiary(); }
+function renderDiary() {
+  const [y,m,d] = diaryDate.split('-');
+  document.getElementById('diaryDateMain').textContent = `${parseInt(d)} ${HI_MONTHS[parseInt(m)-1]} ${y}`;
+  document.getElementById('diaryDateSub').textContent = fmtDayName(diaryDate) + (diaryDate===todayStr()?' • आज':'');
+  const entry = APP.diary.find(e => e.date === diaryDate);
+  document.getElementById('diaryTa').value = entry ? entry.content : '';
+  document.getElementById('diarySt').textContent = '';
+  renderDiaryList();
+}
+function diaryChange() {
+  document.getElementById('diarySt').textContent = 'लिख रहे हैं...';
+  clearTimeout(diaryTimer);
+  diaryTimer = setTimeout(diarySave, 1400);
+}
+function diarySave() {
+  const content = document.getElementById('diaryTa').value.trim();
+  if (!content) {
+    APP.diary = APP.diary.filter(e => e.date !== diaryDate);
+  } else {
+    const ex = APP.diary.find(e => e.date === diaryDate);
+    if (ex) { ex.content = content; ex.updatedAt = Date.now(); }
+    else { APP.diary.push({id:Date.now(), date:diaryDate, content, createdAt:Date.now(), updatedAt:Date.now()}); }
+    APP.diary.sort((a,b) => b.date.localeCompare(a.date));
+  }
+  saveApp();
+  document.getElementById('diarySt').textContent = '✓ सहेजा गया';
+  setTimeout(()=>{ const el=document.getElementById('diarySt'); if(el) el.textContent=''; }, 2000);
+  renderDiaryList();
+}
+function renderDiaryList() {
+  const el = document.getElementById('diaryList');
+  const list = APP.diary.filter(e => e.date !== diaryDate);
+  if (!list.length) { el.innerHTML = '<div class="empty-state"><div class="es-icon">📓</div><div class="es-title">कोई प्रविष्टि नहीं</div><div class="es-sub">ऊपर लिखना शुरू करें</div></div>'; return; }
+  el.innerHTML = list.map(e => {
+    const [y,m,d] = e.date.split('-');
+    return `<div class="diary-item" onclick="diaryGoTo('${e.date}')">
+      <div class="d-badge"><div class="d-day">${parseInt(d)}</div><span class="d-mon">${HI_MONTHS_SHORT[parseInt(m)-1]} ${y.slice(2)}</span></div>
+      <div class="d-prev"><p>${e.content.replace(/</g,'&lt;')}</p></div>
+      <button class="d-prev-del" onclick="event.stopPropagation();delDiary('${e.date}')" title="हटाएं">🗑️</button>
+    </div>`;
+  }).join('');
+}
+function diaryGoTo(dt) { diaryDate = dt; renderDiary(); window.scrollTo({top:0,behavior:'smooth'}); }
+function delDiary(dt) {
+  if (!confirm('यह प्रविष्टि हटाएं?')) return;
+  APP.diary = APP.diary.filter(e => e.date !== dt);
+  saveApp(); renderDiaryList(); showToast('प्रविष्टि हटाई गई');
+}
+
+// ─── NOTES ────────────────────────────────────────────────────────────────────
+function setNotesCat(cat, el) {
+  activeNotesCat = cat;
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+  if(el) el.classList.add('active');
+  renderNotes();
+}
+function renderNotes() {
+  const el = document.getElementById('notesList');
+  const list = activeNotesCat === 'all' ? APP.notes : APP.notes.filter(n => n.cat === activeNotesCat);
+  if (!list.length) { el.innerHTML = '<div class="empty-state"><div class="es-icon">📝</div><div class="es-title">कोई नोट नहीं</div><div class="es-sub">नीचे + बटन दबाकर नोट जोड़ें</div></div>'; return; }
+  el.innerHTML = list.map(n => {
+    const c = NOTE_CAT[n.cat] || NOTE_CAT.general;
+    const d = new Date(n.createdAt);
+    const ds = `${d.getDate()} ${HI_MONTHS_SHORT[d.getMonth()]}`;
+    return `<div class="note-card">
+      <div class="note-card-top">
+        <div class="note-title-txt">${n.title.replace(/</g,'&lt;')}</div>
+        <div class="note-acts">
+          <button class="n-btn" onclick="openNoteModal(${n.id})" title="संपादित करें">✏️</button>
+          <button class="n-btn" onclick="delNote(${n.id})" title="हटाएं">🗑️</button>
+        </div>
+      </div>
+      <div class="note-prev">${n.content.replace(/</g,'&lt;')}</div>
+      <div class="note-meta"><span class="n-chip ${c.cls}">${c.label}</span><span class="n-date">${ds}</span></div>
+    </div>`;
+  }).join('');
+}
+function openNoteModal(id) {
+  const n = id ? APP.notes.find(x=>x.id===id) : null;
+  const body = `
+    <div class="form-group"><label class="form-label">शीर्षक *</label>
+      <input class="form-input" id="nTitle" placeholder="नोट का शीर्षक..." value="${n?n.title.replace(/"/g,'&quot;'):''}"></div>
+    <div class="form-group"><label class="form-label">श्रेणी</label>
+      <select class="form-select" id="nCat">
+        <option value="meeting" ${n&&n.cat==='meeting'?'selected':''}>📋 बैठक नोट्स</option>
+        <option value="staff" ${n&&n.cat==='staff'?'selected':''}>👤 स्टाफ नोट्स</option>
+        <option value="student" ${n&&n.cat==='student'?'selected':''}>👨‍🎓 विद्यार्थी नोट्स</option>
+        <option value="general" ${(!n||n.cat==='general')?'selected':''}>📌 सामान्य</option>
+      </select></div>
+    <div class="form-group"><label class="form-label">विवरण *</label>
+      <textarea class="form-textarea" id="nContent" placeholder="नोट का विस्तृत विवरण...">${n?n.content.replace(/</g,'&lt;'):''}</textarea></div>`;
+  const footer = `<button class="btn btn-primary btn-block" onclick="saveNoteFromModal(${id||'null'})">${id?'अपडेट करें':'नोट सहेजें'}</button>`;
+  openModal(id?'नोट संपादित करें':'नया नोट', body, footer);
+}
+function saveNoteFromModal(id) {
+  const title = document.getElementById('nTitle').value.trim();
+  const content = document.getElementById('nContent').value.trim();
+  const cat = document.getElementById('nCat').value;
+  if (!title || !content) { showToast('शीर्षक और विवरण आवश्यक है'); return; }
+  if (id) {
+    const n = APP.notes.find(x=>x.id===id);
+    if(n){ n.title=title; n.content=content; n.cat=cat; n.updatedAt=Date.now(); }
+  } else {
+    APP.notes.unshift({id:Date.now(),title,content,cat,createdAt:Date.now(),updatedAt:Date.now()});
+  }
+  saveApp(); closeModal(); renderNotes(); showToast(id?'नोट अपडेट हुआ':'नया नोट सहेजा गया ✓');
+}
+function delNote(id) {
+  if(!confirm('यह नोट हटाएं?')) return;
+  APP.notes = APP.notes.filter(n=>n.id!==id);
+  saveApp(); renderNotes(); showToast('नोट हटाया गया');
+}
+
+// ─── REMINDER CALENDAR ───────────────────────────────────────────────────────
+function initRemCal() {
+  const t = new Date();
+  remCalY = t.getFullYear(); remCalM = t.getMonth();
+  remSelDate = todayStr();
+}
+function remCalNav(d) {
+  remCalM += d;
+  if (remCalM < 0) { remCalM = 11; remCalY--; }
+  if (remCalM > 11) { remCalM = 0; remCalY++; }
+  buildRemCal();
+}
+function remSelectDate(dt) { remSelDate = dt; buildRemCal(); renderRemDayDetail(); }
+function buildRemCal() {
+  document.getElementById('remCalHd').textContent = `${HI_MONTHS[remCalM]} ${remCalY}`;
+  const grid = document.getElementById('remCalGrid');
+  grid.innerHTML = '';
+  const today = todayStr();
+  const firstDay = new Date(remCalY, remCalM, 1).getDay();
+  const daysInMonth = new Date(remCalY, remCalM+1, 0).getDate();
+  // Build reminder dot map
+  const remMap = {};
+  APP.reminders.forEach(r => {
+    const [ry,rm,rd] = r.date.split('-').map(Number);
+    if (ry===remCalY && rm-1===remCalM) {
+      if(!remMap[rd]) remMap[rd]=[];
+      remMap[rd].push(r);
+    }
+  });
+  // Shivira events map
+  const mKeys = ['apr','may','jun','jul','aug','sep','oct','nov','dec','jan','feb','mar'];
+  const mData = [
+    {year:2026,month:3},{year:2026,month:4},{year:2026,month:5},{year:2026,month:6},
+    {year:2026,month:7},{year:2026,month:8},{year:2026,month:9},{year:2026,month:10},
+    {year:2026,month:11},{year:2027,month:0},{year:2027,month:1},{year:2027,month:2}
+  ];
+  let shiviraDots = {};
+  for(let i=0;i<mData.length;i++){
+    if(mData[i].year===remCalY && mData[i].month===remCalM && calData[mKeys[i]]){
+      calData[mKeys[i]].events.forEach(ev => { shiviraDots[ev.d] = true; });
+    }
+  }
+  for(let i=0;i<firstDay;i++){const c=document.createElement('div');c.className='rc rc-empty';grid.appendChild(c);}
+  for(let day=1;day<=daysInMonth;day++){
+    const dateStr = `${remCalY}-${String(remCalM+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const c = document.createElement('div');
+    const dow = (firstDay+day-1)%7;
+    let cls = 'rc';
+    if(dow===0) cls+=' rc-sun';
+    if(dateStr===today) cls+=' rc-today';
+    if(dateStr===remSelDate) cls+=' rc-sel';
+    c.className=cls;
+    c.innerHTML=`<div class="rn">${day}</div>`;
+    const dots = [];
+    if(shiviraDots[day]) dots.push(`<div class="rdot" style="background:var(--saffron)"></div>`);
+    if(remMap[day]) remMap[day].forEach(r=>dots.push(`<div class="rdot" style="background:${CAT_COLORS[r.category]||'#78716C'}"></div>`));
+    if(dots.length) c.innerHTML+=`<div class="rdots">${dots.join('')}</div>`;
+    c.onclick = () => remSelectDate(dateStr);
+    grid.appendChild(c);
+  }
+}
+function renderRemDayDetail() {
+  const el = document.getElementById('remDayDetail');
+  if(!remSelDate){el.innerHTML='';return;}
+  const [y,m,d] = remSelDate.split('-');
+  const userEvs = APP.reminders.filter(r=>r.date===remSelDate);
+  // Shivira events for this date
+  const mKeys=['apr','may','jun','jul','aug','sep','oct','nov','dec','jan','feb','mar'];
+  const mData=[{y:2026,m:3},{y:2026,m:4},{y:2026,m:5},{y:2026,m:6},{y:2026,m:7},{y:2026,m:8},{y:2026,m:9},{y:2026,m:10},{y:2026,m:11},{y:2027,m:0},{y:2027,m:1},{y:2027,m:2}];
+  let shiviraEvs = [];
+  for(let i=0;i<mData.length;i++){
+    if(mData[i].y===parseInt(y) && mData[i].m===parseInt(m)-1 && calData[mKeys[i]]){
+      calData[mKeys[i]].events.filter(ev=>ev.d===parseInt(d)).forEach(ev=>shiviraEvs.push(ev));
+    }
+  }
+  const typeColors={hol:'var(--saffron)',fest:'var(--gold)',exam:'var(--blue)',ptm:'var(--green)',sport:'var(--purple)',notice:'var(--teal)',other:'var(--ink-muted)'};
+  const typeLabels={hol:'अवकाश',fest:'उत्सव',exam:'परीक्षा',ptm:'बैठक/PTM',sport:'खेल',notice:'विशेष',other:'अन्य'};
+  let html = `<div class="rem-day-detail">
+    <div class="rdd-hd">
+      <span>${parseInt(d)} ${HI_MONTHS[parseInt(m)-1]} ${y} — ${fmtDayName(remSelDate)}</span>
+      <button class="btn btn-sm btn-primary" onclick="openRemModal('${remSelDate}')">＋ इवेंट</button>
+    </div>`;
+  if(!userEvs.length && !shiviraEvs.length){html+='<div style="font-size:12px;color:var(--ink-muted);padding:6px 0">इस दिन कोई इवेंट नहीं। + बटन दबाएं।</div>';}
+  shiviraEvs.forEach(ev=>{
+    html+=`<div class="rev"><div class="rev-dot" style="background:${typeColors[ev.t]||'#888'}"></div>
+      <div class="rev-body"><div class="rev-title">${ev.l}</div><div class="rev-sub">शिविरा पंचांग — ${typeLabels[ev.t]||ev.t}</div></div></div>`;
+  });
+  userEvs.forEach(r=>{
+    html+=`<div class="rev${r.done?' r-done':''}">
+      <div class="rev-dot" style="background:${CAT_COLORS[r.category]||'#888'}"></div>
+      <div class="rev-body">
+        <div class="rev-title">${r.title.replace(/</g,'&lt;')}</div>
+        <div class="rev-sub">${r.time?'⏰ '+r.time+' • ':''}${CAT_LABELS[r.category]||''}${r.description?'<br>'+r.description.replace(/</g,'&lt;').slice(0,60):''}</div>
+      </div>
+      <div class="rev-acts">
+        <button class="n-btn" onclick="toggleRemDone(${r.id})" title="${r.done?'अनमार्क':'पूर्ण'}">${r.done?'↩️':'✅'}</button>
+        <button class="n-btn" onclick="openRemModal('${remSelDate}',${r.id})" title="संपादित">✏️</button>
+        <button class="n-btn" onclick="delRem(${r.id})" title="हटाएं">🗑️</button>
+      </div>
+    </div>`;
+  });
+  html+='</div>';
+  el.innerHTML=html;
+}
+function renderUpcoming() {
+  const el = document.getElementById('upcomingList');
+  const today = todayStr();
+  const cutoff = new Date(); cutoff.setDate(cutoff.getDate()+60);
+  const cutStr = cutoff.toISOString().slice(0,10);
+  const list = APP.reminders.filter(r=>r.date>=today && r.date<=cutStr).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
+  if(!list.length){el.innerHTML='<div class="empty-state"><div class="es-icon">🗓️</div><div class="es-title">कोई आगामी इवेंट नहीं</div><div class="es-sub">कैलेंडर में तिथि चुनकर इवेंट जोड़ें</div></div>';return;}
+  el.innerHTML=list.map(r=>{
+    const [y,m,d]=r.date.split('-');
+    return `<div class="up-item${r.done?' up-done':''}">
+      <div class="up-db"><div class="up-day">${parseInt(d)}</div><div class="up-mon">${HI_MONTHS_SHORT[parseInt(m)-1]}</div></div>
+      <div class="up-body">
+        <div class="up-title" style="color:${r.done?'var(--ink-muted)':'var(--ink)'};${r.done?'text-decoration:line-through':''}">${r.title.replace(/</g,'&lt;')}</div>
+        <div class="up-meta">${r.time?'⏰ '+r.time+' · ':''}${CAT_LABELS[r.category]||''}${r.repeat&&r.repeat!=='once'?' · 🔁':''}</div>
+      </div>
+      <div class="up-acts">
+        <button class="n-btn" onclick="toggleRemDone(${r.id})">${r.done?'↩️':'✅'}</button>
+        <button class="n-btn" onclick="delRem(${r.id})">🗑️</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+function renderReminder() {
+  buildRemCal(); renderRemDayDetail(); renderUpcoming(); renderTodayBanner();
+}
+function renderTodayBanner() {
+  const el = document.getElementById('todayBanner');
+  const today = todayStr();
+  const todayReminders = APP.reminders.filter(r=>r.date===today && !r.done);
+  if(!todayReminders.length){el.innerHTML='';return;}
+  el.innerHTML=`<div class="nb" onclick="remSelectDate('${today}')">
+    <div class="nb-icon">🔔</div>
+    <div><div class="nb-t">आज के ${todayReminders.length} रिमाइंडर</div>
+    <div class="nb-s">${todayReminders.map(r=>r.title).join(' • ').slice(0,60)}</div></div>
+  </div>`;
+}
+function openRemModal(date, id) {
+  const r = id ? APP.reminders.find(x=>x.id===id) : null;
+  const colorsHtml = Object.entries(CAT_COLORS).map(([k,v])=>
+    `<div class="col-sw${r&&r.category===k?' sel':k==='meeting'&&!r?' sel':''}" style="background:${v}" data-cat="${k}" onclick="selectRemCat(this)" title="${CAT_LABELS[k]}"></div>`
+  ).join('');
+  const body = `
+    <div class="form-group"><label class="form-label">दिनांक *</label>
+      <input type="date" class="form-input" id="rDate" value="${r?r.date:date}"></div>
+    <div class="form-group"><label class="form-label">समय (वैकल्पिक)</label>
+      <input type="time" class="form-input" id="rTime" value="${r?r.time:''}"></div>
+    <div class="form-group"><label class="form-label">शीर्षक *</label>
+      <input class="form-input" id="rTitle" placeholder="इवेंट का नाम..." value="${r?r.title.replace(/"/g,'&quot;'):''}"></div>
+    <div class="form-group"><label class="form-label">विवरण (वैकल्पिक)</label>
+      <textarea class="form-textarea" style="min-height:70px" id="rDesc" placeholder="अतिरिक्त जानकारी...">${r?r.description||'':''}</textarea></div>
+    <div class="form-group"><label class="form-label">श्रेणी</label>
+      <div class="col-swatches">${colorsHtml}</div>
+      <input type="hidden" id="rCat" value="${r?r.category:'meeting'}"></div>
+    <div class="form-group"><label class="form-label">दोहराएं</label>
+      <select class="form-select" id="rRepeat">
+        <option value="once" ${(!r||r.repeat==='once')?'selected':''}>एक बार</option>
+        <option value="weekly" ${r&&r.repeat==='weekly'?'selected':''}>साप्ताहिक</option>
+        <option value="monthly" ${r&&r.repeat==='monthly'?'selected':''}>मासिक</option>
+        <option value="yearly" ${r&&r.repeat==='yearly'?'selected':''}>वार्षिक</option>
+      </select></div>`;
+  const footer = `<button class="btn btn-primary btn-block" onclick="saveRemFromModal(${id||'null'})">${id?'अपडेट करें':'इवेंट सहेजें'}</button>`;
+  openModal(id?'इवेंट संपादित करें':'नया इवेंट / रिमाइंडर', body, footer);
+}
+function selectRemCat(el) {
+  document.querySelectorAll('.col-sw').forEach(s=>s.classList.remove('sel'));
+  el.classList.add('sel');
+  document.getElementById('rCat').value = el.dataset.cat;
+}
+function saveRemFromModal(id) {
+  const date = document.getElementById('rDate').value;
+  const title = document.getElementById('rTitle').value.trim();
+  const time = document.getElementById('rTime').value;
+  const desc = document.getElementById('rDesc').value.trim();
+  const category = document.getElementById('rCat').value || 'meeting';
+  const repeat = document.getElementById('rRepeat').value;
+  if (!date || !title) { showToast('दिनांक और शीर्षक आवश्यक है'); return; }
+  if (id) {
+    const r = APP.reminders.find(x=>x.id===id);
+    if(r){Object.assign(r,{date,time,title,description:desc,category,repeat});}
+  } else {
+    APP.reminders.push({id:Date.now(),date,time,title,description:desc,category,repeat,done:false,createdAt:Date.now()});
+  }
+  APP.reminders.sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
+  saveApp(); closeModal();
+  remSelDate = date;
+  const [y,m] = date.split('-');
+  remCalY = parseInt(y); remCalM = parseInt(m)-1;
+  renderReminder();
+  showToast(id?'इवेंट अपडेट हुआ ✓':'इवेंट सहेजा गया ✓');
+}
+function toggleRemDone(id) {
+  const r = APP.reminders.find(x=>x.id===id);
+  if(r){ r.done=!r.done; saveApp(); renderReminder(); }
+}
+function delRem(id) {
+  if(!confirm('यह इवेंट हटाएं?')) return;
+  APP.reminders = APP.reminders.filter(r=>r.id!==id);
+  saveApp(); renderReminder(); showToast('इवेंट हटाया गया');
+}
+
+// ─── NOTIFICATIONS ────────────────────────────────────────────────────────────
+function checkNotifications() {
+  const today = todayStr();
+  const due = APP.reminders.filter(r=>r.date<=today && !r.done);
+  if(!due.length) return;
+  if(!('Notification' in window)) return;
+  if(Notification.permission === 'granted') {
+    due.slice(0,3).forEach(r=>{
+      new Notification('ShiviraDiary 🔔', {
+        body: r.title + (r.time?' • '+r.time:'') + (r.date<today?' (बकाया)':''),
+        icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">📅</text></svg>'
+      });
+    });
+  } else if(Notification.permission !== 'denied') {
+    Notification.requestPermission().then(p=>{
+      if(p==='granted') checkNotifications();
+    });
+  }
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
+  loadApp();
+  initRemCal();
+  setTimeout(checkNotifications, 2000);
+  // Show today's reminder badge in header
+  const today = todayStr();
+  const todayCount = APP.reminders.filter(r=>r.date===today&&!r.done).length;
+  if(todayCount>0) {
+    const statRow = document.querySelector('.stats-row');
+    if(statRow) {
+      const div = document.createElement('div');
+      // Update reminder stat
+    }
+  }
+});
+
+
+
+const calData = {
+  apr:{year:2026,month:3,startDay:3,days:30,events:[
+    {d:2,t:'fest',l:'हनुमान जयंती'},{d:3,t:'hol',l:'गुडफ्राईडे'},
+    {d:4,t:'ptm',l:'स्टाफ बैठक'},{d:7,t:'other',l:'स्वास्थ्य दिवस'},
+    {d:8,t:'exam',l:'पूरक'},{d:9,t:'exam',l:'पूरक'},{d:10,t:'exam',l:'पूरक'},
+    {d:11,t:'hol',l:'फुले जयंती'},{d:14,t:'hol',l:'अम्बेडकर'},
+    {d:15,t:'exam',l:'परिणाम'},{d:18,t:'ptm',l:'बाल सभा'},
+    {d:19,t:'hol',l:'परशुराम'},{d:20,t:'notice',l:'वाक्पीठ'},{d:21,t:'notice',l:'वाक्पीठ'},
+    {d:23,t:'notice',l:'खेल प्रवेश'},{d:24,t:'notice',l:'खेल प्रवेश'},{d:25,t:'notice',l:'खेल छात्रावास'}
+  ]},
+  may:{year:2026,month:4,startDay:5,days:31,events:[
+    {d:7,t:'fest',l:'टैगोर जयंती'},
+    {d:13,t:'exam',l:'प्रथम परख'},{d:14,t:'exam',l:'परख'},{d:15,t:'exam',l:'परख'},
+    {d:16,t:'ptm',l:'PTM-I'},
+    {d:17,t:'hol',l:'ग्रीष्म'},{d:18,t:'hol',l:'ग्रीष्म'},{d:19,t:'hol',l:'ग्रीष्म'},{d:20,t:'hol',l:'ग्रीष्म'},{d:21,t:'hol',l:'ग्रीष्म'},{d:22,t:'hol',l:'ग्रीष्म'},{d:23,t:'hol',l:'ग्रीष्म'},{d:24,t:'hol',l:'ग्रीष्म'},{d:25,t:'hol',l:'ग्रीष्म'},{d:26,t:'hol',l:'ग्रीष्म'},{d:27,t:'hol',l:'ग्रीष्म'},
+    {d:28,t:'hol',l:'सावरकर/ईद'},{d:29,t:'hol',l:'ग्रीष्म'},{d:30,t:'hol',l:'ग्रीष्म'},{d:31,t:'hol',l:'ग्रीष्म'}
+  ]},
+  jun:{year:2026,month:5,startDay:1,days:30,events:[
+    {d:1,t:'hol',l:'ग्रीष्म'},{d:2,t:'hol',l:'ग्रीष्म'},{d:3,t:'hol',l:'ग्रीष्म'},{d:4,t:'hol',l:'ग्रीष्म'},{d:5,t:'hol',l:'ग्रीष्म'},{d:6,t:'hol',l:'ग्रीष्म'},{d:7,t:'hol',l:'ग्रीष्म'},{d:8,t:'hol',l:'ग्रीष्म'},{d:9,t:'hol',l:'ग्रीष्म'},{d:10,t:'hol',l:'ग्रीष्म'},{d:11,t:'hol',l:'ग्रीष्म'},{d:12,t:'hol',l:'ग्रीष्म'},{d:13,t:'hol',l:'ग्रीष्म'},{d:14,t:'hol',l:'ग्रीष्म'},{d:15,t:'hol',l:'ग्रीष्म'},{d:16,t:'hol',l:'ग्रीष्म'},
+    {d:17,t:'hol',l:'महाराणा'},{d:18,t:'hol',l:'ग्रीष्म'},{d:19,t:'hol',l:'ग्रीष्म'},{d:20,t:'hol',l:'ग्रीष्म'},
+    {d:21,t:'fest',l:'योग दिवस'},{d:26,t:'hol',l:'मोहर्रम'},{d:28,t:'fest',l:'भामाशाह'}
+  ]},
+  jul:{year:2026,month:6,startDay:3,days:31,events:[
+    {d:1,t:'notice',l:'CSR'},{d:2,t:'notice',l:'नामांकन'},{d:3,t:'notice',l:'नामांकन'},{d:4,t:'notice',l:'नामांकन'},{d:5,t:'notice',l:'नामांकन'},{d:6,t:'notice',l:'नामांकन'},{d:7,t:'notice',l:'नामांकन'},{d:8,t:'notice',l:'नामांकन'},{d:9,t:'notice',l:'नामांकन'},{d:10,t:'notice',l:'नामांकन'},
+    {d:11,t:'exam',l:'प्रवेश अंतिम'},
+    {d:23,t:'fest',l:'तिलक जयंती'},{d:28,t:'other',l:'प्रकृति संरक्षण'},{d:29,t:'fest',l:'गुरु पूर्णिमा'}
+  ]},
+  aug:{year:2026,month:7,startDay:6,days:31,events:[
+    {d:5,t:'fest',l:'स्वर्णमुकुट'},{d:8,t:'other',l:'कृमि मुक्ति'},
+    {d:9,t:'hol',l:'आदिवासी'},{d:13,t:'fest',l:'दुर्गादास'},
+    {d:15,t:'hol',l:'स्वतंत्रता'},
+    {d:17,t:'exam',l:'द्वितीय परख'},{d:18,t:'exam',l:'परख'},{d:19,t:'exam',l:'परख'},
+    {d:20,t:'fest',l:'सद्भावना/हॉकी'},{d:21,t:'sport',l:'नेहरू हॉकी'},
+    {d:22,t:'sport',l:'रोल प्ले'},{d:24,t:'sport',l:'शिक्षक क्रीड़ा'},{d:25,t:'sport',l:'शिक्षक क्रीड़ा'},
+    {d:26,t:'hol',l:'बाराबफात'},{d:27,t:'fest',l:'रक्षा सूत्र/हॉकी'},
+    {d:28,t:'hol',l:'रक्षा बंधन'},{d:29,t:'fest',l:'खेल दिवस'},
+    {d:30,t:'sport',l:'जिला खेलकूद'},{d:31,t:'sport',l:'जिला खेल'}
+  ]},
+  sep:{year:2026,month:8,startDay:2,days:30,events:[
+    {d:4,t:'hol',l:'जन्माष्टमी'},{d:5,t:'fest',l:'शिक्षक दिवस'},
+    {d:8,t:'fest',l:'साक्षरता/निबंध'},{d:8,t:'sport',l:'शिक्षक क्रीड़ा'},{d:9,t:'sport',l:'राज्य खेल'},
+    {d:10,t:'sport',l:'राज्य खेल'},{d:11,t:'sport',l:'राज्य खेल'},{d:12,t:'sport',l:'जिला खेल'},
+    {d:13,t:'sport',l:'जिला खेल'},{d:14,t:'fest',l:'हिंदी दिवस'},
+    {d:15,t:'sport',l:'रोल प्ले'},{d:18,t:'exam',l:'शिक्षक सम्मेलन'},{d:19,t:'exam',l:'सम्मेलन'},
+    {d:21,t:'hol',l:'रामदेव/तेजा'},{d:22,t:'sport',l:'राज्य/प्राथमिक खेल'},
+    {d:23,t:'other',l:'किशोरी जागृति'},{d:24,t:'sport',l:'जिला-3'},{d:25,t:'sport',l:'जिला-3'},
+    {d:26,t:'fest',l:'विज्ञान मेला'},{d:30,t:'other',l:'झंडी राशि'}
+  ]},
+  oct:{year:2026,month:9,startDay:4,days:31,events:[
+    {d:2,t:'hol',l:'गांधी जयंती'},{d:4,t:'sport',l:'राज्य खेल'},{d:5,t:'sport',l:'राज्य खेल'},
+    {d:6,t:'sport',l:'रोल प्ले'},{d:7,t:'sport',l:'रोल प्ले'},
+    {d:10,t:'other',l:'मानसिक स्वास्थ्य'},{d:11,t:'hol',l:'बालिका दिवस/नवरात्रा'},
+    {d:12,t:'fest',l:'विज्ञान मेला'},{d:13,t:'sport',l:'जिला खेल'},
+    {d:14,t:'fest',l:'विज्ञान मेला'},{d:15,t:'exam',l:'अर्धवार्षिक'},
+    {d:16,t:'exam',l:'अर्धवार्षिक'},{d:17,t:'exam',l:'अर्धवार्षिक'},{d:18,t:'exam',l:'अर्धवार्षिक'},
+    {d:19,t:'hol',l:'दुर्गाष्टमी'},{d:20,t:'hol',l:'विजयदशमी'},
+    {d:21,t:'exam',l:'अर्धवार्षिक'},{d:22,t:'exam',l:'अर्धवार्षिक'},
+    {d:23,t:'sport',l:'राज्य खेल'},{d:24,t:'exam',l:'अर्धवार्षिक'},{d:25,t:'exam',l:'अर्धवार्षिक'},
+    {d:26,t:'exam',l:'अर्धवार्षिक'},{d:27,t:'sport',l:'राज्य खेल'},{d:28,t:'sport',l:'राज्य खेल'},
+    {d:29,t:'exam',l:'अर्धवार्षिक'},{d:31,t:'fest',l:'पटेल जयंती'}
+  ]},
+  nov:{year:2026,month:10,startDay:0,days:30,events:[
+    {d:4,t:'hol',l:'मध्यावधि'},{d:5,t:'hol',l:'मध्यावधि'},{d:6,t:'hol',l:'मध्यावधि'},{d:7,t:'hol',l:'मध्यावधि'},
+    {d:8,t:'hol',l:'दीपावली'},{d:9,t:'hol',l:'गोवर्धन'},{d:10,t:'hol',l:'मध्यावधि'},
+    {d:11,t:'hol',l:'भाई दूज'},{d:12,t:'hol',l:'मध्यावधि'},{d:13,t:'hol',l:'मध्यावधि'},
+    {d:14,t:'fest',l:'बाल दिवस'},{d:15,t:'hol',l:'मध्यावधि'},
+    {d:18,t:'sport',l:'विज्ञान मेला'},{d:19,t:'sport',l:'विज्ञान/समरसता'},
+    {d:20,t:'other',l:'समरसता'},{d:21,t:'ptm',l:'PTM-II'},
+    {d:24,t:'hol',l:'गुरुनानक'},{d:26,t:'fest',l:'संविधान दिवस'},
+    {d:27,t:'exam',l:'शिक्षक सम्मेलन'},{d:28,t:'exam',l:'सम्मेलन'}
+  ]},
+  dec:{year:2026,month:11,startDay:2,days:31,events:[
+    {d:1,t:'fest',l:'एड्स/एकता'},{d:3,t:'other',l:'विशेष योग्यजन'},
+    {d:8,t:'sport',l:'कर्मचारी खेल'},{d:9,t:'sport',l:'कर्मचारी खेल'},
+    {d:10,t:'fest',l:'मानवाधिकार/भाषण'},{d:12,t:'ptm',l:'बाल सभा'},
+    {d:15,t:'sport',l:'मण्डल खेल'},{d:16,t:'other',l:'पुरस्कार समारोह'},
+    {d:17,t:'exam',l:'तृतीय परख'},{d:18,t:'exam',l:'परख'},{d:19,t:'exam',l:'परख/प्रशिक्षण'},
+    {d:20,t:'exam',l:'NMMSS'},{d:21,t:'sport',l:'प्रशिक्षण'},{d:22,t:'sport',l:'प्रशिक्षण'},{d:23,t:'sport',l:'प्रशिक्षण'},{d:24,t:'sport',l:'प्रशिक्षण'},
+    {d:25,t:'hol',l:'क्रिसमस'},{d:26,t:'fest',l:'वीर बाल/पूर्व प्रशिक्षण'},
+    {d:27,t:'sport',l:'राज्य प्रशिक्षण'},{d:28,t:'sport',l:'राज्य प्रशिक्षण'},{d:29,t:'sport',l:'राज्य प्रशिक्षण'},
+    {d:30,t:'sport',l:'शिक्षक क्रीड़ा'},{d:31,t:'hol',l:'शीतकाल/क्रीड़ा'}
+  ]},
+  jan:{year:2027,month:0,startDay:5,days:31,events:[
+    {d:1,t:'hol',l:'शीतकाल'},{d:2,t:'hol',l:'शीतकाल'},{d:3,t:'hol',l:'शीतकाल'},
+    {d:4,t:'other',l:'ब्रेल दिवस'},{d:5,t:'hol',l:'शीतकाल'},{d:6,t:'hol',l:'शीतकाल'},{d:7,t:'hol',l:'शीतकाल'},{d:8,t:'hol',l:'शीतकाल'},{d:9,t:'hol',l:'शीतकाल'},{d:10,t:'hol',l:'हिन्दी दिवस'},
+    {d:12,t:'fest',l:'विवेकानन्द'},{d:13,t:'fest',l:'लोहड़ी'},{d:14,t:'fest',l:'मकर संक्रांति'},
+    {d:15,t:'hol',l:'कैरियर डे'},{d:16,t:'ptm',l:'PTM-III'},
+    {d:22,t:'fest',l:'श्रीराम प्रतिष्ठा'},{d:23,t:'fest',l:'सुभाष बोस'},
+    {d:24,t:'fest',l:'बालिका दिवस'},{d:25,t:'fest',l:'मतदाता दिवस'},
+    {d:26,t:'hol',l:'गणतंत्र दिवस'},{d:30,t:'fest',l:'शहीद दिवस'}
+  ]},
+  feb:{year:2027,month:1,startDay:1,days:28,events:[
+    {d:9,t:'other',l:'इंटरनेट दिवस'},{d:11,t:'fest',l:'बसन्त पंचमी'},
+    {d:12,t:'fest',l:'सूर्य नमस्कार'},{d:13,t:'hol',l:'देवनारायण'},
+    {d:14,t:'ptm',l:'मातृ-पितृ पूजन'},{d:19,t:'fest',l:'शिवाजी'},
+    {d:20,t:'ptm',l:'बाल सभा'},{d:28,t:'fest',l:'विज्ञान दिवस'}
+  ]},
+  mar:{year:2027,month:2,startDay:1,days:31,events:[
+    {d:2,t:'fest',l:'दयानन्द'},{d:6,t:'hol',l:'शिवरात्रि'},
+    {d:8,t:'fest',l:'महिला दिवस'},
+    {d:8,t:'exam',l:'वार्षिक'},{d:9,t:'exam',l:'वार्षिक'},{d:10,t:'hol',l:'ईद'},
+    {d:11,t:'exam',l:'वार्षिक'},{d:12,t:'exam',l:'वार्षिक'},{d:13,t:'ptm',l:'बाल सभा'},
+    {d:14,t:'exam',l:'वार्षिक'},{d:15,t:'exam',l:'वार्षिक'},{d:16,t:'exam',l:'वार्षिक'},{d:17,t:'exam',l:'वार्षिक'},{d:18,t:'exam',l:'वार्षिक'},{d:19,t:'exam',l:'वार्षिक'},{d:20,t:'exam',l:'वार्षिक'},
+    {d:21,t:'hol',l:'होलिका'},{d:22,t:'hol',l:'धुलेण्डी'},
+    {d:25,t:'exam',l:'परिणाम'},{d:26,t:'hol',l:'गुडफ्राईडे'},
+    {d:29,t:'notice',l:'वाक्पीठ'},{d:30,t:'notice',l:'वाक्पीठ'}
+  ]}
+};
+
+function buildCalendar(id) {
+  const d = calData[id]; if (!d) return;
+  const grid = document.getElementById('cal-' + id); if (!grid) return;
+  const evMap = {};
+  d.events.forEach(e => { if (!evMap[e.d]) evMap[e.d] = []; evMap[e.d].push(e); });
+  for (let i = 0; i < d.startDay; i++) {
+    const c = document.createElement('div'); c.className = 'cal-cell empty'; grid.appendChild(c);
+  }
+  for (let day = 1; day <= d.days; day++) {
+    const c = document.createElement('div');
+    const dow = (d.startDay + day - 1) % 7;
+    const evs = evMap[day] || [];
+    const types = evs.map(e => e.t);
+    let cls = 'cal-cell';
+    if (dow === 0) cls += ' sunday';
+    if (types.includes('hol') || dow === 0) cls += ' holiday';
+    else if (types.includes('exam')) cls += ' exam-day';
+    else if (types.includes('fest')) cls += ' festival-day';
+    c.className = cls;
+    c.innerHTML = `<div class="cal-num">${day}</div>`;
+    if (evs.length > 0) {
+      const seen = new Set();
+      const unique = evs.filter(e => { if (seen.has(e.t)) return false; seen.add(e.t); return true; });
+      c.innerHTML += `<div class="cal-dots">${unique.map(e=>`<div class="cal-dot dot-${e.t}"></div>`).join('')}</div>`;
+      c.innerHTML += `<div class="cal-tiny-text">${evs[0].l}</div>`;
+    }
+    // Add user-reminder dots from stored data
+    const dateStr2 = `${d.year}-${String(d.month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const hasUserEv = APP.reminders.some(r => r.date === dateStr2);
+    if(hasUserEv) {
+      const dd = c.querySelector('.cal-dots') || (() => { const x=document.createElement('div'); x.className='cal-dots'; c.appendChild(x); return x; })();
+      dd.innerHTML += `<div class="cal-dot dot-user"></div>`;
+    }
+    // Click opens date quick-action sheet
+    c.onclick = () => openDqa(dateStr2, evs);
+    grid.appendChild(c);
+  }
+}
+Object.keys(calData).forEach(id => buildCalendar(id));
+
+
+// ── BOTTOM NAV ──────────────────────────────────────────────────────────────
+const MONTH_PANELS = ['apr','may','jun','jul','aug','sep','oct','nov','dec','jan','feb','mar'];
+const ALL_MONTH_PANELS = [...MONTH_PANELS,'pariksha','annual-schedule','other','baithak','avkash'];
+const HOME_PANELS = [...MONTH_PANELS,'pariksha','annual-schedule','other','baithak','avkash','appinfo'];
+
+function bnavGo(dest) {
+  if (dest === 'home') {
+    // Go to current month or april
+    const now = new Date();
+    const y = now.getFullYear(), m = now.getMonth();
+    const mKeys=['apr','may','jun','jul','aug','sep','oct','nov','dec','jan','feb','mar'];
+    const mData=[{y:2026,m:3},{y:2026,m:4},{y:2026,m:5},{y:2026,m:6},{y:2026,m:7},{y:2026,m:8},{y:2026,m:9},{y:2026,m:10},{y:2026,m:11},{y:2027,m:0},{y:2027,m:1},{y:2027,m:2}];
+    let target = 'apr';
+    for(let i=0;i<mData.length;i++){if(mData[i].y===y&&mData[i].m===m){target=mKeys[i];break;}}
+    showPanel(target);
+  } else if (dest === 'diary') { showPanel('diary'); }
+  else if (dest === 'notes') { showPanel('notes'); }
+  else if (dest === 'reminder') { showPanel('reminder'); }
+  else if (dest === 'avkash') { showPanel('avkash'); }
+}
+
+function updateBnav(panelId) {
+  document.querySelectorAll('.bnav-item').forEach(b => b.classList.remove('active'));
+  if (['diary'].includes(panelId)) document.getElementById('bn-diary')?.classList.add('active');
+  else if (['notes'].includes(panelId)) document.getElementById('bn-notes')?.classList.add('active');
+  else if (['reminder'].includes(panelId)) document.getElementById('bn-reminder')?.classList.add('active');
+  else if (['avkash'].includes(panelId)) document.getElementById('bn-avkash')?.classList.add('active');
+  else document.getElementById('bn-home')?.classList.add('active');
+  // Update CL badge
+  updateCLBadge();
+  // hide FAB on home panels, show on notes/reminder
+  const fab = document.getElementById('fab');
+  if(fab) fab.style.display = ['notes','reminder'].includes(panelId) ? 'flex' : 'none';
+}
+
+function updateRemBadge() {
+  const badge = document.getElementById('remBadge');
+  if(!badge) return;
+  const today = todayStr();
+  const count = APP.reminders.filter(r => r.date >= today && !r.done).length;
+  if(count > 0) { badge.textContent = count > 9 ? '9+' : count; badge.style.display = 'block'; }
+  else { badge.style.display = 'none'; }
+}
+
+// ── DATE QUICK ACTION SHEET ──────────────────────────────────────────────────
+let dqaCurrentDate = null;
+const TYPE_COLORS = {hol:'var(--saffron)',fest:'var(--gold)',exam:'var(--blue)',ptm:'var(--green)',sport:'var(--purple)',notice:'var(--teal)',other:'var(--ink-muted)'};
+const TYPE_LABELS = {hol:'अवकाश',fest:'उत्सव',exam:'परीक्षा',ptm:'बैठक/PTM',sport:'खेल',notice:'विशेष',other:'अन्य'};
+const HI_MONTHS_FULL = ['जनवरी','फरवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितम्बर','अक्टूबर','नवम्बर','दिसम्बर'];
+const DAY_NAMES = ['रविवार','सोमवार','मंगलवार','बुधवार','गुरुवार','शुक्रवार','शनिवार'];
+
+function openDqa(dateStr, shiviraEvs) {
+  dqaCurrentDate = dateStr;
+  const [y,m,d] = dateStr.split('-');
+  document.getElementById('dqaDate').textContent = `${parseInt(d)} ${HI_MONTHS_FULL[parseInt(m)-1]} ${y}`;
+  document.getElementById('dqaDay').textContent = DAY_NAMES[new Date(dateStr+'T12:00:00').getDay()] + (dateStr===todayStr()?' • आज':'');
+  
+  // Shivira events
+  const userEvs = APP.reminders.filter(r => r.date === dateStr);
+  let shiviraHtml = '';
+  if(shiviraEvs && shiviraEvs.length) {
+    shiviraHtml += shiviraEvs.map(ev => `<div class="dqa-ev">
+      <div class="dqa-ev-dot" style="background:${TYPE_COLORS[ev.t]||'#888'}"></div>
+      <div class="dqa-ev-txt"><b>${ev.l}</b> — ${TYPE_LABELS[ev.t]||ev.t}</div>
+    </div>`).join('');
+  }
+  if(userEvs.length) {
+    shiviraHtml += userEvs.map(r => `<div class="dqa-ev">
+      <div class="dqa-ev-dot" style="background:#C62828"></div>
+      <div class="dqa-ev-txt">🔔 ${r.title.replace(/</g,'&lt;')}${r.time?' • ⏰'+r.time:''}</div>
+    </div>`).join('');
+  }
+  if(!shiviraHtml) shiviraHtml = '<div style="font-size:12px;color:var(--ink-muted);padding:4px 0">इस दिन कोई शिविरा/निर्धारित कार्यक्रम नहीं</div>';
+  document.getElementById('dqaShivira').innerHTML = shiviraHtml;
+  document.getElementById('dqaOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDqa() {
+  document.getElementById('dqaOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function dqaBgClick(e) {
+  if(e.target === document.getElementById('dqaOverlay')) closeDqa();
+}
+
+function dqaAction(type) {
+  const date = dqaCurrentDate;
+  closeDqa();
+  if(type === 'diary') {
+    diaryDate = date;
+    showPanel('diary');
+    setTimeout(renderDiary, 80);
+  } else if(type === 'note') {
+    showPanel('notes');
+    setTimeout(() => openNoteModal(), 120);
+  } else if(type === 'reminder') {
+    showPanel('reminder');
+    const [y,m] = date.split('-');
+    remCalY = parseInt(y); remCalM = parseInt(m)-1;
+    remSelDate = date;
+    setTimeout(() => { renderReminder(); openRemModal(date); }, 120);
+  }
+}
+
+// ── PATCH showPanel to update bnav ───────────────────────────────────────────
+const _origShowPanel = showPanel;
+// Wrap to also update bnav — actually showPanel is already defined above,
+// so we just add bnav update directly. We do it by redefining at end:
+
+// ── INIT PATCH ───────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
+  updateRemBadge();
+});
+
+// ── CL PLANNER ────────────────────────────────────────────────────────────────
+// NOTE: Rajasthan govt schools — Saturday is a WORKING day, only Sunday is weekly off
+const CL_KEY = 'cl_v3';
+const _DN = ['रवि','सोम','मंगल','बुध','गुरु','शुक्र','शनि'];
+const _HM = ['जन','फर','मार','अप्र','मई','जून','जुल','अग','सित','अक्त','नव','दिस'];
+function _fd(ds){ const[y,m,d]=ds.split('-'); return `${parseInt(d)} ${_HM[parseInt(m)-1]}`; }
+function _fdFull(ds){ const[y,m,d]=ds.split('-'); return `${parseInt(d)} ${_HM[parseInt(m)-1]} ${y.slice(2)}`; }
+function _dow(ds){ return new Date(ds+'T12:00:00').getDay(); }
+
+// LEGEND for day types in each plan:
+// 'h' = विभागीय अवकाश (Govt holiday — no school)
+// 'cl' = CL दिन — teacher applies for this
+// 's' = रविवार (only weekly off)
+// 'w' = शनिवार / कार्यदिवस — school OPEN, needs CL to stay home
+
+const CL_PLANS = [
+
+  { id:'apr1', quality:3, clCount:1,
+    title:'ज्योतिबा फुले + अम्बेडकर जयंती',
+    badge:'3 दिन | 1 CL',
+    tip:'रविवार + सोमवार CL + मंगलवार अवकाश = 3 दिन लगातार। 11 शनिवार स्कूल खुला है।',
+    warn:'11 अप्रैल (शनि) स्कूल खुला है — इस दिन नहीं गिनें।',
+    days:[
+      {d:'2026-04-11',t:'w', l:'शनिवार — स्कूल खुला (कार्यदिवस)'},
+      {d:'2026-04-12',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+      {d:'2026-04-13',t:'cl',l:'⭐ सोमवार — 1 CL लें'},
+      {d:'2026-04-14',t:'h', l:'मंगलवार — अम्बेडकर जयंती (विभागीय अवकाश)'},
+    ]},
+
+  { id:'may1', quality:3, clCount:2,
+    title:'ईद उल जुहा / वीर सावरकर जयंती',
+    badge:'4 दिन | 2 CL',
+    tip:'गुरुवार अवकाश के बाद शुक्रवार + शनिवार दोनों की CL लें → गुरु से रवि 4 दिन।',
+    warn:'सिर्फ 1 CL लेने पर केवल 2 दिन (गुरु+शुक्र), फिर शनि स्कूल खुलेगा।',
+    days:[
+      {d:'2026-05-28',t:'h', l:'गुरुवार — ईद उल जुहा (विभागीय अवकाश)'},
+      {d:'2026-05-29',t:'cl',l:'⭐ शुक्रवार — CL-1 लें'},
+      {d:'2026-05-30',t:'cl',l:'⭐ शनिवार — CL-2 लें (शनि = कार्यदिवस)'},
+      {d:'2026-05-31',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'jun1', quality:3, clCount:1,
+    title:'मोहर्रम',
+    badge:'3 दिन | 1 CL',
+    tip:'शुक्रवार अवकाश के बाद शनिवार की CL लें → शुक्र-शनि-रवि = 3 दिन लगातार।',
+    days:[
+      {d:'2026-06-26',t:'h', l:'शुक्रवार — मोहर्रम (विभागीय अवकाश)'},
+      {d:'2026-06-27',t:'cl',l:'⭐ शनिवार — 1 CL लें (शनि = कार्यदिवस)'},
+      {d:'2026-06-28',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'aug0', quality:3, clCount:1,
+    title:'स्वतंत्रता दिवस',
+    badge:'3 दिन | 1 CL',
+    tip:'स्वतंत्रता दिवस शनिवार को है + रविवार। पहले शुक्रवार 14 की CL लें → शुक्र-शनि-रवि = 3 दिन।',
+    days:[
+      {d:'2026-08-14',t:'cl',l:'⭐ शुक्रवार — 1 CL लें'},
+      {d:'2026-08-15',t:'h', l:'शनिवार — 🇮🇳 स्वतंत्रता दिवस (विभागीय अवकाश)'},
+      {d:'2026-08-16',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'aug1a', quality:4, clCount:1,
+    title:'बाराबफात + रक्षा बंधन — 3 दिन (1 CL)',
+    badge:'3 दिन | 1 CL',
+    tip:'बुधवार और शुक्रवार दोनों विभागीय अवकाश हैं। बीच में गुरुवार की 1 CL लें = 3 दिन लगातार। शनिवार 29 स्कूल खुला रहेगा।',
+    days:[
+      {d:'2026-08-26',t:'h', l:'बुधवार — बाराबफात (विभागीय अवकाश)'},
+      {d:'2026-08-27',t:'cl',l:'⭐ गुरुवार — Bridge CL लें (दोनों छुट्टियों के बीच)'},
+      {d:'2026-08-28',t:'h', l:'शुक्रवार — रक्षा बंधन (विभागीय अवकाश)'},
+      {d:'2026-08-29',t:'w', l:'शनिवार — स्कूल खुला है (कार्यदिवस)'},
+    ]},
+
+  { id:'aug1b', quality:5, clCount:2,
+    title:'बाराबफात + रक्षा बंधन ⭐ — 5 दिन (2 CL)',
+    badge:'5 दिन | 2 CL',
+    tip:'सबसे उत्तम प्लान! 2 CL में पूरे 5 दिन की छुट्टी — बुध से रवि तक।',
+    days:[
+      {d:'2026-08-26',t:'h', l:'बुधवार — बाराबफात (विभागीय अवकाश)'},
+      {d:'2026-08-27',t:'cl',l:'⭐ गुरुवार — CL-1 (Bridge CL)'},
+      {d:'2026-08-28',t:'h', l:'शुक्रवार — रक्षा बंधन (विभागीय अवकाश)'},
+      {d:'2026-08-29',t:'cl',l:'⭐ शनिवार — CL-2 लें (शनि = कार्यदिवस)'},
+      {d:'2026-08-30',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'sep1', quality:3, clCount:1,
+    title:'जन्माष्टमी',
+    badge:'3 दिन | 1 CL',
+    tip:'शुक्रवार अवकाश के बाद शनिवार की CL लें → शुक्र-शनि-रवि = 3 दिन लगातार।',
+    days:[
+      {d:'2026-09-04',t:'h', l:'शुक्रवार — जन्माष्टमी (विभागीय अवकाश)'},
+      {d:'2026-09-05',t:'cl',l:'⭐ शनिवार — 1 CL लें (शनि = कार्यदिवस)'},
+      {d:'2026-09-06',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'sep2', quality:3, clCount:1,
+    title:'रामदेव जयंती / तेजा दशमी',
+    badge:'3 दिन | 1 CL',
+    tip:'सोमवार का विभागीय अवकाश है। रविवार पहले से off है। मंगलवार 22 की CL लें = रवि-सोम-मंगल 3 दिन।',
+    days:[
+      {d:'2026-09-20',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+      {d:'2026-09-21',t:'h', l:'सोमवार — रामदेव जयंती (विभागीय अवकाश)'},
+      {d:'2026-09-22',t:'cl',l:'⭐ मंगलवार — 1 CL लें'},
+    ]},
+
+  { id:'oct1', quality:3, clCount:1,
+    title:'गांधी जयंती',
+    badge:'3 दिन | 1 CL',
+    tip:'शुक्रवार अवकाश के बाद शनिवार की CL लें → शुक्र-शनि-रवि = 3 दिन। ⚠️ 1 अक्टूबर की CL न लें — 3 शनि स्कूल खुला रहेगा तो लाभ नहीं।',
+    days:[
+      {d:'2026-10-02',t:'h', l:'शुक्रवार — गांधी जयंती (विभागीय अवकाश)'},
+      {d:'2026-10-03',t:'cl',l:'⭐ शनिवार — 1 CL लें (शनि = कार्यदिवस)'},
+      {d:'2026-10-04',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'oct2a', quality:3, clCount:0,
+    title:'दुर्गाष्टमी + विजयदशमी — बिना CL 3 दिन 🎉',
+    badge:'3 दिन | 0 CL',
+    tip:'शनिवार 18 स्कूल खुला है। लेकिन रवि+सोम+मंगल तीनों दिन off हैं — कोई CL नहीं लगेगी!',
+    days:[
+      {d:'2026-10-18',t:'w', l:'शनिवार — स्कूल खुला (कार्यदिवस)'},
+      {d:'2026-10-19',t:'h', l:'रविवार → सोमवार — दुर्गाष्टमी (विभागीय अवकाश)'},
+      {d:'2026-10-20',t:'h', l:'मंगलवार — विजयदशमी (विभागीय अवकाश)'},
+    ]},
+
+  { id:'oct2b', quality:4, clCount:1,
+    title:'दुर्गाष्टमी + विजयदशमी — CL से 4 दिन',
+    badge:'4 दिन | 1 CL',
+    tip:'रवि+सोम+मंगल पहले से off। बुधवार 21 की 1 CL लें → रवि से बुध 4 दिन। शनि 18 स्कूल खुला है।',
+    warn:'18 शनिवार स्कूल खुला — 17 शुक्रवार की CL न लें (3 कार्यदिवस बाधित होंगे)।',
+    days:[
+      {d:'2026-10-18',t:'w', l:'शनिवार — स्कूल खुला है'},
+      {d:'2026-10-19',t:'h', l:'रविवार — दुर्गाष्टमी (विभागीय अवकाश)'},
+      {d:'2026-10-20',t:'h', l:'सोमवार — विजयदशमी (विभागीय अवकाश)'},
+      {d:'2026-10-21',t:'cl',l:'⭐ मंगलवार — 1 CL लें'},
+    ]},
+
+  { id:'nov1', quality:3, clCount:1,
+    title:'गुरुनानक जयंती',
+    badge:'3 दिन | 1 CL',
+    tip:'मंगलवार का अवकाश है। रविवार पहले से off। बीच में सोमवार 23 की CL लें = रवि-सोम-मंगल 3 दिन।',
+    days:[
+      {d:'2026-11-22',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+      {d:'2026-11-23',t:'cl',l:'⭐ सोमवार — 1 CL लें'},
+      {d:'2026-11-24',t:'h', l:'मंगलवार — गुरुनानक जयंती (विभागीय अवकाश)'},
+    ]},
+
+  { id:'dec1', quality:3, clCount:1,
+    title:'क्रिसमस',
+    badge:'3 दिन | 1 CL',
+    tip:'शुक्रवार अवकाश के बाद शनिवार CL → शुक्र-शनि-रवि = 3 दिन।',
+    warn:'24 गुरुवार की CL लेने पर 26 शनि स्कूल खुला रहेगा — तोड़ा टूट जाएगा।',
+    days:[
+      {d:'2026-12-25',t:'h', l:'शुक्रवार — क्रिसमस (विभागीय अवकाश)'},
+      {d:'2026-12-26',t:'cl',l:'⭐ शनिवार — 1 CL लें (शनि = कार्यदिवस)'},
+      {d:'2026-12-27',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'jan1', quality:3, clCount:1,
+    title:'गुरु गोविन्द सिंह जयंती / कैरियर डे',
+    badge:'3 दिन | 1 CL',
+    tip:'शुक्रवार अवकाश + शनिवार CL + रविवार = शुक्र-शनि-रवि 3 दिन।',
+    days:[
+      {d:'2027-01-15',t:'h', l:'शुक्रवार — कैरियर डे (विभागीय अवकाश)'},
+      {d:'2027-01-16',t:'cl',l:'⭐ शनिवार — 1 CL लें (शनि = कार्यदिवस)'},
+      {d:'2027-01-17',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'jan2', quality:3, clCount:1,
+    title:'गणतंत्र दिवस',
+    badge:'3 दिन | 1 CL',
+    tip:'मंगलवार का अवकाश है। रविवार पहले से off। सोमवार 25 की CL = रवि-सोम-मंगल 3 दिन।',
+    days:[
+      {d:'2027-01-24',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+      {d:'2027-01-25',t:'cl',l:'⭐ सोमवार — 1 CL लें'},
+      {d:'2027-01-26',t:'h', l:'मंगलवार — गणतंत्र दिवस (विभागीय अवकाश)'},
+    ]},
+
+  { id:'feb1', quality:3, clCount:1,
+    title:'देवनारायण जयंती / सूर्य सप्तमी',
+    badge:'3 दिन | 1 CL',
+    tip:'शनिवार को अवकाश है + रविवार। पहले शुक्रवार 12 की CL लें → शुक्र-शनि-रवि = 3 दिन।',
+    days:[
+      {d:'2027-02-12',t:'cl',l:'⭐ शुक्रवार — 1 CL लें'},
+      {d:'2027-02-13',t:'h', l:'शनिवार — देवनारायण जयंती (विभागीय अवकाश)'},
+      {d:'2027-02-14',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'mar1', quality:3, clCount:1,
+    title:'महाशिवरात्रि',
+    badge:'3 दिन | 1 CL',
+    tip:'शनिवार को अवकाश है + रविवार। पहले शुक्रवार 5 की CL लें → शुक्र-शनि-रवि = 3 दिन।',
+    days:[
+      {d:'2027-03-05',t:'cl',l:'⭐ शुक्रवार — 1 CL लें'},
+      {d:'2027-03-06',t:'h', l:'शनिवार — महाशिवरात्रि (विभागीय अवकाश)'},
+      {d:'2027-03-07',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+  { id:'mar2', quality:3, clCount:1,
+    title:'होलिका दहन + धुलेण्डी',
+    badge:'3 दिन | 1 CL',
+    tip:'रविवार होलिका + सोमवार धुलेण्डी पहले से 2 दिन। मंगलवार 23 की CL लें = रवि-सोम-मंगल 3 दिन।',
+    note:'परीक्षाओं के पश्चात् ही यह plan लागू होगा।',
+    days:[
+      {d:'2027-03-21',t:'h', l:'रविवार — होलिका दहन (विभागीय अवकाश)'},
+      {d:'2027-03-22',t:'h', l:'सोमवार — धुलेण्डी (विभागीय अवकाश)'},
+      {d:'2027-03-23',t:'cl',l:'⭐ मंगलवार — 1 CL लें'},
+    ]},
+
+  { id:'mar3', quality:3, clCount:1,
+    title:'गुडफ्राईडे',
+    badge:'3 दिन | 1 CL',
+    tip:'शुक्रवार अवकाश + शनिवार CL + रविवार = शुक्र-शनि-रवि 3 दिन।',
+    days:[
+      {d:'2027-03-26',t:'h', l:'शुक्रवार — गुडफ्राईडे (विभागीय अवकाश)'},
+      {d:'2027-03-27',t:'cl',l:'⭐ शनिवार — 1 CL लें (शनि = कार्यदिवस)'},
+      {d:'2027-03-28',t:'s', l:'रविवार — साप्ताहिक अवकाश'},
+    ]},
+
+];
+
+const _TC = {h:'var(--saffron-dark)', cl:'#0C447C', s:'var(--ink-muted)', w:'#C62828'};
+const _TI = {h:'🏛️', cl:'📝', s:'📅', w:'⚠️'};
+const _TBG= {h:'var(--saffron-pale)', cl:'var(--blue-light)', s:'var(--border)', w:'#FFEBEE'};
+const _TLB= {h:'अवकाश', cl:'CL', s:'रवि', w:'स्कूल खुला'};
+const _TLBC= {h:'var(--saffron-dark)', cl:'#0C447C', s:'var(--ink-muted)', w:'var(--red)'};
+
+function buildCLSuggestions() {
+  const saved = JSON.parse(localStorage.getItem(CL_KEY)||'{}');
+  const usedCount = Object.values(saved).filter(v=>v==='used').length;
+  const el = document.getElementById('clBudgetDisplay');
+  const bar = document.getElementById('clProgressBar');
+  const rem = document.getElementById('clRemaining');
+  if(el) el.textContent = `15 में से ${usedCount} उपयोग`;
+  if(bar){ bar.style.width=(usedCount/15*100)+'%'; bar.style.background=usedCount<=10?'#1A7A4A':usedCount<=13?'#F59E0B':'#C62828'; }
+  if(rem) rem.textContent = `शेष CL: ${15-usedCount} उपलब्ध`;
+  const cont = document.getElementById('clSuggestions');
+  if(!cont) return;
+
+  // Saturday rule notice
+  buildCLResultSheet();
+  updateCLBadge();
+  cont.innerHTML = CL_PLANS.map(p => {
+    const st = saved[p.id]||'none';
+    const isUsed = st==='used', isSkip = st==='skip';
+    const qC = p.quality===5?'#1A7A4A':p.quality>=3?'#1565C0':'#00695C';
+    const qBg = p.quality===5?'var(--green-light)':p.quality>=3?'var(--blue-light)':'var(--teal-light)';
+    const daysHtml = p.days.map(d=>`
+      <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--border)">
+        <div style="flex-shrink:0;width:32px;height:32px;border-radius:8px;background:${_TBG[d.t]};display:flex;align-items:center;justify-content:center;font-size:14px">${_TI[d.t]}</div>
+        <div style="flex:1;min-width:0">
+          <div style="font-size:12.5px;font-weight:${d.t==='cl'?'700':'500'};color:${_TC[d.t]};line-height:1.4">${d.l}</div>
+          <div style="font-size:11px;color:var(--ink-muted)">${_fdFull(d.d)} — ${_DN[_dow(d.d)]}</div>
+        </div>
+        <div style="flex-shrink:0;font-size:10px;font-weight:700;padding:3px 8px;border-radius:8px;background:${_TBG[d.t]};color:${_TLBC[d.t]};white-space:nowrap">${_TLB[d.t]}</div>
+      </div>`).join('');
+
+    return `<div style="background:#fff;border:1px solid ${isUsed?'#9FE1CB':isSkip?'var(--border)':'var(--border)'};border-radius:var(--radius-sm);margin-bottom:10px;overflow:hidden;${isSkip?'opacity:0.45':''}">
+      <div style="padding:11px 13px;background:${isUsed?'var(--green-light)':'linear-gradient(135deg,var(--saffron-pale),#fff)'};border-bottom:1px solid var(--border)">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px">
+          <div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--ink);margin-bottom:5px">${p.title}</div>
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">
+              <span style="font-size:11px;font-weight:700;background:${qBg};color:${qC};padding:2px 10px;border-radius:10px">${p.badge}</span>
+              ${isUsed?'<span style="font-size:11px;background:var(--green-light);color:var(--green);padding:2px 8px;border-radius:10px;font-weight:600">✅ उपयोग में</span>':''}
+              ${p.clCount===0?'<span style="font-size:11px;background:var(--green-light);color:var(--green);padding:2px 8px;border-radius:10px;font-weight:600">🎉 CL नहीं लगेगी!</span>':''}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding:9px 13px;background:#FFFCF9;border-bottom:1px solid var(--border)">
+        <div style="font-size:12.5px;color:var(--ink-soft);line-height:1.6">💡 ${p.tip}</div>
+        ${p.warn?`<div style="font-size:11.5px;color:var(--red);margin-top:5px;font-weight:600;background:var(--red-light);padding:5px 8px;border-radius:6px">⚠️ ${p.warn}</div>`:''}
+        ${p.note?`<div style="font-size:11.5px;color:#92400E;margin-top:5px;font-weight:600">📌 ${p.note}</div>`:''}
+      </div>
+      <div style="padding:4px 13px 6px">${daysHtml}</div>
+      <div style="display:flex;gap:8px;padding:9px 13px;border-top:1px solid var(--border);background:#FAFAFA">
+        ${p.clCount===0?`<div style="flex:1;text-align:center;font-size:12px;color:var(--green);font-weight:600;padding:6px">🎉 CL की आवश्यकता नहीं — यह break free है!</div>`:''}
+        ${p.clCount>0&&!isUsed&&!isSkip?`<button class="btn btn-primary btn-sm" style="flex:1" onclick="markCL2('${p.id}','used')">✅ यह CL उपयोग करूंगा</button>`:''}
+        ${p.clCount>0&&isUsed?`<button class="btn btn-secondary btn-sm" style="flex:1" onclick="markCL2('${p.id}','none')">↩️ चिह्न हटाएं</button>`:''}
+        ${p.clCount>0&&!isUsed&&!isSkip?`<button class="btn btn-secondary btn-sm" onclick="markCL2('${p.id}','skip')">छोड़ें</button>`:''}
+        ${p.clCount>0&&isSkip?`<button class="btn btn-secondary btn-sm" onclick="markCL2('${p.id}','none')">↩️ वापस लाएं</button>`:''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function markCL2(id, status) {
+  const saved = JSON.parse(localStorage.getItem(CL_KEY)||'{}');
+  if(status==='none') delete saved[id];
+  else saved[id]=status;
+  localStorage.setItem(CL_KEY, JSON.stringify(saved));
+  buildCLSuggestions();
+  const msgs={used:'✅ CL चिह्नित — बजट अपडेट',skip:'सुझाव हटाया गया',none:'चिह्न हटाया'};
+  showToast(msgs[status]||'');
+}
+
+function toggleCLSheet() {
+  const sheet = document.getElementById('clResultSheet');
+  if(!sheet) return;
+  const isVisible = sheet.style.display !== 'none';
+  if(isVisible) { sheet.style.display = 'none'; return; }
+  buildCLResultSheet();
+  sheet.style.display = 'block';
+  sheet.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function updateCLBadge() {
+  const saved = JSON.parse(localStorage.getItem(CL_KEY)||'{}');
+  const count = Object.values(saved).filter(v=>v==='used').length;
+  const badge = document.getElementById('clBadge');
+  if(badge) { badge.textContent = count>0?count:''; badge.style.display = count>0?'block':'none'; }
+}
+
+function buildCLResultSheet() {
+  const saved = JSON.parse(localStorage.getItem(CL_KEY)||'{}');
+  const usedPlans = CL_PLANS.filter(p => saved[p.id]==='used');
+  const sheet = document.getElementById('clResultSheet');
+  const list = document.getElementById('clResultList');
+  if(!sheet||!list) return;
+  if(!usedPlans.length) { sheet.style.display='none'; return; }
+  sheet.style.display='block';
+  // Collect all CL dates from used plans
+  const allCLDays = [];
+  usedPlans.forEach(p => {
+    p.days.filter(d=>d.t==='cl').forEach(d => {
+      allCLDays.push({date:d.d, planTitle:p.title, label:d.l.replace('⭐ ',''), clCount:p.clCount});
+    });
+  });
+  allCLDays.sort((a,b)=>a.date.localeCompare(b.date));
+  // Total CL count
+  const totalCL = allCLDays.length;
+  list.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;background:var(--green-light);border:1px solid #9FE1CB;border-radius:var(--radius-sm);padding:10px 13px;margin-bottom:10px">
+      <div>
+        <div style="font-size:13px;font-weight:700;color:var(--green)">कुल ${totalCL} CL दिन चुने</div>
+        <div style="font-size:11px;color:var(--ink-muted);margin-top:2px">15 में से ${totalCL} उपयोग • ${15-totalCL} शेष</div>
+      </div>
+      <div style="font-size:28px;font-weight:700;color:var(--green)">${totalCL}<span style="font-size:11px;font-weight:400">/15</span></div>
+    </div>
+    ` + allCLDays.map(function(cl,i) {
+      var pts = cl.date.split('-');
+      var dn = _DN[_dow(cl.date)];
+      var dd = parseInt(pts[2]);
+      var mm = _HM[parseInt(pts[1])-1];
+      return '<div style="display:flex;align-items:center;gap:10px;padding:9px 12px;background:#fff;border:1px solid #E7E5E4;border-radius:8px;margin-bottom:6px">'
+        + '<div style="flex-shrink:0;width:40px;height:40px;background:#E3F0FF;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center">'
+        + '<div style="font-size:15px;font-weight:700;color:#1565C0;line-height:1">'+dd+'</div>'
+        + '<div style="font-size:9px;color:#1565C0">'+mm+'</div></div>'
+        + '<div style="flex:1;min-width:0">'
+        + '<div style="font-size:12.5px;font-weight:700;color:#1C1917">'+dn+' — '+cl.label+'</div>'
+        + '<div style="font-size:11px;color:#78716C;margin-top:1px">'+cl.planTitle+'</div></div>'
+        + '<div style="flex-shrink:0;font-size:10px;font-weight:700;background:#E3F0FF;color:#1565C0;padding:3px 8px;border-radius:8px">CL '+(i+1)+'</div>'
+        + '</div>';
+    }).join('') + `
+  `;
+}
+
+
+
+function openLegal(page) {
+  const content = {
+    about: ['ℹ️ हमारे बारे में', document.getElementById('panel-appinfo')?.innerHTML || ''],
+    contact: ['📧 संपर्क', '<div style="padding:8px 0"><a href="mailto:junctionteacher@gmail.com" style="display:block;padding:12px;background:#FFF3EB;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;color:var(--blue);margin-bottom:8px">📧 junctionteacher@gmail.com</a><a href="https://wa.me/917014067853" style="display:block;padding:12px;background:#E8F5EE;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;color:var(--green)">💬 +91 7014067853</a></div>'],
+    privacy: ['🔒 Privacy Policy', '<div style="font-size:12.5px;color:var(--ink-soft);line-height:1.8;padding:4px 0">यह App कोई व्यक्तिगत डेटा Server पर store नहीं करती।<br><b>Permissions:</b> Notifications (optional) • Internet (Ads/Fonts)<br><b>Ads:</b> Google AdSense<br><b>Target Audience:</b> 18+ Teachers only<br><b>Contact:</b> junctionteacher@gmail.com<br><span style="font-size:10.5px;color:var(--ink-muted)">Updated: April 2026</span></div>'],
+    disclaimer: ['⚠️ Disclaimer', '<div style="background:var(--red-light);padding:12px;border-radius:8px;font-size:12.5px;color:#7f1d1d;line-height:1.7"><b>यह App राजस्थान सरकार का आधिकारिक App नहीं है।</b><br>शिविरा पंचांग डेटा सरकारी पंचांग पर आधारित है। CL सुझाव केवल मार्गदर्शन हेतु।<br><br>© 2026 ShiviraDiary by Teacher Junction</div>']
+  };
+  const pg = content[page];
+  if(!pg) return;
+  openModal(pg[0], pg[1], '<button class="btn btn-secondary btn-block" onclick="closeModal()">बंद करें</button>');
+}
+
+function updateCLBadge() {
+  try {
+    const saved = JSON.parse(localStorage.getItem('cl_v3')||'{}');
+    const count = Object.values(saved).filter(v=>v==='used').length;
+    const badge = document.getElementById('clBadge');
+    if(badge){ badge.textContent=count>0?count:''; badge.style.display=count>0?'block':'none'; }
+  } catch(e){}
+}
+
+// ── Render CL on avkash panel
+</script>
+</body>
+</html>
