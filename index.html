@@ -323,6 +323,21 @@
 .notif-banner svg{width:20px;height:20px;fill:#856404;flex-shrink:0}
 .notif-banner-text{font-size:12px;color:#856404;line-height:1.4}
 .notif-banner-text b{display:block;font-size:13px}
+
+/* ── District-Chunav Accordion ── */
+.dc-card{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;overflow:hidden;background:#fff}
+.dc-hdr{display:flex;align-items:center;gap:8px;padding:11px 14px;cursor:pointer;background:#FAFAFA;user-select:none;transition:background .15s}
+.dc-hdr:hover{background:var(--saffron-pale)}
+.dc-hdr>span:first-child{font-size:14px;font-weight:600;color:var(--ink);flex:1}
+.dc-meta{font-size:11px;color:var(--ink-muted);white-space:nowrap}
+.dc-arr{font-size:14px;color:var(--ink-muted);margin-left:4px;transition:transform .2s}
+.dc-body{padding:10px 14px 12px}
+.dc-phase{font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:6px;margin:8px 0 4px;display:inline-block}
+.dc-phase.p1{background:#FFF3E0;color:#E65100;border:1px solid #FFCC02}
+.dc-phase.p2{background:#E3F0FF;color:#1565C0;border:1px solid #90CAF9}
+.dc-phase.p3{background:#E8F5EE;color:#1A7A4A;border:1px solid #A5D6A7}
+.dc-phase.p4{background:#F3E5F5;color:#6A1B9A;border:1px solid #CE93D8}
+.dc-samiti{font-size:12.5px;color:var(--ink-soft);line-height:1.6;padding:0 2px 4px}
 </style>
 </head>
 <body>
@@ -1182,49 +1197,515 @@
 
 <!-- ══ पंचायत चुनाव ══ -->
 <div class="month-panel" id="panel-chunav">
-  <div class="month-header"><div><div class="month-name">🗳️ पंचायती राज चुनाव 2026</div><div class="month-year">राजस्थान — मूल एवं संशोधित कार्यक्रम</div></div></div>
+  <div class="month-header"><div><div class="month-name">🗳️ पंचायती राज चुनाव 2026</div><div class="month-year">राजस्थान — जिलेवार पंचायत समिति चरण सूची</div></div></div>
 
-  <!-- REVISED SCHEDULE -->
-  <div class="section-title">संशोधित कार्यक्रम — 06 अक्टूबर 2026</div>
-  <div class="notes-box" style="border-left-color:var(--red);background:var(--red-light)">
-    <div class="notes-title" style="color:var(--red)">⚠️ संशोधित कार्यक्रम (06.10.2026 आदेशानुसार)</div>
-    <ul>
-      <li>शिक्षकों की ड्यूटी इसी कार्यक्रम के अनुसार लगेगी</li>
-    </ul>
-  </div>
-  <div class="table-wrap"><table class="data-table">
-    <tr><th>चरण</th><th>मतदान तिथि</th><th>विवरण</th></tr>
-    <tr class="hl"><td>प्रथम चरण</td><td>22 अक्टूबर 2026</td><td>सरपंच, वार्ड पंच</td></tr>
-    <tr><td>द्वितीय चरण</td><td>28 अक्टूबर 2026</td><td>सरपंच, वार्ड पंच</td></tr>
-    <tr class="hl"><td>तृतीय चरण</td><td>03 नवम्बर 2026</td><td>सरपंच, वार्ड पंच</td></tr>
+  <!-- PHASE DATES (REVISED) -->
+  <div class="section-title">संशोधित कार्यक्रम अनुसार मतदान तिथियाँ</div>
+  <div class="table-wrap"><table class="data-table" style="font-size:12px">
+    <tr><th>चरण</th><th>जिप / पंस मतदान</th><th>पंच/सरपंच मतदान</th></tr>
+    <tr style="background:#fff3e0"><td><b>प्रथम चरण</b></td><td><b>22 अक्टूबर 2026</b> (गुरुवार)</td><td>24 अक्टूबर (शनिवार)</td></tr>
+    <tr><td><b>द्वितीय चरण</b></td><td><b>28 अक्टूबर 2026</b> (बुधवार)</td><td>30 अक्टूबर (शुक्रवार)</td></tr>
+    <tr style="background:#fff3e0"><td><b>तृतीय चरण</b></td><td><b>03 नवम्बर 2026</b> (मंगलवार)</td><td>05 नवम्बर (गुरुवार)</td></tr>
+    <tr><td><b>चतुर्थ चरण</b></td><td><b>14 नवम्बर 2026</b> (शनिवार)</td><td>15 नवम्बर (रविवार)</td></tr>
+    <tr style="background:#e8f5e9"><td>🗳️ मतगणना</td><td colspan="2"><b>20 नवम्बर 2026</b> (शुक्रवार) — समस्त चरण</td></tr>
+    <tr style="background:#e8f5e9"><td>🏛️ जिला प्रमुख</td><td colspan="2"><b>25 नवम्बर 2026</b> (बुधवार)</td></tr>
   </table></div>
 
-  <!-- ORIGINAL SCHEDULE -->
-  <div class="section-title" style="margin-top:18px">मूल कार्यक्रम — 03 अक्टूबर 2026</div>
-  <div class="notes-box" style="border-left-color:var(--blue);background:var(--blue-light)">
-    <div class="notes-title" style="color:var(--blue)">📋 मूल कार्यक्रम (03.10.2026 — पूर्व प्रकाशित)</div>
-    <ul>
-      <li>शिक्षकों को ड्यूटी असाइनमेंट के लिए दोनों कार्यक्रम संदर्भ में रखने हेतु</li>
-    </ul>
+  <div class="notes-box" style="border-left-color:#e74c3c;background:#fdecea;margin-top:10px;padding:8px 12px">
+    <b style="color:#c0392b">⚠️ संशोधन (06.10.2026):</b> <span style="font-size:12px">जैसलमेर — समस्त समितियाँ प्रथम→चतुर्थ चरण। बीकानेर — कुछ समितियाँ प्रथम→चतुर्थ चरण। सलूम्बर — कुछ समितियाँ चतुर्थ→तृतीय चरण।</span>
   </div>
-  <div class="table-wrap"><table class="data-table">
-    <tr><th>चरण / तिथि</th><th>कार्यक्रम</th><th>विवरण</th></tr>
-    <tr><td>प्रथम चरण मतदान</td><td>23 अक्टूबर 2026</td><td>सरपंच, वार्ड पंच</td></tr>
-    <tr class="hl"><td>द्वितीय चरण मतदान</td><td>29 अक्टूबर 2026</td><td>सरपंच, वार्ड पंच</td></tr>
-    <tr><td>तृतीय चरण मतदान</td><td>04 नवम्बर 2026</td><td>सरपंच, वार्ड पंच</td></tr>
-    <tr class="hl"><td>चतुर्थ चरण मतदान</td><td>14 नवम्बर 2026</td><td>सरपंच, वार्ड पंच</td></tr>
-    <tr><td>मतगणना</td><td>20 नवम्बर 2026</td><td>ग्राम पंचायत स्तर</td></tr>
-    <tr class="hl"><td>जिला प्रमुख / प्रधान चुनाव</td><td>25 नवम्बर 2026</td><td>अप्रत्यक्ष निर्वाचन</td></tr>
-  </table></div>
+
+  <!-- SEARCH BOX -->
+  <div class="section-title" style="margin-top:14px">जिलेवार पंचायत समिति चरण सूची</div>
+  <div style="position:relative;margin:0 0 10px">
+    <input type="text" id="chunavSearch" placeholder="🔍 जिला या पंचायत समिति खोजें..." oninput="chunavFilter(this.value)"
+      style="width:100%;box-sizing:border-box;padding:9px 12px;border:1.5px solid var(--border);border-radius:10px;font-size:13px;font-family:inherit;background:var(--card-bg);color:var(--ink)">
+  </div>
+
+  <!-- DISTRICT ACCORDION -->
+  <div id="chunavList">
+
+  <!-- 1. अजमेर -->
+  <div class="dc-card" data-dist="अजमेर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>अजमेर</span><span class="dc-meta">10 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">सरवाड़, केकड़ी, सावर, पीसांगन, श्रीनगर, अजमेर ग्रामीण</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">अजमेर (आं.), बड़ाल्या, सिलोरा, अराई, मिनाय</div>
+    </div>
+  </div>
+
+  <!-- 2. ब्यावर -->
+  <div class="dc-card" data-dist="ब्यावर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>ब्यावर</span><span class="dc-meta">7 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">मसूदा, जवाजा, जैतारण, रास</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">बदनोर, शाहपुर, ब्यावर</div>
+    </div>
+  </div>
+
+  <!-- 3. अलवर -->
+  <div class="dc-card" data-dist="अलवर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>अलवर</span><span class="dc-meta">11 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">रामगढ़, कठूमर, छेदरिया सीकर, गोविन्दगढ़, मुण्डावर, रैणी</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">उमरैण, मालाखेड़ा, लक्ष्मणगढ़, राजगढ़, थानागाजी</div>
+    </div>
+  </div>
+
+  <!-- 4. दौसा-तिजारा -->
+  <div class="dc-card" data-dist="दौसा तिजारा">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>दौसा–तिजारा</span><span class="dc-meta">6 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">किशनगढ़बास, तिजारा</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">मुण्डावर, कोटकासिम, रामपुरा, तातारपुर</div>
+    </div>
+  </div>
+
+  <!-- 5. बाँसवाड़ा -->
+  <div class="dc-card" data-dist="बाँसवाड़ा बांसवाड़ा">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>बाँसवाड़ा</span><span class="dc-meta">16 समितियाँ · 3 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">घाटोल, गनोड़ा, छोटी सरवन, तलवाड़ा</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">बागीदौरा, गामड़ातलाई, आनन्दपुरी, नाहरपुरा</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">कुशलगढ़, सज्जनगढ़, छोटी सरदा, छोटा डूंगरा, गड़ी, सरेड़ी बड़ी, असपुर, बाँसवाड़ा</div>
+    </div>
+  </div>
+
+  <!-- 6. बारां -->
+  <div class="dc-card" data-dist="बारां">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>बारां</span><span class="dc-meta">10 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">नाहरगढ़, किशनगंज, कालवाड़ा, शाहबाद, मांगरोल, अंता</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">अटरू, छीपाबड़ौद, उंझा, बारां</div>
+    </div>
+  </div>
+
+  <!-- 7. बाड़मेर -->
+  <div class="dc-card" data-dist="बाड़मेर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>बाड़मेर</span><span class="dc-meta">17 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">बायतू, आंटेल, मंगला, गुड़ारोड़, रामसर, चौहटन, लीलसर, धनाक, सेवड़ा, फागलिया</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">शिव, भीयाड़, बोटाड़ू, बाड़मेर, बाड़मेर ग्रामीण, दूगर का तला, बिशाला</div>
+    </div>
+  </div>
+
+  <!-- 8. बालोतरा -->
+  <div class="dc-card" data-dist="बालोतरा">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>बालोतरा</span><span class="dc-meta">11 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">सिणधरी, गिड़ा, कल्याणपुर, गुड़ामालानी, धोरीमना, समदड़ी</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">बालोतरा, पादरू, पायसा कला, पाटोदी, सिवाना</div>
+    </div>
+  </div>
+
+  <!-- 9. भरतपुर -->
+  <div class="dc-card" data-dist="भरतपुर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>भरतपुर</span><span class="dc-meta">7 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">बयाना, नदबई, वैर, भूसावर</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">सेवर, उचैन, कपावास</div>
+    </div>
+  </div>
+
+  <!-- 10. डीग -->
+  <div class="dc-card" data-dist="डीग">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>डीग</span><span class="dc-meta">5 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">कामां, पहाड़ी, बृज नगर</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">डीग, कुम्हेर</div>
+    </div>
+  </div>
+
+  <!-- 11. भीलवाड़ा -->
+  <div class="dc-card" data-dist="भीलवाड़ा">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>भीलवाड़ा</span><span class="dc-meta">16 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">कोटड़ी, जहाजपुर, खजूरी, माण्डलगढ़, बिजोलिया, भादल, करेड़ा, सुवाणा, बनेड़ा</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">रायपुर, सांडेड़ा, शाहपुरा, फुलियाकलां, आसींद, शम्भूगढ़, झुरड़ा</div>
+    </div>
+  </div>
+
+  <!-- 12. बीकानेर (REVISED) -->
+  <div class="dc-card" data-dist="बीकानेर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>बीकानेर <span style="font-size:9px;color:#e74c3c">★संशोधित</span></span><span class="dc-meta">15 समितियाँ · 4 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div style="font-size:11px;color:#e74c3c;margin:4px 0 6px;padding:4px 8px;background:#fdecea;border-radius:6px">⚠️ संशोधन 06.10.2026: कुछ समितियाँ प्रथम → चतुर्थ चरण</div>
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">खाजूवाला, पूगल, छत्तरगढ़, रूनिया</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">हदा, बीठनोक, बज्जू, कोलायत, बीकानेर</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">डूंगरगढ़, रिड़ी, लूणकरणसर</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर) <span style="font-size:10px;color:#e74c3c">[संशोधित]</span></div>
+      <div class="dc-samiti">नोखा, पांचू, जसरासर</div>
+    </div>
+  </div>
+
+  <!-- 13. बूंदी -->
+  <div class="dc-card" data-dist="बूंदी">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>बूंदी</span><span class="dc-meta">8 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">तालेड़ा</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">बूंदी, खटकड़, दबलाना, हिण्डोली, नैनवाँ, लाखेरी, केशवरायपाटन</div>
+    </div>
+  </div>
+
+  <!-- 14. चित्तौड़गढ़ -->
+  <div class="dc-card" data-dist="चित्तौड़गढ़ चित्तौड़">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>चित्तौड़गढ़</span><span class="dc-meta">11 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">भुवाल, महेसर, कपासन, रावतभाटा, भूपालसागर</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">निम्बाहेड़ा, मैसरोड़गढ़, नगर, दूंगला, बड़ी सादड़ी, चित्तौड़गढ़</div>
+    </div>
+  </div>
+
+  <!-- 15. चूरू -->
+  <div class="dc-card" data-dist="चूरू">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>चूरू</span><span class="dc-meta">13 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">बीदासर, राजगढ़, चाँदगोटी, सिद्धमुख, भानीपुरा, सरदारशहर, सरदारशहर पूर्व</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">सुजानगढ़, तारानगर पूर्व, तारानगर पश्चिम, रतनगढ़, चूरू, चूरू उत्तर</div>
+    </div>
+  </div>
+
+  <!-- 16. दौसा -->
+  <div class="dc-card" data-dist="दौसा">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>दौसा</span><span class="dc-meta">14 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">मनोहरपुर खेड़ला, महवा, मण्डावर, बाँडीकुई, बँसवा, बैजूपाड़ा</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">लालसोट, शिवसिंहपुरा, समगंड, दीसा, लवाण, सिकन्दरा, सिकराय, नागल राजावतान</div>
+    </div>
+  </div>
+
+  <!-- 17. धौलपुर -->
+  <div class="dc-card" data-dist="धौलपुर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>धौलपुर</span><span class="dc-meta">6 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">धौलपुर, बाड़ी, सैपऊ</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">जसेड़ी, सरमथुरा, राजाखेड़ा</div>
+    </div>
+  </div>
+
+  <!-- 18. डूंगरपुर -->
+  <div class="dc-card" data-dist="डूंगरपुर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>डूंगरपुर</span><span class="dc-meta">14 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">समाबाड़ा, पारेवा, गलियाकोट, सीमलवाड़ा, झीँथरी, भांडारी, विखली</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">डूंगरपुर, पालदेवल, बिछीवाड़ा, गामड़ी अहाड़ा, सावला, आसपुर, देवड़ा</div>
+    </div>
+  </div>
+
+  <!-- 19. हनुमानगढ़ -->
+  <div class="dc-card" data-dist="हनुमानगढ़">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>हनुमानगढ़</span><span class="dc-meta">10 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">हनुमानगढ़ जंक्शन, पीलीबंगा, गोहर, पल्लू, भादरा, राजपुरा</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">संगरिया, रावतसर, टिब्बी, हनुमानगढ़ टाउन</div>
+    </div>
+  </div>
+
+  <!-- 20. जयपुर -->
+  <div class="dc-card" data-dist="जयपुर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>जयपुर</span><span class="dc-meta">22 समितियाँ · 4 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">गोविन्दगढ़, चौमू, किशनगढ़ रेनवाल, जोबनेर, साभरलेक, दूदू, मौजमाबाद, ढूंढगाया</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">आमेर, जालसू, रामपुरा दाँकी, शाहपुरा, अमरसर</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">कामों, माधोराजपुरा, चाकसू, कोटखावड़ा, साँगानेर</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">बस्सी, दूगा, जमवारामगढ़, आँखो</div>
+    </div>
+  </div>
+
+  <!-- 21. कोटपूतली-बहरोड़ -->
+  <div class="dc-card" data-dist="कोटपूतली बहरोड़">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>कोटपूतली–बहरोड़</span><span class="dc-meta">8 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">नारायणपुर, कोटपूतली, बानसुर, पावटा</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">नीमराना, विराटनगर, मैड कुण्डला, बहरोड़</div>
+    </div>
+  </div>
+
+  <!-- 22. जैसलमेर (REVISED) -->
+  <div class="dc-card" data-dist="जैसलमेर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>जैसलमेर <span style="font-size:9px;color:#e74c3c">★संशोधित</span></span><span class="dc-meta">10 समितियाँ · 1 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div style="font-size:11px;color:#e74c3c;margin:4px 0 6px;padding:4px 8px;background:#fdecea;border-radius:6px">⚠️ संशोधन: मूल प्रथम चरण → संशोधित चतुर्थ चरण (06.10.2026)</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर) <span style="font-size:10px;color:#e74c3c">[संशोधित]</span></div>
+      <div class="dc-samiti">राजमथाई मु. फलसूण्ड, साँकड़ा, भनियाणा, खुहड़ी, फतेहगढ़, रामगढ़, जैसलमेर, रामदेवरा मु. पोकरण, नाचना, मोहनगढ़</div>
+    </div>
+  </div>
+
+  <!-- 23. जालोर -->
+  <div class="dc-card" data-dist="जालोर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>जालोर</span><span class="dc-meta">14 समितियाँ · 3 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">भीनमाल, जसवंतपुरा, साँचली, आहोर, मोदलाजून, जालोर, उम्मेदाबाद</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">साम्भर, शिवलहाना, भाद्राजण, सरवाण</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">रानीवाड़ा, बागोड़ा, सरनाऊ</div>
+    </div>
+  </div>
+
+  <!-- 24. झालावाड़ -->
+  <div class="dc-card" data-dist="झालावाड़">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>झालावाड़</span><span class="dc-meta">8 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">भवानीमंडी, डग, अकलेरा, मनोहरथाना</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">झालरापाटन, रिड़गांव, बकानी, खानपुर</div>
+    </div>
+  </div>
+
+  <!-- 25. झुंझुनू -->
+  <div class="dc-card" data-dist="झुंझुनू झुन्झुनू">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>झुंझुनू</span><span class="dc-meta">14 समितियाँ · 3 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">झुंझुनू, भिड़ावा, सूरजगढ़, सिहाना, पिलानी, बुहाना</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">नवलगढ़, गोठड़ा, उदयपुरवाटी, गुड़ागोड़जी</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">खेतड़ी, बबाई, भाण्डावा, अलसीसर</div>
+    </div>
+  </div>
+
+  <!-- 26. जोधपुर -->
+  <div class="dc-card" data-dist="जोधपुर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>जोधपुर</span><span class="dc-meta">23 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">शेरगढ़, शाबा, बालेसर, आंगोलाई, यांमू, सेखाला</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">ओसियां, सामराउ, तिंडी, उम्मेदनगर, बावड़ी, हदूण्डी, गोपालगढ़, आसोप, पीपाड़ शहर, सालवा खुर्द, माण्डोर, लूणी, धवा, बिलाड़ा, कांपरड़ा, करू, झबर</div>
+    </div>
+  </div>
+
+  <!-- 27. फलोदी -->
+  <div class="dc-card" data-dist="फलोदी">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>फलोदी</span><span class="dc-meta">9 समितियाँ · 1 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">फलोदी, बाप, धटियाली, लोहावट, देशू, सेतरावा, पीलवा, आक, बादिपणी</div>
+    </div>
+  </div>
+
+  <!-- 28. करौली -->
+  <div class="dc-card" data-dist="करौली">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>करौली</span><span class="dc-meta">11 समितियाँ · 3 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">नादोती, मासलपुर, करौली</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">क्षिप्सीन, श्रीमहावीरजी, शेरपुर सुरोट</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">मण्डरायल, कुटगांव, सपोट्रा, बालघाट, टोडाभीम</div>
+    </div>
+  </div>
+
+  <!-- 29. कोटा -->
+  <div class="dc-card" data-dist="कोटा">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>कोटा</span><span class="dc-meta">6 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">लाड़पुरा, साँगोद, सुल्तानपुर, इटावा</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">खैराबाद, चेन्नेट</div>
+    </div>
+  </div>
+
+  <!-- 30. नागौर -->
+  <div class="dc-card" data-dist="नागौर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>नागौर</span><span class="dc-meta">12 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">नागौर, श्रीबालाजी–अलाय, खींवसर, परबतसर, जायल, डेह, मुण्डवा (आं.)</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">रियाबड़ी, मेड़ता सिटी, मेड़ता रोड–गोतन, मैराना, डेगाना, मुण्डवा (आं.)</div>
+    </div>
+  </div>
+
+  <!-- 31. डीडवाना-कुचामन -->
+  <div class="dc-card" data-dist="डीडवाना कुचामन">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>डीडवाना–कुचामन</span><span class="dc-meta">9 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">मकराना, पीलवा, नावाँ, परबतसर, इटावा छामणिया</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">लाडनूं, डीडवाना, गौरासिटी, कुचामन सिटी</div>
+    </div>
+  </div>
+
+  <!-- 32. पाली -->
+  <div class="dc-card" data-dist="पाली">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>पाली</span><span class="dc-meta">9 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">मारवाड़ जंक्शन, सोजत, वर्णाली, सुमेरपुर, राणी</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">बाली, देसूरी, पाली, रोहट</div>
+    </div>
+  </div>
+
+  <!-- 33. प्रतापगढ़ -->
+  <div class="dc-card" data-dist="प्रतापगढ़">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>प्रतापगढ़</span><span class="dc-meta">8 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">छोटीसादड़ी, धरियावद, दरियाबाद, दलोट</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">प्रतापगढ़, अरनोद, नीपलखुंट, सुदागर</div>
+    </div>
+  </div>
+
+  <!-- 34. राजसमंद -->
+  <div class="dc-card" data-dist="राजसमंद">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>राजसमंद</span><span class="dc-meta">9 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">खमनोर, देलवाड़ा, आमेट, चारभुजा, कुम्भलगढ़</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">नीब, देवगढ़, राजसमंद, रेलमगरा</div>
+    </div>
+  </div>
+
+  <!-- 35. सवाई माधोपुर -->
+  <div class="dc-card" data-dist="सवाई माधोपुर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>सवाई माधोपुर</span><span class="dc-meta">8 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">बामनवास, महारानीपुर, बौली, खंडार</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">सवाई माधोपुर, गंगापुरसिटी, बोंग का बरवाड़ा, वजीरपुर</div>
+    </div>
+  </div>
+
+  <!-- 36. सीकर -->
+  <div class="dc-card" data-dist="सीकर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>सीकर</span><span class="dc-meta">16 समितियाँ · 3 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">मनोहरपुर, श्रीमाधोपुर, अजीतगढ़, खण्डेला, पिपराली, नीमकाथाना</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">धोद ग्रामीण, दांतारामगढ़, पलसाना, खाचरियावास, सरकारी</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">रामगढ़ शेखावाटी, गोठेपुर, दांतारामगढ़, नेछवा, बलारा</div>
+    </div>
+  </div>
+
+  <!-- 37. सिरोही -->
+  <div class="dc-card" data-dist="सिरोही">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>सिरोही</span><span class="dc-meta">8 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">शिवगंज, कालन्दी, मण्डार, आबूरोड</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">रेवदर, भावरी, पिण्डवाड़ा, सिरोही</div>
+    </div>
+  </div>
+
+  <!-- 38. श्रीगंगानगर -->
+  <div class="dc-card" data-dist="श्रीगंगानगर गंगानगर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>श्रीगंगानगर</span><span class="dc-meta">11 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">श्रीविजयनगर, सूरतगढ़, सथिंयासर</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">श्रीगंगानगर उत्तर, श्रीगंगानगर दक्षिण, सादुलशहर, अनुपगढ़, घड़साना, पदमपुर, श्रीकरणपुर, राधेसलोगढ़</div>
+    </div>
+  </div>
+
+  <!-- 39. टोंक -->
+  <div class="dc-card" data-dist="टोंक">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>टोंक</span><span class="dc-meta">8 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">पीपलू, परवेर, मालपुरा (आं.), देवली, उनियारा</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">निवाई, टोंक (आं.), टोडारायसिंह</div>
+    </div>
+  </div>
+
+  <!-- 40. उदयपुर -->
+  <div class="dc-card" data-dist="उदयपुर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>उदयपुर</span><span class="dc-meta">20 समितियाँ · 3 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div class="dc-phase p1">प्रथम चरण (22 अक्टूबर)</div>
+      <div class="dc-samiti">झाड़ोल, कालासिया, आँगणा, गिरवा, नाई, मावली, घासा, वल्लभनगर, भींडर, कुराबड़</div>
+      <div class="dc-phase p2">द्वितीय चरण (28 अक्टूबर)</div>
+      <div class="dc-samiti">गोमण्डा, सावरा, बड़गांव, कोटड़ा, देवला, सूलाव</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर)</div>
+      <div class="dc-samiti">खेरवाड़ा, नयागाँव, ऋषभदेव, कल्याणपुर</div>
+    </div>
+  </div>
+
+  <!-- 41. सलूम्बर (REVISED) -->
+  <div class="dc-card" data-dist="सलूम्बर">
+    <div class="dc-hdr" onclick="dcToggle(this)"><span>सलूम्बर <span style="font-size:9px;color:#e74c3c">★संशोधित</span></span><span class="dc-meta">7 समितियाँ · 2 चरण</span><span class="dc-arr">▾</span></div>
+    <div class="dc-body" style="display:none">
+      <div style="font-size:11px;color:#e74c3c;margin:4px 0 6px;padding:4px 8px;background:#fdecea;border-radius:6px">⚠️ संशोधन: कुछ समितियाँ चतुर्थ→तृतीय चरण (06.10.2026)</div>
+      <div class="dc-phase p3">तृतीय चरण (03 नवम्बर) <span style="font-size:10px;color:#e74c3c">[संशोधित]</span></div>
+      <div class="dc-samiti">लसाड़िया, सेमारी, सलूम्बर, गींगला</div>
+      <div class="dc-phase p4">चतुर्थ चरण (14 नवम्बर)</div>
+      <div class="dc-samiti">झल्लारा, जयसमंद, सराड़ा</div>
+    </div>
+  </div>
+
+  </div><!-- /chunavList -->
 
   <!-- NOTE FOR TEACHERS -->
   <div class="notes-box" style="margin-top:14px;border-left-color:var(--gold)">
     <div class="notes-title">📌 शिक्षकों के लिए महत्वपूर्ण</div>
     <ul>
-      <li>मतदान ड्यूटी के दौरान विद्यालय में पर्यवेक्षण हेतु वैकल्पिक व्यवस्था सुनिश्चित करें</li>
-      <li>संशोधित कार्यक्रम (06.10.2026) अनुसार ड्यूटी आदेश प्राप्त करें</li>
-      <li>मतदान ड्यूटी अवकाश के लिए विभागीय आदेश संलग्न रखें</li>
+      <li>अपने जिले की पंचायत समिति खोजकर चरण व तिथि देखें</li>
+      <li>मतदान ड्यूटी <b>संशोधित कार्यक्रम 06.10.2026</b> अनुसार लगेगी</li>
+      <li>जिला परिषद / पंचायत समिति मतदान और पंच/सरपंच मतदान की तिथियाँ अलग हैं</li>
       <li>ELC: <b>फॉर्म-6 भरना और पंजीकृत होना</b> — कक्षा 12 (अक्टूबर)</li>
+      <li>स्रोत: राज्य निर्वाचन आयोग, राजस्थान — प्रेस नोट 03.10.2026 व संशोधन 06.10.2026</li>
     </ul>
   </div>
   <div style="margin:14px 0 2px;text-align:center">
@@ -2608,6 +3089,22 @@ function initShiviraNotifications(forceAsk) {
   if (!tryWebNotif() || forceAsk) {
     showInAppSummary(todayEvs, upcoming, remDue);
   }
+}
+
+// ── District Chunav Accordion ──
+function dcToggle(hdr) {
+  const body = hdr.nextElementSibling;
+  const arr = hdr.querySelector('.dc-arr');
+  const open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  if (arr) arr.textContent = open ? '▾' : '▴';
+}
+function chunavFilter(val) {
+  const q = val.trim().toLowerCase();
+  document.querySelectorAll('#chunavList .dc-card').forEach(card => {
+    const match = !q || card.textContent.toLowerCase().includes(q);
+    card.style.display = match ? '' : 'none';
+  });
 }
 </script>
 </body>
