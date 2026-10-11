@@ -2538,64 +2538,75 @@ function renderTodayPanel() {
 }
 
 // ─── SHIVIRA NOTIFICATIONS ────────────────────────────────────────────────────
+// ── In-app toast (works in WebView where Notification API is blocked) ──────────
+function showToast(msg, duration) {
+  let t = document.getElementById('shiviraToast');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'shiviraToast';
+    t.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#323232;color:#fff;padding:10px 20px;border-radius:24px;font-size:13px;z-index:9999;max-width:88vw;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.3);transition:opacity .3s';
+    document.body.appendChild(t);
+  }
+  t.textContent = msg;
+  t.style.opacity = '1';
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => { t.style.opacity = '0'; }, duration || 3000);
+}
+
+function buildTodaySummary() {
+  const now = new Date();
+  const todayEvs = getCalEventsForDate(now);
+  const remDue = (APP.reminders||[]).filter(r=>r.date===todayStr()&&!r.done);
+  const upcoming = [];
+  for (let i=1;i<=7;i++) {
+    const d = new Date(now); d.setDate(now.getDate()+i);
+    getCalEventsForDate(d).forEach(ev=>{
+      upcoming.push(`${d.getDate()} ${HI_MONTHS[d.getMonth()]}: ${ev.l}`);
+    });
+  }
+  return {todayEvs, remDue, upcoming};
+}
+
 function initShiviraNotifications(forceAsk) {
-  if (!('Notification' in window)) return;
-  if (Notification.permission === 'denied') return;
+  const {todayEvs, remDue, upcoming} = buildTodaySummary();
 
-  const fire = () => {
-    const now = new Date();
-    const todayEvs = getCalEventsForDate(now);
-    const remDue = (APP.reminders||[]).filter(r=>r.date===todayStr()&&!r.done);
-
-    // Today's shivira events notification
-    if (todayEvs.length) {
-      const body = todayEvs.map(e=>e.l).join(' | ');
-      new Notification('📅 शिविरा पंचांग — आज', {
-        body,
-        icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">📅</text></svg>',
-        tag: 'shivira-today'
+  // ── Try Web Notifications API first ────────────────────────────────────────
+  const tryWebNotif = () => {
+    if (!('Notification' in window)) return false;
+    if (Notification.permission === 'denied') return false;
+    const fireNotif = () => {
+      if (todayEvs.length) new Notification('📅 शिविरा — आज', {body: todayEvs.map(e=>e.l).join(' | '), tag:'shivira-today'});
+      if (upcoming.length) new Notification('🗓️ इस सप्ताह', {body: upcoming.slice(0,3).join('\n'), tag:'shivira-week'});
+      remDue.slice(0,2).forEach(r => new Notification('🔔 '+r.title, {body: r.time||'', tag:'rem-'+r.id}));
+      renderTodayPanel();
+      return true;
+    };
+    if (Notification.permission === 'granted') { fireNotif(); return true; }
+    if (forceAsk) {
+      Notification.requestPermission().then(p => {
+        if (p === 'granted') fireNotif();
+        else showInAppSummary(todayEvs, upcoming, remDue);
+        renderTodayPanel();
       });
+      return true;
     }
+    return false;
+  };
 
-    // Upcoming week highlights
-    const upcoming = [];
-    for (let i = 1; i <= 7; i++) {
-      const d = new Date(now); d.setDate(now.getDate() + i);
-      const evs = getCalEventsForDate(d);
-      evs.forEach(ev => {
-        const dl = `${d.getDate()} ${HI_MONTHS[d.getMonth()]}`;
-        upcoming.push(`${dl}: ${ev.l}`);
-      });
-    }
-    if (upcoming.length) {
-      new Notification('🗓️ इस सप्ताह — शिविरा', {
-        body: upcoming.slice(0,3).join('\n'),
-        icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🗓️</text></svg>',
-        tag: 'shivira-week'
-      });
-    }
-
-    // Due reminders
-    if (remDue.length) {
-      remDue.slice(0,2).forEach(r => {
-        new Notification('ShiviraDiary 🔔', {
-          body: r.title + (r.time?' • '+r.time:''),
-          icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2020/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🔔</text></svg>',
-          tag: 'rem-'+r.id
-        });
-      });
-    }
-
-    // Refresh today panel to hide banner
+  // ── Fallback: in-app summary popup ─────────────────────────────────────────
+  const showInAppSummary = (evs, upc, rem) => {
+    let lines = [];
+    if (evs.length) lines.push('📅 आज: ' + evs.map(e=>e.l).join(', '));
+    if (rem.length) lines.push('🔔 बकाया: ' + rem.map(r=>r.title).join(', '));
+    if (upc.length) lines.push('🗓️ इस सप्ताह: ' + upc.slice(0,2).join(' • '));
+    if (!lines.length) lines.push('✅ आज और इस सप्ताह कोई विशेष कार्यक्रम नहीं');
+    showToast(lines.join('\n'), 5000);
+    localStorage.setItem('notif_asked','1');
     renderTodayPanel();
   };
 
-  if (Notification.permission === 'granted') {
-    fire();
-  } else if (forceAsk || Notification.permission !== 'granted') {
-    if (Notification.requestPermission) {
-      Notification.requestPermission().then(p => { if (p === 'granted') fire(); renderTodayPanel(); });
-    }
+  if (!tryWebNotif() || forceAsk) {
+    showInAppSummary(todayEvs, upcoming, remDue);
   }
 }
 </script>
