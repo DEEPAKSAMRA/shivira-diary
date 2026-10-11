@@ -777,9 +777,16 @@
 <div class="month-panel" id="panel-annual-schedule">
   <div class="month-header"><div><div class="month-name">समय-सारिणी विवरण</div><div class="month-year">एक पारी एवं दो पारी विद्यालय</div></div></div>
   <div class="section-title">एक पारी विद्यालय</div>
-  <div class="table-wrap"><table class="data-table"><tr><th>अवधि</th><th>समय</th><th>कुल घंटे</th></tr><tr class="hl"><td>ग्रीष्मकाल (1 अप्रैल–30 सितम्बर)</td><td>7:30 AM – 1:00 PM</td><td>5.30 घंटे (35 मिनट प्रति कालांश)</td></tr><tr><td>शीतकाल (1 अक्टूबर–31 मार्च)</td><td>10:00 AM – 4:00 PM</td><td>6 घंटे (1–6: 40 मिनट; 7–8: 35 मिनट)</td></tr></table></div>
+  <div class="table-wrap"><table class="data-table"><tr><th>अवधि</th><th>समय</th><th>कुल घंटे</th></tr>
+    <tr class="hl"><td>ग्रीष्मकाल (1 अप्रैल–15 अक्टूबर)</td><td>7:30 AM – 1:00 PM</td><td>5.30 घंटे (35 मिनट प्रति कालांश)</td></tr>
+    <tr style="background:#e8f5e9"><td><b>🔄 संशोधित शीतकाल (16 अक्टूबर 2026 से)</b></td><td><b>10:00 AM – 4:00 PM</b></td><td>6 घंटे (1–6: 40 मिनट; 7–8: 35 मिनट)</td></tr>
+    <tr style="color:var(--ink-muted);font-size:11px"><td colspan="3">⚠️ पूर्व: 1 अक्टूबर से, संशोधित आदेश अनुसार अब 16 अक्टूबर 2026 से लागू</td></tr>
+  </table></div>
   <div class="section-title">दो पारी विद्यालय</div>
-  <div class="table-wrap"><table class="data-table"><tr><th>अवधि</th><th>समय</th><th>प्रति पारी</th></tr><tr class="hl"><td>ग्रीष्मकाल</td><td>7:00 AM – 6:00 PM</td><td>5.30 घंटे (35 मिनट प्रति कालांश)</td></tr><tr><td>शीतकाल</td><td>7:30 AM – 5:30 PM</td><td>5 घंटे (1व5वां: 35 मिनट; शेष: 30 मिनट)</td></tr></table></div>
+  <div class="table-wrap"><table class="data-table"><tr><th>अवधि</th><th>समय</th><th>प्रति पारी</th></tr>
+    <tr class="hl"><td>ग्रीष्मकाल (1 अप्रैल–15 अक्टूबर)</td><td>7:00 AM – 6:00 PM</td><td>5.30 घंटे (35 मिनट प्रति कालांश)</td></tr>
+    <tr style="background:#e8f5e9"><td><b>🔄 संशोधित शीतकाल (16 अक्टूबर 2026 से)</b></td><td><b>7:30 AM – 5:30 PM</b></td><td>5 घंटे (1व5वां: 35 मिनट; शेष: 30 मिनट)</td></tr>
+  </table></div>
   <div class="section-title">दो पारी विद्यालय — वर्ग क्रम</div>
   <div class="table-wrap"><table class="data-table"><tr><th>विद्यालय प्रकार</th><th>प्रथम पारी</th><th>द्वितीय पारी</th></tr><tr><td>उच्च माध्यमिक (1–12)</td><td>9–12</td><td>1–8</td></tr><tr><td>उच्च माध्यमिक (6–12)</td><td>9–12</td><td>6–8</td></tr><tr><td>उच्च माध्यमिक (9–12)</td><td>11–12</td><td>9–10</td></tr><tr><td>माध्यमिक (1–10)</td><td>6–10</td><td>1–5</td></tr><tr><td>माध्यमिक (6–10)</td><td>9–10</td><td>6–8</td></tr></table></div>
   <div class="section-title">No Bag Day</div>
@@ -2443,7 +2450,12 @@ function renderTodayPanel() {
 
   // Notification banner (if not granted)
   let notifBanner = '';
-  if ('Notification' in window && Notification.permission === 'default') {
+  // Show banner if: notifications supported AND not yet granted
+  // localStorage flag prevents re-asking after user dismissed
+  const notifAsked = localStorage.getItem('notif_asked');
+  const notifSupported = 'Notification' in window;
+  const notifGranted = notifSupported && Notification.permission === 'granted';
+  if (notifSupported && !notifGranted && !notifAsked) {
     notifBanner = `<div class="notif-banner" id="notifEnableBtn">
       <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
       <div class="notif-banner-text"><b>🔔 सूचनाएँ चालू करें</b>आज और इस सप्ताह के कार्यक्रमों की सूचना पाएँ</div>
@@ -2519,7 +2531,10 @@ function renderTodayPanel() {
     </div>`;
   // Attach notification btn listener after rendering
   const notifBtn = document.getElementById('notifEnableBtn');
-  if (notifBtn) notifBtn.addEventListener('click', function(){ initShiviraNotifications(true); });
+  if (notifBtn) notifBtn.addEventListener('click', function(){
+    localStorage.setItem('notif_asked','1');
+    initShiviraNotifications(true);
+  });
 }
 
 // ─── SHIVIRA NOTIFICATIONS ────────────────────────────────────────────────────
@@ -2577,8 +2592,10 @@ function initShiviraNotifications(forceAsk) {
 
   if (Notification.permission === 'granted') {
     fire();
-  } else if (forceAsk || Notification.permission === 'default') {
-    Notification.requestPermission().then(p => { if (p === 'granted') fire(); renderTodayPanel(); });
+  } else if (forceAsk || Notification.permission !== 'granted') {
+    if (Notification.requestPermission) {
+      Notification.requestPermission().then(p => { if (p === 'granted') fire(); renderTodayPanel(); });
+    }
   }
 }
 </script>
