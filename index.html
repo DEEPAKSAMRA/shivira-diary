@@ -1733,18 +1733,16 @@ function checkNotifications() {
 }
 
 // ─── INIT ─────────────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', function() {
+// Main init — called after calData and all functions are defined (see bottom of script)
+function _mainInit() {
   loadApp();
   initRemCal();
-  // Auto-open current month panel instead of always April
   bnavGo('home');
-  // Render today panel
   renderTodayPanel();
-  // Notifications: ask permission + fire daily shivira events notification
   setTimeout(initShiviraNotifications, 2500);
   updateRemBadge();
   updateCLBadge();
-});
+}
 
 
 
@@ -2004,9 +2002,8 @@ const _origShowPanel = showPanel;
 // so we just add bnav update directly. We do it by redefining at end:
 
 // ── INIT PATCH ───────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', function() {
-  updateRemBadge();
-});
+// Single DOMContentLoaded — runs after all JS (calData etc.) is parsed
+document.addEventListener('DOMContentLoaded', _mainInit);
 
 // ── CL PLANNER ────────────────────────────────────────────────────────────────
 // NOTE: Rajasthan govt schools — Saturday is a WORKING day, only Sunday is weekly off
